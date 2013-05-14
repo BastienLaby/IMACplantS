@@ -72,7 +72,9 @@ public class JOGLWindow {
 				case 'd' : case 'D' : 
 					renderer.getCamera().moveLeft(-1.0f);
 				break;
-			}
+				case 'n' : case 'N' :
+					renderer.createTree();
+				}
 			}
 			
 		});

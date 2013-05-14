@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arbre length="0">
+  <trunck length="16.627903" radius="1.61376" axe="0 1 0" side="1">
+    <trunck length="10.015862" radius="1.1783046" axe="-0.3974676 -0.61726487 -0.62394166" cote="1">
+      <trunck length="6.033082" radius="0.860352" axe="-0.3974676 -0.61726487 -0.62394166" cote="1">
+        <trunck length="3.6340435" radius="0.6281954" axe="-0.3974676 -0.61726487 -0.62394166" cote="1">
+          <trunck length="2.188976" radius="0.45868376" axe="-0.3974676 -0.61726487 -0.62394166" cote="1">
+            <trunck length="1.3185357" radius="0.33491296" axe="-0.3974676 -0.61726487 -0.62394166" cote="1" />
+            <trunck length="1.5212375" radius="0.31340724" axe="0.14033937 -0.36410546 0.33891368" cote="2" />
+          </trunck>
+          <trunck length="2.5254927" radius="0.42923033" axe="0.14033937 -0.36410546 0.33891368" cote="2">
+            <trunck length="2.0146558" radius="0.18131934" axe="0.18074787 -0.98037386 0.68237805" cote="1" />
+          </trunck>
+        </trunck>
+        <trunck length="4.192714" radius="0.5878572" axe="0.14033937 -0.36410546 0.33891368" cote="2">
+          <trunck length="3.344645" radius="0.24832793" axe="0.18074787 -0.98037386 0.68237805" cote="1">
+            <trunck length="2.6681166" radius="0.10490092" axe="0.18074787 -0.98037386 0.68237805" cote="1" />
+            <trunck length="2.1112683" radius="0.22508344" axe="0.10294664 0.23613441 0.8678199" cote="2">
+              <trunck length="1.6842176" radius="0.09508177" axe="0.18074787 -0.98037386 0.68237805" cote="1" />
+              <trunck length="1.3327136" radius="0.20401473" axe="0.10294664 0.23613441 0.8678199" cote="2" />
+            </trunck>
+          </trunck>
+        </trunck>
+      </trunck>
+      <trunck length="6.9605627" radius="0.8051063" axe="0.14033937 -0.36410546 0.33891368" cote="2">
+        <trunck length="5.5526347" radius="0.34010023" axe="0.18074787 -0.98037386 0.68237805" cote="1">
+          <trunck length="4.4294915" radius="0.1436682" axe="0.18074787 -0.98037386 0.68237805" cote="1" />
+          <trunck length="3.5050364" radius="0.30826548" axe="0.10294664 0.23613441 0.8678199" cote="2">
+            <trunck length="2.7960653" radius="0.13022028" axe="0.18074787 -0.98037386 0.68237805" cote="1" />
+            <trunck length="2.2125134" radius="0.2794106" axe="0.10294664 0.23613441 0.8678199" cote="2">
+              <trunck length="1.7649242" radius="0.103819385" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+              <trunck length="1.6539048" radius="0.25940666" axe="-0.5512558 0.036054492 0.024851203" cote="2" />
+            </trunck>
+          </trunck>
+        </trunck>
+      </trunck>
+    </trunck>
+    <trunck length="11.555626" radius="1.1026422" axe="0.14033937 -0.36410546 0.33891368" cote="2">
+      <trunck length="9.217935" radius="0.40970397" axe="-0.6786573 0.4739958 0.24693811" cote="1">
+        <trunck length="7.3531556" radius="0.15223193" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+        <trunck length="6.890619" radius="0.38037193" axe="-0.5512558 0.036054492 0.024851203" cote="2">
+          <trunck length="5.4966536" radius="0.14133315" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+          <trunck length="5.1508965" radius="0.35313985" axe="-0.5512558 0.036054492 0.024851203" cote="2">
+            <trunck length="4.1088753" radius="0.13121465" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+            <trunck length="3.850414" radius="0.32785738" axe="-0.5512558 0.036054492 0.024851203" cote="2">
+              <trunck length="3.071479" radius="0.12182055" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+              <trunck length="2.8782732" radius="0.30438498" axe="-0.5512558 0.036054492 0.024851203" cote="2">
+                <trunck length="2.2960014" radius="0.11309901" axe="-0.6786573 0.4739958 0.24693811" cote="1" />
+                <trunck length="2.1515756" radius="0.28259304" axe="-0.5512558 0.036054492 0.024851203" cote="2">
+                  <trunck length="1.296181" radius="0.11791169" axe="-0.9756831 -0.254156 0.06973851" cote="1" />
+                  <trunck length="0.98686194" radius="0.25681835" axe="0.17773199 -0.96434534 -0.18999255" cote="2" />
+                </trunck>
+              </trunck>
+            </trunck>
+          </trunck>
+        </trunck>
+      </trunck>
+    </trunck>
+  </trunck>
+</arbre>

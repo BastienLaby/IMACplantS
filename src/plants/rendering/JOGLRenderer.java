@@ -22,6 +22,7 @@ import plants.rendering.drawable.Cube;
 import plants.rendering.drawable.HeightMap;
 import plants.rendering.drawable.Repere;
 import plants.rendering.shaders.TreeShaderLocations;
+import plants.xml.JDOMCreate;
 import plants.xml.JDOMHierarchy;
 
 import com.jogamp.opengl.util.texture.Texture;
@@ -49,7 +50,7 @@ public class JOGLRenderer implements GLEventListener {
 	private FPSCamera camera;
 	
 	// Textures
-	private Texture texSkybox, texGround, texTree;
+	private Texture texSkybox, texGround, texTree, texLeaf;
 	
 	// Drawable
 	private Cube skybox;
@@ -145,7 +146,7 @@ public class JOGLRenderer implements GLEventListener {
 		this.groundLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/ground.vs.glsl", "src/plants/rendering/shaders/ground.fs.glsl");
 		this.treeLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/tree.vs.glsl", "src/plants/rendering/shaders/tree.fs.glsl");
 		this.leafLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/leaf.vs.glsl", "src/plants/rendering/shaders/leaf.fs.glsl");
-		this.repereLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/repere.vs.glsl", "src/plants/rendering/shaders/repere.fs.glsl");
+		//this.repereLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/repere.vs.glsl", "src/plants/rendering/shaders/repere.fs.glsl");
 		
 		// Send Projection Matrix to shadersMatrix4f
 		final Matrix4f P = new Matrix4f(Transform.Perspective(70.0f, 900.0f/900.0f, 0.1f, 1000.0f));
@@ -162,8 +163,8 @@ public class JOGLRenderer implements GLEventListener {
 		this.gl.glUseProgram(this.leafLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.leafLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
-		this.gl.glUseProgram(this.repereLoc.PROGRAM_ID);
-		this.gl.glUniformMatrix4fv(this.repereLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		//this.gl.glUseProgram(this.repereLoc.PROGRAM_ID);
+		//this.gl.glUniformMatrix4fv(this.repereLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
 		// Create the this.stack Matrix
 		this.stack = new MatrixStack();
@@ -172,7 +173,8 @@ public class JOGLRenderer implements GLEventListener {
 		try {
 			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), false);
 			this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/grass.jpg"), true);
-			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
+			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree2.jpg"), false);
+			this.texLeaf = TextureIO.newTexture(new File("src/plants/rendering/img/leaf.png"), false);
 		} catch (GLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -184,10 +186,12 @@ public class JOGLRenderer implements GLEventListener {
 		this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_NEAREST);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_NEAREST);
-		
+		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_NEAREST);
+				
 		// Create drawable objects
 		this.skybox = new Cube(this.gl);
-		this.repere = new Repere(gl);
+		//this.repere = new Repere(gl);
 		
 		try {
 			this.ground = new HeightMap(this.gl, "src/plants/rendering/heightmaps/hmap2.png");
@@ -218,10 +222,17 @@ public class JOGLRenderer implements GLEventListener {
 		this.camera = camera;
 	}
 
-	private void createTree() {
+	public void createTree() {
 		
-		// Get JDOM Structure from xml file
-		JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File("src/plants/xml/tree2.xml"));
+		int i = trees.size();
+		String filename = "src/plants/xml/tree" + i + ".xml";
+		File f = new File(filename);
+		f.delete();
+		
+		JDOMCreate treeCreator =  new JDOMCreate(filename);
+		
+		//Create JDOM Hierarchy
+		JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File(filename));
 		
 		// Create a tree
 		PlantsTreeNode root = new TrunckTreeNode();
@@ -352,8 +363,8 @@ public class JOGLRenderer implements GLEventListener {
 					// Rend leaf
 					gl.glUseProgram(this.leafLoc.PROGRAM_ID);
 					gl.glActiveTexture(GL3.GL_TEXTURE1);
-					this.texTree.enable(gl);
-					this.texTree.bind(gl);
+					this.texLeaf.enable(gl);
+					this.texLeaf.bind(gl);
 					gl.glUniform1i(this.leafLoc.LOC_TEX, 1);
 					
 					gl.glUniformMatrix4fv(this.leafLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);

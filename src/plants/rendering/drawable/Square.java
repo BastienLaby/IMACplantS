@@ -66,6 +66,7 @@ public class Square implements Drawable {
 		// Active vertex attributes
 		gl.glEnableVertexAttribArray(Utils.LEAFSHADER_POSITION_LOCATION); // position
 		gl.glEnableVertexAttribArray(Utils.LEAFSHADER_NORMAL_LOCATION); // normal
+		gl.glEnableVertexAttribArray(Utils.LEAFSHADER_TEXCOORDS_LOCATION); // Texcoordse
 		
 		// Specify vbo data
 		gl.glBindBuffer(GL3.GL_ARRAY_BUFFER, vbo);
@@ -83,6 +84,7 @@ public class Square implements Drawable {
 								  false,
 								  VertexShape.SIZEOF_VERTEX,
 								  VertexShape.OFFSET_NORMAL * Utils.SIZEOF_FLOAT);
+		
 		gl.glVertexAttribPointer( Utils.LEAFSHADER_TEXCOORDS_LOCATION,
 								  VertexShape.NB_COMPONENTS_TEXCOORDS,
 								  GL3.GL_FLOAT,
