@@ -171,7 +171,7 @@ public class JOGLRenderer implements GLEventListener {
 		try {
 			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), true);
 			//this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/sand.jpg"), true);
-			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
+			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree3.jpg"), false);
 			this.texLeaf = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
 		} catch (GLException e) {
 			e.printStackTrace();
@@ -247,11 +247,12 @@ public class JOGLRenderer implements GLEventListener {
 		DefaultMutableTreeNode treeNodeRoot = new DefaultMutableTreeNode(root, true);
 		
 		// Fill the tree with the xml informations
-		JDOMHierarchy.fillTree(xmlHierarchy.getRoot(), treeNodeRoot);
+		JDOMHierarchy.fillTree(this.gl, xmlHierarchy.getRoot(), treeNodeRoot);
+		
 		// Compute Tree's ModelView Matrix
 		MatrixStack stack = new MatrixStack();
 		JOGLRenderer.computeMVmatrix(treeNodeRoot, stack);
-		this.createDrawableObjects(treeNodeRoot);
+		//this.createDrawableObjects(treeNodeRoot);
 		this.trees.add(treeNodeRoot);
 		
 	}
@@ -311,73 +312,7 @@ public class JOGLRenderer implements GLEventListener {
 	 * @param tree : the root of the tree currently treated
 	 */
 	private void render(DefaultMutableTreeNode tree) {
-		/*
-			switch (((PlantsTreeNode)tree.getUserObject()).getType()) {
-				
-				case "trunck" :
-					
-					if(tree.getParent() != null) {
-					
-						// Calculate Parent ModelView Matrix
-						Matrix4f MVp = new Matrix4f();
-						if (tree.getParent() == null) {
-							MVp.setIdentity();
-						} else {
-							DefaultMutableTreeNode parent = ((DefaultMutableTreeNode) tree.getParent());
-							MVp = new Matrix4f(((TrunckTreeNode) parent.getUserObject()).getMV());
-						}
-				
-						// Calculate Brother ModelView Matrix
-						Matrix4f MVb = new Matrix4f();
-						if (tree.getSiblingCount() == 2) {
-							if (tree.getPreviousSibling() == null) {
-								MVb = new Matrix4f(((TrunckTreeNode) tree.getNextSibling().getUserObject()).getMV());
-							} else {
-								MVb = new Matrix4f(((TrunckTreeNode) tree.getPreviousSibling().getUserObject()).getMV());
-							}
-						} else {
-							MVb = new Matrix4f(((TrunckTreeNode) tree.getUserObject()).getMV());
-						}
-						
-						// Rend trunck
-						
-						this.gl.glUseProgram(this.treeLoc.PROGRAM_ID);
-						this.gl.glActiveTexture(GL3.GL_TEXTURE1);
-						this.texTree.enable(this.gl);
-						this.texTree.bind(this.gl);
-						this.gl.glUniform1i(this.treeLoc.LOC_TEX, 1);
-						this.gl.glUniformMatrix4fv(this.treeLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);
-						
-						((TrunckTreeNode) tree.getUserObject()).render(gl, this.treeLoc.LOC_MV_CURRENT,
-																		   this.treeLoc.LOC_MV_PARENT, MVp,
-																		   this.treeLoc.LOC_MV_BROTHER, MVb,
-																		   this.treeLoc.LOC_S_CURRENT, 
-																		   this.treeLoc.LOC_S_PARENT, 
-																		   this.treeLoc.LOC_S_BROTHER);
-					}
-					
-					// draw children
-					for (int i = 0; i < tree.getChildCount(); ++i) {
-						this.render((DefaultMutableTreeNode) tree.getChildAt(i));
-					}
-					
-					break;
-				
-				case "leaf" :
-				
-					// Rend leaf
-					gl.glUseProgram(this.leafLoc.PROGRAM_ID);
-					gl.glActiveTexture(GL3.GL_TEXTURE1);
-					this.texTree.enable(gl);
-					this.texTree.bind(gl);
-					gl.glUniform1i(this.leafLoc.LOC_TEX, 1);
-					
-					gl.glUniformMatrix4fv(this.leafLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);
-					
-					((LeafTreeNode)tree.getUserObject()).render(gl, this.leafLoc.LOC_MV_CURRENT);
-						
-					break;
-		}*/
+
 		
 		Matrix4f MV = new Matrix4f();
 		

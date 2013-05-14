@@ -4,6 +4,7 @@
 in vec3 v_Position;
 in vec3 v_Normal;
 in vec2 v_Texcoords;
+in vec4 color;
 
 /* OUT */
 out vec4 glFragColor;
@@ -15,6 +16,5 @@ uniform sampler2D uTex;
 void main (void) {
 	
 	glFragColor = texture(uTex, v_Texcoords);
-	//glFragColor = vec4(1.0f, 1.0f, 1.0f, 1.0f);
 	
 } ;

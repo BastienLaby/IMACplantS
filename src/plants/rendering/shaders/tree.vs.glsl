@@ -10,6 +10,8 @@ out vec3 v_Position;
 out vec3 v_Normal;
 out vec2 v_Texcoords;
 
+out vec4 color;
+
 uniform mat4 uniform_MV = mat4(1.f);
 uniform mat4 uniform_MVc = mat4(1.f);
 uniform mat4 uniform_MVp = mat4(1.f);
@@ -33,7 +35,7 @@ void main(void) {
 	gl_Position.w = 1.f;
 	
 	gl_Position = uniform_P * uniform_MV * gl_Position;
-	gl_Position = uniform_P * uniform_MV * vec4(positionC.xyz, 1.0f);
+	//gl_Position = uniform_P * uniform_MV * vec4(positionC.xyz, 1.0f);
 	
 	v_Position = vec3(gl_Position);
 	v_Normal = attribute_Normal;
