@@ -171,7 +171,7 @@ public class JOGLRenderer implements GLEventListener {
 		try {
 			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), true);
 			//this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/sand.jpg"), true);
-			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree3.jpg"), false);
+			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree5.jpg"), false);
 			this.texLeaf = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
 		} catch (GLException e) {
 			e.printStackTrace();
