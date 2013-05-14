@@ -19,7 +19,7 @@ public class LeafTreeNode extends PlantsTreeNode {
 	
 	private Square square;
 	
-	public LeafTreeNode(float rho, float theta, float phi, float scale, float height, float radiusTrunck, float lengthTrunck, float orientation) {
+	public LeafTreeNode(GL3 gl, float rho, float theta, float phi, float scale, float height, float radiusTrunck, float lengthTrunck, float orientation) {
 		this.rho = rho;
 		this.theta = theta;
 		this.phi = phi;
@@ -28,10 +28,11 @@ public class LeafTreeNode extends PlantsTreeNode {
 		this.radiusTrunck = radiusTrunck;
 		this.lengthTrunck = lengthTrunck;
 		this.orientation = orientation;
+		this.square = new Square(gl);
 	}
 	
 	public void createDrawableObjects(GL3 gl) {
-		this.square = new Square(gl);
+		
 	}
 	
 	public void render(GL3 gl, int MVcLocation) {
