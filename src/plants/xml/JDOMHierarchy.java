@@ -219,8 +219,6 @@ public class JDOMHierarchy {
 
 					boolean uniqueChild = (nbChildren==1)?true:false;
 
-
-					
 					treeChild = new DefaultMutableTreeNode(new TrunckTreeNode(length, v, rad, radp, radb, PASSAGEchildParent, PASSAGEchildBrother, uniqueChild));
 
 					break;
@@ -234,7 +232,6 @@ public class JDOMHierarchy {
 					float currentRadius = Float.parseFloat(JDOMchild.getAttributeValue("radiusCurrent"));
 					float currentLength = Float.parseFloat(JDOMchild.getAttributeValue("lengthCurrent"));
 					float orientation = Float.parseFloat(JDOMchild.getAttributeValue("angleDiscLat"));
-					//int type = Integer.parseInt(JDOMchild.getAttributeValue("type"));
 					treeChild = new DefaultMutableTreeNode(new LeafTreeNode(rho, theta, phi, scale, height, currentRadius, currentLength, orientation));
 					break;
 

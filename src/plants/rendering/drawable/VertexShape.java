@@ -114,6 +114,18 @@ public class VertexShape {
 		this.positionRB = positionRB;
 	}
 
+	public void setCurrentWeight(float weight) {
+		this.position.z = weight;
+	}
+	
+	public void setParentWeight(float weight) {
+		this.positionRP.z = weight;
+	}
+	
+	public void setBrotherWeight(float weight) {
+		this.positionRB.z = weight;
+	}
+	
 	public Vector3f getNormal() {
 		return normal;
 	}

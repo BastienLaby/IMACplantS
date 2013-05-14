@@ -49,7 +49,7 @@ public class JOGLRenderer implements GLEventListener {
 	private FPSCamera camera;
 	
 	// Textures
-	private Texture texSkybox, texGround, texTree;
+	private Texture texSkybox, texGround, texTree, texLeaf;
 	
 	// Drawable
 	private Cube skybox;
@@ -64,7 +64,7 @@ public class JOGLRenderer implements GLEventListener {
 		this.gl = drawable.getGL().getGL3();
 
 		// Clear GL context
-		this.gl.glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
+		this.gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		this.gl.glClear(GL3.GL_COLOR_BUFFER_BIT | GL3.GL_DEPTH_BUFFER_BIT);
 
 		// Check errors
@@ -84,7 +84,7 @@ public class JOGLRenderer implements GLEventListener {
 			this.stack.mult(this.camera.getViewMatrix());
 			
 			// Drawing Skybox
-			this.stack.push();
+			/*this.stack.push();
 				this.gl.glUseProgram(this.skyboxLoc.PROGRAM_ID);
 				this.gl.glActiveTexture(GL3.GL_TEXTURE1);
 				this.texSkybox.enable(this.gl);
@@ -94,10 +94,10 @@ public class JOGLRenderer implements GLEventListener {
 				this.stack.scale(new Vector3f(2.0f, 2.0f, 2.0f));
 				this.gl.glUniformMatrix4fv(this.skyboxLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);
 				this.skybox.draw(this.gl);
-			this.stack.pop();
+			this.stack.pop();*/
 			
 			// Drawing HeightMap
-			this.stack.push();
+			/*this.stack.push();
 				this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
 				this.gl.glActiveTexture(GL3.GL_TEXTURE1);
 				this.texGround.enable(this.gl);
@@ -107,17 +107,16 @@ public class JOGLRenderer implements GLEventListener {
 				this.stack.translate(new Vector3f(0.0f, -17.5f, 0.0f));
 				this.gl.glUniformMatrix4fv(this.groundLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);
 				this.ground.draw(gl);
-			this.stack.pop();
-			
-			// Drawing tree
-			this.stack.push();
-				for(DefaultMutableTreeNode tree : this.trees) {	
-					this.render(tree);
-				}
-			this.stack.pop();
+			this.stack.pop();*/
 			
 		this.stack.pop();
 		
+		// Drawing tree
+		this.stack.push();
+			for(DefaultMutableTreeNode tree : this.trees) {	
+				this.render(tree);
+			}
+		this.stack.pop();
 	}
 
 	@Override
@@ -170,9 +169,10 @@ public class JOGLRenderer implements GLEventListener {
 		
 		// Load and init textures
 		try {
-			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), false);
-			this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/grass.jpg"), true);
+			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), true);
+			//this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/sand.jpg"), true);
 			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
+			this.texLeaf = TextureIO.newTexture(new File("src/plants/rendering/img/tree.jpg"), false);
 		} catch (GLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -180,20 +180,22 @@ public class JOGLRenderer implements GLEventListener {
 		}
 		this.texSkybox.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
 		this.texSkybox.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
-		this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
-		this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_NEAREST);
+		//this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		//this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
-		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_NEAREST);
+		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
+		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		
 		// Create drawable objects
 		this.skybox = new Cube(this.gl);
 		this.repere = new Repere(gl);
 		
-		try {
+		/*try {
 			this.ground = new HeightMap(this.gl, "src/plants/rendering/heightmaps/hmap2.png");
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		System.out.println("Init openGL : Success");
 		
@@ -204,9 +206,26 @@ public class JOGLRenderer implements GLEventListener {
 	}
 
 	@Override
-	public void reshape(GLAutoDrawable drawable, int arg1, int arg2, int arg3,
-			int arg4) {
-		// TODO Auto-generated method stub
+	public void reshape(GLAutoDrawable drawable, int x, int y, int width,
+			int height) {
+		
+		// Recalculate the projection matrix
+		final Matrix4f P = new Matrix4f(Transform.Perspective(70.0f, width/(float)height, 0.1f, 1000.0f));
+		
+		this.gl.glUseProgram(this.skyboxLoc.PROGRAM_ID);
+		this.gl.glUniformMatrix4fv(this.skyboxLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		
+		this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
+		this.gl.glUniformMatrix4fv(this.groundLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		
+		this.gl.glUseProgram(this.treeLoc.PROGRAM_ID);
+		this.gl.glUniformMatrix4fv(this.treeLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		
+		this.gl.glUseProgram(this.leafLoc.PROGRAM_ID);
+		this.gl.glUniformMatrix4fv(this.leafLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		
+		this.gl.glUseProgram(this.repereLoc.PROGRAM_ID);
+		this.gl.glUniformMatrix4fv(this.repereLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 
 	}
 	
@@ -261,7 +280,6 @@ public class JOGLRenderer implements GLEventListener {
 		if(((PlantsTreeNode)root.getUserObject()).getType() == "trunck") {
 			stack.rotate(((PlantsTreeNode) root.getUserObject()).getRotationMatrix());
 			((PlantsTreeNode) root.getUserObject()).setMV(stack.top());
-			System.out.println(((PlantsTreeNode) root.getUserObject()).getMV());
 			for (int i = 0; i < root.getChildCount(); i++) {
 				stack.push();
 					float length = ((TrunckTreeNode) root.getUserObject()).getLength();
@@ -293,9 +311,7 @@ public class JOGLRenderer implements GLEventListener {
 	 * @param tree : the root of the tree currently treated
 	 */
 	private void render(DefaultMutableTreeNode tree) {
-		
-		
-		
+		/*
 			switch (((PlantsTreeNode)tree.getUserObject()).getType()) {
 				
 				case "trunck" :
@@ -361,7 +377,84 @@ public class JOGLRenderer implements GLEventListener {
 					((LeafTreeNode)tree.getUserObject()).render(gl, this.leafLoc.LOC_MV_CURRENT);
 						
 					break;
+		}*/
+		
+		Matrix4f MV = new Matrix4f();
+		
+		switch (((PlantsTreeNode)tree.getUserObject()).getType()) {
+		
+			case "trunck" :
+				
+				// Calculate Parent ModelView Matrix
+				Matrix4f MVp = new Matrix4f();
+				if (tree.getParent() == null) {
+					MVp.setIdentity();
+				} else {
+					DefaultMutableTreeNode parent = ((DefaultMutableTreeNode) tree.getParent());
+					MVp = new Matrix4f(((TrunckTreeNode) parent.getUserObject()).getMV());
+				}
+		
+				// Calculate Brother ModelView Matrix
+				Matrix4f MVb = new Matrix4f();
+				if (tree.getSiblingCount() == 2) {
+					if (tree.getPreviousSibling() == null) {
+						MVb = new Matrix4f(((TrunckTreeNode) tree.getNextSibling()
+								.getUserObject()).getMV());
+					} else {
+						MVb = new Matrix4f(((TrunckTreeNode) tree.getPreviousSibling()
+								.getUserObject()).getMV());
+					}
+				} else {
+					MVb = new Matrix4f(((TrunckTreeNode) tree.getUserObject()).getMV());
+				}
+				
+				// Rend trunck
+				
+				gl.glUseProgram(this.treeLoc.PROGRAM_ID);
+				gl.glActiveTexture(GL3.GL_TEXTURE1);
+				this.texTree.enable(this.gl);
+				this.texTree.bind(this.gl);
+				this.gl.glUniform1i(this.treeLoc.LOC_TEX, 1);
+				
+				MV = new Matrix4f(this.camera.getViewMatrix());
+				MV.mul(this.stack.top());
+				this.gl.glUniformMatrix4fv(this.treeLoc.LOC_MV, 1, false, Transform.toFloatArray(MV), 0);
+				
+				((TrunckTreeNode) tree.getUserObject()).render(gl,
+															   this.treeLoc.LOC_MV_CURRENT,
+															   this.treeLoc.LOC_MV_PARENT,
+															   MVp,
+															   this.treeLoc.LOC_MV_BROTHER,
+															   MVb,
+															   this.treeLoc.LOC_S_CURRENT,
+															   this.treeLoc.LOC_S_PARENT,
+															   this.treeLoc.LOC_S_BROTHER);
+				
+				// draw children
+				for (int i = 0; i < tree.getChildCount(); ++i) {
+					this.render((DefaultMutableTreeNode) tree.getChildAt(i));
+				}
+				
+				break;
+			
+			case "leaf" :
+
+				this.gl.glUseProgram(this.leafLoc.PROGRAM_ID);
+				this.gl.glActiveTexture(GL3.GL_TEXTURE1);
+				this.texLeaf.enable(gl);
+				this.texLeaf.bind(gl);
+				this.gl.glUniform1i(this.leafLoc.LOC_TEX, 1);
+				
+				MV = new Matrix4f(this.camera.getViewMatrix());
+				MV.mul(this.stack.top());
+				gl.glUniformMatrix4fv(this.leafLoc.LOC_MV, 1, false, Transform.toFloatArray(MV), 0);
+				
+				((LeafTreeNode)tree.getUserObject()).render(gl, this.leafLoc.LOC_MV_CURRENT);
+					
+				break;
+		
 		}
+		
 	}
 	
 }

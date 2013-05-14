@@ -18,7 +18,7 @@ public class Cylinder implements Drawable {
  
 	private ArrayList<VertexShape> allVertices;
 	private int nbTotalVertices;
-	private final static int DRAWING_MODE = GL3.GL_TRIANGLES; // le mode de dessin
+	private final static int DRAWING_MODE = GL3.GL_POINTS; // le mode de dessin
 	private int vao;
 	
 	public Cylinder(GL3 gl, float height, int discLat, int discHeight, Matrix4f MPcp, Matrix4f MPcb, boolean uniqueChild) {
@@ -26,7 +26,6 @@ public class Cylinder implements Drawable {
 		try {
 			this.createData(height, discLat, discHeight, uniqueChild, MPcp, MPcb);
 		} catch (IllegalWeightSumException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         this.createGLRessources(gl);
@@ -45,9 +44,9 @@ public class Cylinder implements Drawable {
         for(int j = 0; j <= discHeight; ++j) {
         	for(int i = 0; i < discLat; ++i) {
                 VertexShape v = new VertexShape(
-                		new Vector4f((float)Math.sin(i*dPhi)*0.5f, j * dH, (float)Math.cos(i * dPhi)*0.5f, 1.0f),
-                		new Vector4f(),
-                		new Vector4f(),
+                		new Vector4f((float)Math.sin(i*dPhi), j * dH, (float)Math.cos(i * dPhi), 1.0f),
+                		new Vector4f(0f, 0f, 0f, 0f),
+                		new Vector4f(0f, 0f, 0f, 0f),
                 		new Vector3f((float)Math.sin(i * dPhi), 0, (float)Math.cos(i * dPhi)),
                 		new Vector2f(i * rcpLat, j * rcpH)
                 );             
@@ -179,20 +178,18 @@ public class Cylinder implements Drawable {
 		
 		float dy = height/discHeight;
         
-		// For the first quarter points
-        for(int i = 0; i < discHeight/4; ++i) {  
+        for(int i = 0; i < discHeight/4; ++i) {
         	
-        	// Calculate weight and ponderate angle
         	float weight = (1-(float)4*i/discHeight);
-        	float angle = (float)Math.PI/4;        	
+        	float angle = (float)Math.PI/4;
+        	
         	float ponderateAngle = weight*angle;
         	if(uniqueChild) {
+        		System.out.println("unique child");
     			ponderateAngle = - ponderateAngle;
     		}
         	
-        	// For the first semi-circle points (ponderated by parent only)
     		for(int j = 0; j < discLat/2; ++j) {
-    			
         		float tmpx = distinctVertices.get(j + discLat*i).getPosition().x;
         		float tmpy = distinctVertices.get(j + discLat*i).getPosition().y;
         		
@@ -211,10 +208,8 @@ public class Cylinder implements Drawable {
         		distinctVertices.set(j  + discLat*i, new VertexShape(newx, newy, newz, normalx, normaly, normalz, tx, ty));
     		}
     		
-    		// Inverse the ponderate angle
     		ponderateAngle =  (float) (weight*(angle - (float)Math.PI/2));
     		
-    		// For the second semi-circle points (ponderated by parent and brother)
     		for(int j = discLat/2; j < discLat; ++j) {
 
     			float tmpx = distinctVertices.get(j + discLat*i).getPosition().x;
@@ -241,22 +236,21 @@ public class Cylinder implements Drawable {
 		
 		float start = -discHeight/6;
         float a = start;
-        float H = (float)discHeight/2; // The height limit onto the cylinder to ponderate
+        float H = (float)discHeight/2;
         float pas = (-2*start)/H;
         
         float wc; // local weight
     	float wp; // Parent weight
     	float wb; // Brother weight
         
-    	float B; // Lateral ponderation
-    	float X; // Height variation
+    	float B; // Pondération latérale
+    	float X; // Variation de Hauteur
     	
     	
     	for(int i = 0; i < discHeight; ++i) {
-    		
             	X = (float)Math.sqrt(i);
             	
-            	/****** First semi-circle ******/
+            	// First semi-circle
             	for(int j = 0; j < discLat/2; ++j) {
             		
             		B = ((float)16.0f/((discLat)*(discLat)))*(j - ((float)(discLat)/4))*(j - ((float)(discLat)/4));
@@ -265,16 +259,19 @@ public class Cylinder implements Drawable {
             		
             		if(i < H) {
             			
-            			// Polynomial ponderation
             			/*if(!uniqueChild){
     	        			//wc = (1-(float)(4*i*i)/(discHeight*discHeight))*(initialWc) + (float)(4*i*i)/(float)(discHeight*discHeight);
     	        			//wb = wp = (1 - wc)/2;
-            				// Parent
+    	        			
+            				//Pondération polynomiale
+            					//père :
             				wp = B -(B/((float)Math.sqrt(H)))*X;
-            				// Curent
+            					//courante :
             				wc = ((1-B)/2) + ((B+1)/(2*(float)Math.sqrt(H)))*X;
-            				// Brother
+            					//frèrot :
             				wb = ((1-B)/2) + ((B-1)/(2*(float)Math.sqrt(H)))*X;
+            				
+            				
             			} else {
             				wc = (float)((float)Math.sqrt(i))/((float)Math.sqrt(H));
                 			wp = (1.0f - (float)((float)Math.sqrt(i))/((float)Math.sqrt(H)));
@@ -288,11 +285,11 @@ public class Cylinder implements Drawable {
     	        			
             			} else {
             				wc = (float)(4*i*i)/(discHeight*discHeight);
-                			wp = (1.0f - (float)(4*i*i)/(discHeight*discHeight)); // ->  linear
+                			wp = (1.0f - (float)(4*i*i)/(discHeight*discHeight)); // ->  linéaire
                 			wb = 0.0f;
             			}*/
             			
-                		// Quadratic Ponderation
+                		// Quadratique Ponderation
                 		wc = (float)(Math.sqrt(i)/Math.sqrt(H));
             			wp = 1.0f - (float)(Math.sqrt(i)/Math.sqrt(H));
             			wb = 0.0f;
@@ -306,16 +303,14 @@ public class Cylinder implements Drawable {
             			distinctVertices.get(j  + discLat*i).fixWeight(wc, wp, wb);
             			
             		} else {
-            			
             			wp = 0.0f;
             			wb = 0.0f;
             			wc = 1.0f;
             			distinctVertices.get(j  + discLat*i).fixWeight(wc, wp, wb);
-            			
             		}
             	}
             	
-            	/****** Second semi-circle ******/
+            	// Second semi-circle
             	for(int j = discLat/2; j < discLat; ++j) {
             		
             		//initialWp = (16/((discLat)*(discLat)))*(j - ((3*(discLat))/4)*(j - ((3*(discLat))/4)));
@@ -330,24 +325,24 @@ public class Cylinder implements Drawable {
     	        			//wc = (1-(float)(4*i*i)/(discHeight*discHeight))*(initialWc) + (float)(4*i*i)/(float)(discHeight*discHeight);
     	        			//wb = wp = (1 - wc)/2;
     	        			
-            				// Parent
+            				//Pondération polynomiale
+            					//père :
             				wp = B -(B/((float)Math.sqrt(H)))*X;
-            				// Current
+            					//courante :
             				wc = ((1-B)/2) + ((B+1)/(2*(float)Math.sqrt(H)))*X;
-            				// Brother
+            					//frèrot :
             				wb = ((1-B)/2) + ((B-1)/(2*(float)Math.sqrt(H)))*X;
+            				
             				
             			} else {
             				wc = (float)((float)Math.sqrt(i))/((float)Math.sqrt(H));
                 			wp = (1.0f - (float)((float)Math.sqrt(i))/((float)Math.sqrt(H)));
                 			wb = 0.0f;
             			}*/
-            			
             			// Quadratique Ponderation
                 		wc = (float)(Math.sqrt(i)/Math.sqrt(H));
             			wp = 1.0f - (float)(Math.sqrt(i)/Math.sqrt(H));
             			wb = 0.0f;
-            			
             			//Arctan Ponderation
             			//wc = (float) (1.176f*((Math.atan(a/4)/Math.PI) + 0.49f));
             			//wp = 1 - wc;
@@ -355,7 +350,7 @@ public class Cylinder implements Drawable {
             			//wb = 0.0f;
             			
             			//Linear Ponderation
-            			//wp = (0.5f - (float)i/discHeight);//--> linear
+            			//wp = (0.5f - (float)i/discHeight);//--> linéaire
             			//wc = (float)2*i/discHeight;
             			//wb = (0.5f - (float)i/discHeight);
             			
@@ -363,42 +358,44 @@ public class Cylinder implements Drawable {
             			//wc = (i*i)/(float)Math.pow(discHeight/2, 2);
             			//wp = wb = (1 - wc)/2;
             			
-            			//Polynomial ponderation
+            			//Pondération polynomiale
             			//wp = B + w*X -(2*t + (1/H*H) + (w/H))*X*X;
             			//wc =((1-B)/2) - (H*t + ((1-B)/2) + w)*X + ((1/H*H) + t + (w/H))*X*X;
             			//wb = ((1-B)/2) - (H*t + ((1-B)/2*H))*X + t*X*X;
             			//wb = ((1-B)/2) - (H*t + ((1-B)/2))*X + t*X*X;
             			
             			distinctVertices.get(j  + discLat*i).fixWeight(wc, wp, wb);
-            			
-            		} else {
-            			
+            		}
+            		else {
             			wp = 0.0f;
             			wb = 0.0f;
             			wc = 1.0f;
             			distinctVertices.get(j  + discLat*i).fixWeight(wc, wp, wb);
-            			
             		}
             	}
-            	
             	a = a + pas;
-            	
             }
         
         for(VertexShape v : distinctVertices) {
-      
-            Vector4f coordsRP = Transform.multMat4Vec4(MPcp, new Vector4f(v.getPosition().x, v.getPosition().y, v.getPosition().z, 1));
-            v.getPositionRP().x = coordsRP.x/coordsRP.w;
-            v.getPositionRP().y = coordsRP.y/coordsRP.w;
-            v.getPositionRP().z = coordsRP.z/coordsRP.w;
+        	
+        	Vector4f currentPosition = new Vector4f(v.getPosition());
+        	currentPosition.setZ(1);
+        	
+            Vector4f coordsRP = new Vector4f(Transform.multMat4Vec4(MPcp, currentPosition));
+            v.setPositionRP(coordsRP);
+           /* v.positionRP.x = coordsRP.x/coordsRP.w;
+            v.positionRP.y = coordsRP.y/coordsRP.w;
+            v.positionRP.z = coordsRP.z/coordsRP.w;*/
             
-            Vector4f coordsRB = Transform.multMat4Vec4(MPcb, new Vector4f(v.getPosition().x, v.getPosition().y, v.getPosition().z, 1));
-            v.getPositionRB().x = coordsRB.x/coordsRB.w;
-            v.getPositionRB().y = coordsRB.y/coordsRB.w;
-            v.getPositionRB().z = coordsRB.z/coordsRB.w;
+            Vector4f coordsRB = new Vector4f(Transform.multMat4Vec4(MPcb, currentPosition));
+            v.setPositionRB(coordsRB);
+            
+            /*v.positionRB.x = coordsRB.x/coordsRB.w;
+            v.positionRB.y = coordsRB.y/coordsRB.w;
+            v.positionRB.z = coordsRB.z/coordsRB.w;*/
             
         }
-		
+        
 	}
 	
 	private void regroupDataIntoTriangles(int discHeight, int discLat, ArrayList<VertexShape> distinctVertices) {
