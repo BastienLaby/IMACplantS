@@ -144,4 +144,8 @@ public class JOGLWindow {
 		this.frame.setVisible(true);
 	}
 	
+	public void updateFPS(int fps) {
+		this.frame.setTitle("FPS : " + fps);
+	}
+	
 }

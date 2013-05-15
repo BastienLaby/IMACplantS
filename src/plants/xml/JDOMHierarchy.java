@@ -166,9 +166,9 @@ public class JDOMHierarchy {
 					}
 
 					if(nbChildren == 1) {
-						PASSAGEchildParent.m13 = 0.95f*plength;
+						PASSAGEchildParent.m13 = plength;
 					} else {
-						PASSAGEchildParent.m13 = 0.95f*plength;
+						PASSAGEchildParent.m13 = plength;
 					}
 
 					Matrix4f PASSAGEchildBrother = new Matrix4f();

@@ -34,7 +34,7 @@ public class Cylinder implements Drawable {
 	private void createData(float height, int discLat, int discHeight, boolean uniqueChild, Matrix4f MPcp, Matrix4f MPcb) throws IllegalWeightSumException {
 		
 		// Calculate factors for discretisation
-		float rcpLat = 1.f / discLat, rcpH = 1.f / discHeight;
+		float rcpLat = 1.f / (discLat-1), rcpH = 1.f / (discHeight-1);
         float dPhi = 2 * (float)Math.PI * rcpLat, dH = height * rcpH;
         
         // Create a vertex list which is the list of dictinct vertices
@@ -43,6 +43,7 @@ public class Cylinder implements Drawable {
         // Build all the distinct vertices
         for(int j = 0; j < discHeight; ++j) {
         	for(int i = 0; i < discLat; ++i) {
+        		
                 VertexShape v = new VertexShape(
                 		new Vector4f((float)Math.sin(i*dPhi), j * dH, (float)Math.cos(i * dPhi), 1.0f),
                 		new Vector4f(0f, 0f, 0f, 0f),
