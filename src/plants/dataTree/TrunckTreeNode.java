@@ -65,7 +65,7 @@ public class TrunckTreeNode extends PlantsTreeNode {
 		this.MPcp = new Matrix4f(MPcp);
 		this.MPcb = new Matrix4f(MPcb);
 		
-		this.cylinder = new Cylinder(gl, length, 20, 20, MPcp, MPcb, this.uniqueChild);
+		this.cylinder = new Cylinder(gl, length, 7, 6, MPcp, MPcb, this.uniqueChild);
 		
 	}
 	

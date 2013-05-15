@@ -1,13 +1,16 @@
 package plants.ui;
 
 import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.Point;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
+import java.awt.image.BufferedImage;
 
 import javax.media.opengl.GLCapabilities;
 import javax.media.opengl.GLProfile;
@@ -30,11 +33,17 @@ public class JOGLWindow {
 	private final int WINDOWS_WIDTH = 900;
 	private final int WINDOWS_HEIGHT = 900;
 	
+	private final Cursor blankCursor;
+	
 	public JOGLWindow(String windowName) {
+		
+		BufferedImage cursorImg = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
+		this.blankCursor = Toolkit.getDefaultToolkit().createCustomCursor(cursorImg, new Point(0, 0), "blank cursor");
 		
 		// Init Frame
 		this.frame = new JFrame(windowName);
 		this.frame.setSize(WINDOWS_WIDTH, WINDOWS_HEIGHT);
+		this.frame.setCursor(blankCursor);
 		
 		// Init GL Profile with default profile
 		this.profile = GLProfile.getDefault();
@@ -54,39 +63,48 @@ public class JOGLWindow {
 		});
 		
 		canvas.addKeyListener(new KeyListener() {
+			
 			public void keyTyped(KeyEvent e) {
 				
-			}
-			public void keyReleased(KeyEvent e) {}	
-			public void keyPressed(KeyEvent e) {
 				switch(e.getKeyChar()) {
-				case 'z' : case 'Z' : 
-					renderer.getCamera().moveFront(1.0f);
-				break;
-				case 's' : case 'S' : 
-					renderer.getCamera().moveFront(-1.0f);
-				break;
-				case 'q' : case 'Q' : 
-					renderer.getCamera().moveLeft(1.0f);
-				break;
-				case 'd' : case 'D' : 
-					renderer.getCamera().moveLeft(-1.0f);
-				break;
+					case 'z' : case 'Z' : 
+						renderer.getCamera().moveFront(0.2f);
+						break;
+					case 's' : case 'S' : 
+						renderer.getCamera().moveFront(-0.2f);
+						break;
+					case 'q' : case 'Q' : 
+						renderer.getCamera().moveLeft(0.2f);
+						break;
+					case 'd' : case 'D' : 
+						renderer.getCamera().moveLeft(-0.2f);
+						break;
+				}
 			}
+			
+			public void keyReleased(KeyEvent e) {
+				
+			}	
+			
+			public void keyPressed(KeyEvent e) {
+				
 			}
 			
 		});
+		
 		canvas.addMouseMotionListener(new MouseMotionListener() {
 			
 			@Override
 			public void mouseMoved(MouseEvent e) {
+				
 				if(renderer.getCamera() != null) {
 					int offsetX = WINDOWS_WIDTH/2 - e.getX();
 					int offsetY = WINDOWS_HEIGHT/2 - e.getY();
 					renderer.getCamera().resetRotate();
-					renderer.getCamera().rotateLeft(offsetX);
-					renderer.getCamera().rotateUp(offsetY);
+					renderer.getCamera().rotateLeft(0.5f*offsetX);
+					renderer.getCamera().rotateUp(0.5f*offsetY);
 				}
+				
 			}
 			
 			@Override
