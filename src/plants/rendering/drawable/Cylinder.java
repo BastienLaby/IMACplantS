@@ -250,9 +250,9 @@ public class Cylinder implements Drawable {
 		
         float H = (float)discHeight/2;
         
-        float wc; // local weight
+        float wc;  // local weight
     	float wp; // Parent weight
-    	float wb; // Brother weight
+    	float wb;// Brother weight
     	
     	for(int i = 0; i < discHeight; ++i) {
     		
@@ -279,7 +279,7 @@ public class Cylinder implements Drawable {
         			// Quadratique Ponderation
         			wc = (float)(Math.sqrt(i)/Math.sqrt(H));
         			wp = 1.0f - (float)(Math.sqrt(i)/Math.sqrt(H));
-        			wb = 0.0f; // sensée être pondérée
+        			wb = 0.0f; // sensï¿½e ï¿½tre pondï¿½rï¿½e
         		} else {
         			wp = 0.0f;
         			wb = 0.0f;

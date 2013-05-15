@@ -166,7 +166,7 @@ public class JDOMHierarchy {
 					}
 
 					if(nbChildren == 1) {
-						PASSAGEchildParent.m13 = 0.87f*plength;
+						PASSAGEchildParent.m13 = 0.95f*plength;
 					} else {
 						PASSAGEchildParent.m13 = 0.95f*plength;
 					}

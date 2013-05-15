@@ -66,11 +66,12 @@ public class TrunckTreeNode extends PlantsTreeNode {
 		this.MPcb = new Matrix4f(MPcb);
 		
 		this.cylinder = new Cylinder(gl, length, 7, 6, MPcp, MPcb, this.uniqueChild);
+
 		
 	}
 	
 	public void createDrawableObjects(GL3 gl) {
-		
+
 	}
 	
 	public TrunckTreeNode() {

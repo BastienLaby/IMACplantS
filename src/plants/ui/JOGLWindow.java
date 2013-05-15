@@ -64,9 +64,11 @@ public class JOGLWindow {
 		
 		canvas.addKeyListener(new KeyListener() {
 			
+			@Override
 			public void keyTyped(KeyEvent e) {
 				
 				switch(e.getKeyChar()) {
+
 					case 'z' : case 'Z' : 
 						renderer.getCamera().moveFront(0.2f);
 						break;
@@ -82,11 +84,14 @@ public class JOGLWindow {
 				}
 			}
 			
+			@Override
 			public void keyReleased(KeyEvent e) {
 				
-			}	
+			}
 			
+			@Override
 			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
 				
 			}
 			
