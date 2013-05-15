@@ -85,7 +85,7 @@ public class JOGLRenderer implements GLEventListener {
 			this.stack.mult(this.camera.getViewMatrix());
 			
 			// Drawing Skybox
-			/*this.stack.push();
+			this.stack.push();
 				this.gl.glUseProgram(this.skyboxLoc.PROGRAM_ID);
 				this.gl.glActiveTexture(GL3.GL_TEXTURE1);
 				this.texSkybox.enable(this.gl);
@@ -95,7 +95,7 @@ public class JOGLRenderer implements GLEventListener {
 				this.stack.scale(new Vector3f(2.0f, 2.0f, 2.0f));
 				this.gl.glUniformMatrix4fv(this.skyboxLoc.LOC_MV, 1, false, Transform.toFloatArray(this.stack.top()), 0);
 				this.skybox.draw(this.gl);
-			this.stack.pop();*/
+			this.stack.pop();
 			
 			// Drawing HeightMap
 			/*this.stack.push();
@@ -113,11 +113,12 @@ public class JOGLRenderer implements GLEventListener {
 		this.stack.pop();
 		
 		// Drawing tree
-		this.stack.push();
-			for(DefaultMutableTreeNode tree : this.trees) {	
-				this.render(tree);
+			for(int i = 0; i < 1; i++) {
+				this.stack.push();
+				this.stack.translate(new Vector3f((float)Math.random()*i*10f, (float)Math.random()*i*10f, 0f));
+					this.render(this.trees.get(0));
+				this.stack.pop();
 			}
-		this.stack.pop();
 	}
 
 	@Override
@@ -142,10 +143,10 @@ public class JOGLRenderer implements GLEventListener {
 		
 		// Load shaders and init OpenGL Program
 		this.skyboxLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/skybox.vs.glsl", "src/plants/rendering/shaders/skybox.fs.glsl");
-		this.groundLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/ground.vs.glsl", "src/plants/rendering/shaders/ground.fs.glsl");
+		//this.groundLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/ground.vs.glsl", "src/plants/rendering/shaders/ground.fs.glsl");
 		this.treeLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/tree.vs.glsl", "src/plants/rendering/shaders/tree.fs.glsl");
 		this.leafLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/leaf.vs.glsl", "src/plants/rendering/shaders/leaf.fs.glsl");
-		//this.repereLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/repere.vs.glsl", "src/plants/rendering/shaders/repere.fs.glsl");
+		this.repereLoc = new TreeShaderLocations(drawable, "src/plants/rendering/shaders/repere.vs.glsl", "src/plants/rendering/shaders/repere.fs.glsl");
 		
 		// Send Projection Matrix to shadersMatrix4f
 		final Matrix4f P = new Matrix4f(Transform.Perspective(70.0f, 900.0f/900.0f, 0.1f, 1000.0f));
@@ -153,8 +154,8 @@ public class JOGLRenderer implements GLEventListener {
 		this.gl.glUseProgram(this.skyboxLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.skyboxLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
-		this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
-		this.gl.glUniformMatrix4fv(this.groundLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		//this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
+		//this.gl.glUniformMatrix4fv(this.groundLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
 		this.gl.glUseProgram(this.treeLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.treeLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
@@ -190,7 +191,6 @@ public class JOGLRenderer implements GLEventListener {
 		
 		// Create drawable objects
 		this.skybox = new Cube(this.gl);
-		//this.repere = new Repere(gl);
 		
 		/*try {
 			this.ground = new HeightMap(this.gl, "src/plants/rendering/heightmaps/hmap2.png");
@@ -216,17 +216,14 @@ public class JOGLRenderer implements GLEventListener {
 		this.gl.glUseProgram(this.skyboxLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.skyboxLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
-		this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
-		this.gl.glUniformMatrix4fv(this.groundLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
+		//this.gl.glUseProgram(this.groundLoc.PROGRAM_ID);
+		//this.gl.glUniformMatrix4fv(this.groundLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
 		this.gl.glUseProgram(this.treeLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.treeLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 		
 		this.gl.glUseProgram(this.leafLoc.PROGRAM_ID);
 		this.gl.glUniformMatrix4fv(this.leafLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
-		
-		//this.gl.glUseProgram(this.repereLoc.PROGRAM_ID);
-		//this.gl.glUniformMatrix4fv(this.repereLoc.LOC_P, 1, false, Transform.toFloatArray(P), 0);
 
 	}
 	
@@ -240,15 +237,9 @@ public class JOGLRenderer implements GLEventListener {
 
 	public void createTree() {
 		
-		int i = trees.size();
-		String filename = "src/plants/xml/tree" + i + ".xml";
-		File f = new File(filename);
-		f.delete();
-		
-		JDOMCreate treeCreator =  new JDOMCreate(filename);
-		
 		//Create JDOM Hierarchy
-		JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File(filename));
+		//JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File(filename));
+		JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File("src/plants/xml/randomTree.xml"));
 		
 		// Create a tree
 		PlantsTreeNode root = new TrunckTreeNode();
@@ -260,7 +251,6 @@ public class JOGLRenderer implements GLEventListener {
 		// Compute Tree's ModelView Matrix
 		MatrixStack stack = new MatrixStack();
 		JOGLRenderer.computeMVmatrix(treeNodeRoot, stack);
-		//this.createDrawableObjects(treeNodeRoot);
 		this.trees.add(treeNodeRoot);
 		
 	}

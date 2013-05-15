@@ -1,4 +1,5 @@
 package plants.xml;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Random;
 
@@ -10,240 +11,138 @@ import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
  
-public class JDOMCreate
-{
-	//Nous allons commencer notre arborescence en créant la racine XML
-	   //qui sera ici "arbre".
-	   static Element racine = new Element("arbre");
-	 //On crée un nouveau Document JDOM basé sur la racine que l'on vient de créer
-	   static Document document = new Document(racine);
+public class JDOMCreate {
+	
+	/**
+	 * XML root
+	 */
+	private static Element root = new Element("arbre");
+	
+	/**
+	 * Root based document
+	 */
+	private static Document document = new Document(root);
  
- 
-   public JDOMCreate(String fichier) {
- 
-	   Attribute length = new Attribute("length","0");
-	   racine = new Element("arbre");
-	   document = new Document(racine);
-	   racine.setAttribute(length);
-	   createArbre();
-	   enregistre(fichier);
- 
-   }
- 
-   public static void createArbre()
-   {
-	   float minLength = 18.0f;
-	   float maxLength = 29.0f;
+	private static final float INITIAL_LENGTH = 20.0f;
+	private static final float INITIAL_RADIUS = 0.1f * INITIAL_LENGTH;
+	private static final float INITIAL_LENGTH_RATIO_VARIATION = 0.3f; // + or - 10%
+	private static final float INITIAL_RADIUS_RATIO_VARIATION = 0.3f; // + or - 10%
+	
+	private static final float TWO_SONS_PROBABILITY = 1.0f;
+	
+	private static final float HERITED_LENGTH_RATIO = 0.8f;
+	private static final float HERITED_RADIUS_RATIO = 0.5f;
+	
+	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.3f; // + or - 10%
+	private static final float HERITED_RADIUS_RATIO_VARIATION = 0.2f; // + or - 5%
+	
+	
+	// Recursivity Stop condition
+	private static final float CURRENT_MINIMAL_RADIUS_ACCEPTABLE = 0.1f;
+	
+	private JDOMCreate() {
+	}
+	
+	public static void createTreeAt(String filename) {
+		
+		root = new Element("arbre");
+		document = new Document(root);
+		
+		// Create implicit root
+		Attribute length = new Attribute("length","0");
+		root.setAttribute(length);
+		createTree();
+		
+		File file = new File("src/plants/xml/" + filename);
+		file.delete();
+		saveTree("src/plants/xml/" + filename);
+		
+	}
+
+	private static void createTree() {
+	   
+	   // Initiate random
 	   Random rand = new Random();
 	   rand.setSeed(System.currentTimeMillis());
- 
-	   float lengthTronc = rand.nextFloat()*(maxLength - minLength) + minLength;
-	   float maxRad = 0.13f*lengthTronc;
-	   float minRad = 0.08f*lengthTronc;
-	   float radTronc = rand.nextFloat()*(maxRad - minRad) + minRad;
- 
-	   //On crée un nouvel Element trunck qui correspond au tronc et on l'ajoute
-	   //en tant qu'Element de racine
+	   
+	   /** CREATING THE MAIN TRUNC **/
+	   
+	   float initialTruncLength = INITIAL_LENGTH + (2*rand.nextFloat()-1) * INITIAL_LENGTH_RATIO_VARIATION * INITIAL_LENGTH;
+	   float initialTruncRadius = INITIAL_RADIUS + (2*rand.nextFloat()-1) * INITIAL_RADIUS_RATIO_VARIATION * INITIAL_RADIUS;
+	   String initialAxe = new String("0 1 0");
+	   
+	   // Creating the trunc element
 	   Element trunck = new Element("trunck");
-	   racine.addContent(trunck);
- 
-	   //On crée un nouvel Attribut length et on l'ajoute au tronc
-	   //grâce à la méthode setAttribute
-	   Attribute length = new Attribute("length",""+lengthTronc+"");
-	   trunck.setAttribute(length);
-	   Attribute radius = new Attribute("radius",""+radTronc+"");
-	   trunck.setAttribute(radius);
-	   Attribute axe = new Attribute("axe","0 1 0");
-	   trunck.setAttribute(axe);
-	   Attribute side = new Attribute("side","1");
-	   trunck.setAttribute(side);
- 
-	   //Ajout feuille sur le tronc ??
- 
-	   float tirage = rand.nextFloat();
-	   boolean twoSons;
-	   if(tirage > 0.10f) {
-		   twoSons = true;
-	   } else {
-		   twoSons = false;
-	   }
+	   trunck.setAttribute(new Attribute("length", ""+initialTruncLength));
+	   trunck.setAttribute(new Attribute("radius", ""+initialTruncRadius));
+	   trunck.setAttribute(new Attribute("axe", initialAxe));
+	   root.addContent(trunck);
 	   
-	   // Création des branches
-	   createBranch(trunck, lengthTronc, new Vector3f(0,1,0), radTronc, twoSons, lengthTronc);
- 
- 
-      //----------------------  FIN TRONC PRINCIPAL  --------------------------------------------------//
+	   /** CREATING THE TRUNC SONS **/
+	   
+	   createLink(trunck);
    }
-// --------------------------------------- 1 FILS ---------------------------------------------------------// 
-   static void createBranch(Element trunck, float Tp, Vector3f axe, float Rp, boolean deuxFils, float firstLength) {
-	   Random rand = new Random();
-	   rand.setSeed(System.currentTimeMillis());
-	   float B;
-	   float maxVar = 0.3f;
-	   float minVar = 0.0f;
-	   
-	   //-------- Tirage pour la nouvelle Taille de la branche
-	   float alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-	   if(rand.nextBoolean()) {
-		   B = 1;
-	   }
-	   else {
-		   B = -1;
-	   }
-	   float length1 = (0.7f + B*alphaVar)*Tp;
-	   
-	   //-------- Tirage pour le nouveau rayon de la branche
-	   /*alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-	   if(rand.nextBoolean()) {
-		   B = 1;
-	   }
-	   else {
-		   B = -1;
-	   }
-	   float radius1 = (0.5f + B*alphaVar)*Rp;*/
-	   //float length1 = 0.6f*Tp;
-	   float facteur = rand.nextFloat()*(0.13f - 0.08f) + 0.08f;
-	   float radius1 = facteur*length1;
-	   if(radius1/length1 < 0.04) {
-		   radius1 = radius1*1.4f;
-	   }
-	  
-	   float x = rand.nextFloat()*(0.8f - 0.2f) + 0.2f;
-	   float y = 0.5f;
-	   float z = rand.nextFloat()*(0.8f - 0.1f) + 0.1f;
-	   Vector3f v = new Vector3f(x, y, z);
- 
-	   Element son1 = new Element("trunck");
-	   trunck.addContent(son1);
- 
-	   //On crée un nouvel Attribut length et on l'ajoute au tronc
-	   //grâce à la méthode setAttribute
-	   Attribute length = new Attribute("length",""+length1+"");
-	   son1.setAttribute(length);
-	   Attribute radius = new Attribute("radius",""+radius1+"");
-	   son1.setAttribute(radius);
-	   Attribute newaxey = new Attribute("axe",""+v.x+" "+v.y+" "+v.z+"");
-	   son1.setAttribute(newaxey);
-	   Attribute cote = new Attribute("cote","1");
-	   son1.setAttribute(cote);
-	   
-	   
-	   //------------ Pour Ajouter des feuilles -------------//
-	   addLeaf(son1, length1, radius1);
-	   //----------------------------------------------------//
- 
-	   float tirage = rand.nextFloat();
- 
-	   boolean twoSons;
-	   if(tirage > 0.12f) {
-		   twoSons = true;
-	   } else {
-		   twoSons = false;
-	   }
-	   //Conditions d'arret de l'algo de génération.
-	   if(length1 > 0.05f*firstLength) {
-		   createBranch(son1, length1, v, radius1, twoSons, firstLength);
-	   } else {
- 
-	   }
-//-------------------------------------------------- 2 FILS -------------------------------------------------------------//	   
-	   if(deuxFils) {
- 
-		   if(rand.nextBoolean()) {
-			   B = 1;
-		   }
-		   else {
-			   B = -1;
-		   }
- 
-		   /*alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-		   float length2 = (0.7f + B*alphaVar)*Tp;
-		   float radius2 = (float) Math.sqrt(Rp*Rp - radius1*radius1);*/
-		   
-		   
-		   
-		   /*phi = rand.nextFloat()*(maxPhi - minPhi) + minPhi;
- 
-		   phi = rand.nextFloat()*(maxPhi - minPhi) + minPhi;
-		   //theta = rand.nextFloat()*(maxTheta - minTheta) + minTheta;
-		   //float r = rand.nextFloat()*(maxl - minl) + minl;
-		   //float h = rand.nextFloat()*(maxh - minh) + minh;
-		   theta = (float) -theta;
- 
-		   x = (float)(1.0f*Math.cos(theta)*Math.sin(phi));
-		   y = (float)(5.0f*Math.sin(theta)*Math.sin(phi));
-		   z = (float)(1.0f*Math.cos(phi));
-		   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-		   v.x = (-1)*v.x;
-		   v.z = (-1)*v.z;
-		   v.x = v.x + alphaVar;
-		   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-		   v.z = v.z + alphaVar;
- 
-		   if(v.y < 0.0f) {
-			   v.y = (-1)*v.y;
-		   }
-		   v.normalize();*/
-		   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
-		   if(rand.nextBoolean()) {
-			   B = 1;
-		   }
-		   else {
-			   B = -1;
-		   }
-		   float length2 = (0.7f + B*alphaVar)*Tp;
-		   
-		   //float length2 = 0.6f*Tp;
-		   facteur = rand.nextFloat()*(0.13f - 0.08f) + 0.08f;
-		   float radius2 = facteur*length2;
-		   
-		   if(radius2/length2 < 0.04) {
-			   radius2 = radius2*1.4f;
-		   }
-		   
-		   x = -rand.nextFloat()*(0.8f - 0.2f) - 0.2f;
-		   y = 0.5f;
-		   z = -rand.nextFloat()*(0.8f - 0.1f) - 0.1f;
-		   v = new Vector3f(x, y, z);
 
-		   Element son2 = new Element("trunck");
-		   trunck.addContent(son2);
- 
-		   //Ajout d'attribut
-		   length = new Attribute("length",""+length2+"");
-		   son2.setAttribute(length);
-		   radius = new Attribute("radius",""+radius2+"");
-		   son2.setAttribute(radius);
-		   newaxey = new Attribute("axe",""+v.x+" "+v.y+" "+v.z+"");
-		   son2.setAttribute(newaxey);
-		   cote = new Attribute("cote","2");
-		   son2.setAttribute(cote);
+	private static void createLink(Element parentTrunck) {
+	   
+		float parentLength = Float.parseFloat(parentTrunck.getAttributeValue("length"));
+		float parentRadius = Float.parseFloat(parentTrunck.getAttributeValue("radius"));
 		   
-
-		   //------------ Pour Ajouter des feuilles -------------//
-		   //addLeaf(son2, length2, radius2);
-		   //----------------------------------------------------//
- 
-		   tirage = rand.nextFloat();
-		   if(tirage > 0.12f) {
-			   twoSons = true;
-		   } else {
-			   twoSons = false;
-		   }
-		   // Conditions d'arret de l'algo de génération.
-		   if(length2 > 0.05*firstLength) {
-			   createBranch(son2, length2, v, radius2, twoSons, firstLength);
-		   } else {
- 
-		   }
+		if( parentRadius >= CURRENT_MINIMAL_RADIUS_ACCEPTABLE ) {
+		   
+			// Initiate random
+			Random rand = new Random();
+			rand.setSeed(System.currentTimeMillis());
+		   
+				if( rand.nextFloat() < TWO_SONS_PROBABILITY ) {
+			   
+				float heritedLength = parentLength * HERITED_LENGTH_RATIO;
+				float heritedRadius = parentRadius * HERITED_RADIUS_RATIO;
+			   
+				/** HANDLE SON ONE **/
+			   
+				float newLength1 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
+				float newLength2 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
+				float newRadius1 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
+				float newRadius2 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
+				Vector3f newAxe1 = new Vector3f(
+						rand.nextFloat()*(0.8f - 0.2f) + 0.2f,
+						0.5f,
+						rand.nextFloat()*(0.8f - 0.1f) + 0.1f);
+				Vector3f newAxe2 = new Vector3f(
+						-rand.nextFloat()*(0.8f - 0.2f) + 0.2f,
+						0.5f,
+						-rand.nextFloat()*(0.8f - 0.1f) + 0.1f);
+			   
+				String newAxe1String = new String(newAxe1.x + " " + newAxe1.y + " " + newAxe1.z);
+				String newAxe2String = new String(newAxe2.x + " " + newAxe2.y + " " + newAxe2.z);
+			   
+				Element son1 = new Element("trunck");
+				son1.setAttribute("length", newLength1+"");
+				son1.setAttribute("radius", newRadius1+"");
+				son1.setAttribute("axe", newAxe1String);
+				   
+				Element son2 = new Element("trunck");
+				son2.setAttribute("length", newLength2+"");
+				son2.setAttribute("radius", newRadius2+"");
+				son2.setAttribute("axe", newAxe2String);
+				   
+				parentTrunck.addContent(son1);
+				parentTrunck.addContent(son2);
+				   
+				createLink(son1);
+				createLink(son2);
+			   
+		   }		   
 	   }
    }
+   
    public static void addLeaf(Element trunck, float lengthBranch, float radiusBranch) {
 	   Random rand = new Random();
 	   rand.setSeed(System.currentTimeMillis());
 	   
-	   float minNbLeaf = 25.0f;
-	   float maxNbLeaf =30.0f;
+	   float minNbLeaf = 2.0f;
+	   float maxNbLeaf = 5.0f;
 	   float nbFeuille = rand.nextFloat()*(maxNbLeaf - minNbLeaf) + minNbLeaf;
 	   float minAngle = 0.0f;
 	   float maxAngle = 360.0f;
@@ -293,29 +192,29 @@ public class JDOMCreate
 		   Attribute LENGTHCOURANT = new Attribute("lengthCurrent",""+lengthBranch+"");
 		   leaf.setAttribute(LENGTHCOURANT);
 		   Attribute RADIUSCOURANT = new Attribute("radiusCurrent",""+radiusBranch+"");
-		   leaf.setAttribute(RADIUSCOURANT);
+			   leaf.setAttribute(RADIUSCOURANT);
+		   }
+	 
 	   }
- 
-   }
-      static void affiche() {
-    		  try
-    		  {
-    		  //On utilise ici un affichage classique avec getPrettyFormat()
-    		  XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
-    		  sortie.output(document, System.out);
-    		  }
-    		  catch (java.io.IOException e){}
-      }
-      static void enregistre(String fichier)
-      {
-         try
-         {
-            //On utilise ici un affichage classique avec getPrettyFormat()
-            XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
-            //Remarquez qu'il suffit simplement de créer une instance de FileOutputStream
-            //avec en argument le nom du fichier pour effectuer la sérialisation.
-            sortie.output(document, new FileOutputStream(fichier));
-         }
-         catch (java.io.IOException e){}
-      }
+   
+	  private static void displayTree() {
+			  try {
+				  XMLOutputter outputterXML = new XMLOutputter(Format.getPrettyFormat());
+				  outputterXML.output(document, System.out);
+			  } catch (java.io.IOException e){
+				  e.printStackTrace();
+			  }
+	  }
+	  
+	  
+	  private static void saveTree(String fichier) {
+	     try {
+	        XMLOutputter outputterXML = new XMLOutputter(Format.getPrettyFormat());
+	        outputterXML.output(document, new FileOutputStream(fichier));
+	     } catch (java.io.IOException e){
+	    	 e.printStackTrace();
+	     }
+	  }
+      
+      
    }
