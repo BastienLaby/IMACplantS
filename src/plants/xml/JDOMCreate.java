@@ -32,14 +32,14 @@ public class JDOMCreate
  
    public static void createArbre()
    {
-	   float minLength = 15.0f;
-	   float maxLength = 20.0f;
+	   float minLength = 18.0f;
+	   float maxLength = 29.0f;
 	   Random rand = new Random();
 	   rand.setSeed(System.currentTimeMillis());
  
 	   float lengthTronc = rand.nextFloat()*(maxLength - minLength) + minLength;
-	   float maxRad = 0.25f*lengthTronc;
-	   float minRad = 1.0f;
+	   float maxRad = 0.13f*lengthTronc;
+	   float minRad = 0.08f*lengthTronc;
 	   float radTronc = rand.nextFloat()*(maxRad - minRad) + minRad;
  
 	   //On crée un nouvel Element trunck qui correspond au tronc et on l'ajoute
@@ -62,33 +62,26 @@ public class JDOMCreate
  
 	   float tirage = rand.nextFloat();
 	   boolean twoSons;
-	   if(tirage > 0.25f) {
+	   if(tirage > 0.10f) {
 		   twoSons = true;
 	   } else {
 		   twoSons = false;
 	   }
 	   
 	   // Création des branches
-	   createBranch(trunck, lengthTronc, new Vector3f(0,1,0), radTronc, twoSons);
+	   createBranch(trunck, lengthTronc, new Vector3f(0,1,0), radTronc, twoSons, lengthTronc);
  
  
       //----------------------  FIN TRONC PRINCIPAL  --------------------------------------------------//
    }
 // --------------------------------------- 1 FILS ---------------------------------------------------------// 
-   static void createBranch(Element trunck, float Tp, Vector3f axe, float Rp, boolean deuxFils) {
+   static void createBranch(Element trunck, float Tp, Vector3f axe, float Rp, boolean deuxFils, float firstLength) {
 	   Random rand = new Random();
 	   rand.setSeed(System.currentTimeMillis());
 	   float B;
 	   float maxVar = 0.3f;
 	   float minVar = 0.0f;
-	   float maxPhi = (float) (Math.PI/2);
-	   float minPhi = (float) (Math.PI/6);
-	   float maxTheta = (float) (Math.PI/4);
-	   float minTheta = (float) -(Math.PI/4);
-	   float minl = 2.0f;
-	   float maxl = 5.0f;
-	   float minh = 2.0f;
-	   float maxh = 10.0f;
+	   
 	   //-------- Tirage pour la nouvelle Taille de la branche
 	   float alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
 	   if(rand.nextBoolean()) {
@@ -100,48 +93,24 @@ public class JDOMCreate
 	   float length1 = (0.7f + B*alphaVar)*Tp;
 	   
 	   //-------- Tirage pour le nouveau rayon de la branche
-	   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
+	   /*alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
 	   if(rand.nextBoolean()) {
 		   B = 1;
 	   }
 	   else {
 		   B = -1;
 	   }
-	   float radius1 = (0.5f + B*alphaVar)*Rp;
-	   
-	   /*float phi = rand.nextFloat()*(maxPhi - minPhi) + minPhi;
-	   float theta = rand.nextFloat()*(maxTheta - minTheta) + minTheta;
-	   //float r = rand.nextFloat()*(maxl - minl) + minl;
-	   //float h = rand.nextFloat()*(maxh - minh) + minh;
- 
-	   float x = (float) (1.0f*Math.cos(theta)*Math.sin(phi));
-	   float y = (float) (5.0f*Math.sin(theta)*Math.sin(phi));
-	   float z = (float) (1.0f*Math.cos(phi));
- 
-	   Vector3f v = new Vector3f(x, y, z);
-	   if(v.y < 0.0f) {
-		   v.y = (-1)*v.y;
+	   float radius1 = (0.5f + B*alphaVar)*Rp;*/
+	   //float length1 = 0.6f*Tp;
+	   float facteur = rand.nextFloat()*(0.13f - 0.08f) + 0.08f;
+	   float radius1 = facteur*length1;
+	   if(radius1/length1 < 0.04) {
+		   radius1 = radius1*1.4f;
 	   }
-	   v.normalize();
-	   while(v.dot(new Vector3f(1,0,0)) > 0.9) {
-		   phi = rand.nextFloat()*(maxPhi - minPhi) + minPhi;
-		   theta = rand.nextFloat()*(maxTheta - minTheta) + minTheta;
-		   //float r = rand.nextFloat()*(maxl - minl) + minl;
-		   //float h = rand.nextFloat()*(maxh - minh) + minh;
- 
-		   x = (float) (1.0f*Math.cos(theta)*Math.sin(phi));
-		   y = (float) (5.0f*Math.sin(theta)*Math.sin(phi));
-		   z = (float) (1.0f*Math.cos(phi));
- 
-		   v = new Vector3f(x, y, z);
-		   if(v.y < 0.0f) {
-			   v.y = (-1)*v.y;
-		   }
-		   v.normalize();
-	   }*/
-	   float x = rand.nextFloat()*2 -1;
-	   float y = rand.nextFloat()*2 -1;
-	   float z = rand.nextFloat()*2 -1;
+	  
+	   float x = rand.nextFloat()*(0.8f - 0.2f) + 0.2f;
+	   float y = 0.5f;
+	   float z = rand.nextFloat()*(0.8f - 0.1f) + 0.1f;
 	   Vector3f v = new Vector3f(x, y, z);
  
 	   Element son1 = new Element("trunck");
@@ -160,7 +129,7 @@ public class JDOMCreate
 	   
 	   
 	   //------------ Pour Ajouter des feuilles -------------//
-	   //addLeaf(son1, length1, radius1);
+	   addLeaf(son1, length1, radius1);
 	   //----------------------------------------------------//
  
 	   float tirage = rand.nextFloat();
@@ -172,15 +141,13 @@ public class JDOMCreate
 		   twoSons = false;
 	   }
 	   //Conditions d'arret de l'algo de génération.
-	   if((length1 > 2.0f) && (radius1 > 0.2f)) {
-		   createBranch(son1, length1, v, radius1, twoSons);
+	   if(length1 > 0.05f*firstLength) {
+		   createBranch(son1, length1, v, radius1, twoSons, firstLength);
 	   } else {
  
 	   }
 //-------------------------------------------------- 2 FILS -------------------------------------------------------------//	   
 	   if(deuxFils) {
-		   maxTheta = (float) (5.0f*Math.PI/4.0f);
-		   minTheta = (float) (3.0f*Math.PI/4.0f);
  
 		   if(rand.nextBoolean()) {
 			   B = 1;
@@ -189,9 +156,9 @@ public class JDOMCreate
 			   B = -1;
 		   }
  
-		   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
+		   /*alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
 		   float length2 = (0.7f + B*alphaVar)*Tp;
-		   float radius2 = (float) Math.sqrt(Rp*Rp - radius1*radius1);
+		   float radius2 = (float) Math.sqrt(Rp*Rp - radius1*radius1);*/
 		   
 		   
 		   
@@ -217,10 +184,26 @@ public class JDOMCreate
 			   v.y = (-1)*v.y;
 		   }
 		   v.normalize();*/
+		   alphaVar = rand.nextFloat()*(maxVar - minVar) + minVar;
+		   if(rand.nextBoolean()) {
+			   B = 1;
+		   }
+		   else {
+			   B = -1;
+		   }
+		   float length2 = (0.7f + B*alphaVar)*Tp;
 		   
-		   x = rand.nextFloat()*2 -1;
-		   y = rand.nextFloat()*2 -1;
-		   z = rand.nextFloat()*2 -1;
+		   //float length2 = 0.6f*Tp;
+		   facteur = rand.nextFloat()*(0.13f - 0.08f) + 0.08f;
+		   float radius2 = facteur*length2;
+		   
+		   if(radius2/length2 < 0.04) {
+			   radius2 = radius2*1.4f;
+		   }
+		   
+		   x = -rand.nextFloat()*(0.8f - 0.2f) - 0.2f;
+		   y = 0.5f;
+		   z = -rand.nextFloat()*(0.8f - 0.1f) - 0.1f;
 		   v = new Vector3f(x, y, z);
 
 		   Element son2 = new Element("trunck");
@@ -242,14 +225,14 @@ public class JDOMCreate
 		   //----------------------------------------------------//
  
 		   tirage = rand.nextFloat();
-		   if(tirage > 0.15f) {
+		   if(tirage > 0.12f) {
 			   twoSons = true;
 		   } else {
 			   twoSons = false;
 		   }
 		   // Conditions d'arret de l'algo de génération.
-		   if((length2 > 2.0f) && (radius2 > 0.2f)) {
-			   createBranch(son2, length2, v, radius2, twoSons);
+		   if(length2 > 0.05*firstLength) {
+			   createBranch(son2, length2, v, radius2, twoSons, firstLength);
 		   } else {
  
 		   }

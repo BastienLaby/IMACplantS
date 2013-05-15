@@ -10,6 +10,8 @@ out vec3 v_Position;
 out vec3 v_Normal;
 out vec2 v_Texcoords;
 
+out vec4 color;
+
 uniform mat4 uniform_MV = mat4(1.f);
 uniform mat4 uniform_MVc = mat4(1.f);
 uniform mat4 uniform_MVp = mat4(1.f);

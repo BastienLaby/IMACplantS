@@ -11,19 +11,19 @@ import plants.utils.Utils;
 public class VertexShape {
 
 	public final static int NB_COMPONENTS_POSITION = 4;
-	public final static int NB_COMPONENTS_POSITIONRP = 4;
-	public final static int NB_COMPONENTS_POSITIONRB = 4;
+	public final static int NB_COMPONENTS_PARENT_POSITION = 4;
+	public final static int NB_COMPONENTS_BROTHER_POSITION = 4;
 	public final static int NB_COMPONENTS_NORMAL = 3;
 	public final static int NB_COMPONENTS_TEXCOORDS = 2;
 	public final static int NB_TOTAL_COMPONENTS = NB_COMPONENTS_POSITION
-												  + NB_COMPONENTS_POSITIONRP
-												  + NB_COMPONENTS_POSITIONRB
+												  + NB_COMPONENTS_PARENT_POSITION
+												  + NB_COMPONENTS_BROTHER_POSITION
 												  + NB_COMPONENTS_NORMAL
 												  + NB_COMPONENTS_TEXCOORDS;
 	public final static int OFFSET_POSITION = 0;
-	public final static int OFFSET_POSITIONP = NB_COMPONENTS_POSITION;
-	public final static int OFFSET_POSITIONB = OFFSET_POSITIONP + NB_COMPONENTS_POSITIONRP;
-	public final static int OFFSET_NORMAL = OFFSET_POSITIONB + NB_COMPONENTS_POSITIONRB;
+	public final static int OFFSET_PARENT_POSITION = NB_COMPONENTS_POSITION;
+	public final static int OFFSET_BROTHER_POSITION = OFFSET_PARENT_POSITION + NB_COMPONENTS_PARENT_POSITION;
+	public final static int OFFSET_NORMAL = OFFSET_BROTHER_POSITION + NB_COMPONENTS_BROTHER_POSITION;
 	public final static int OFFSET_TEXCOORDS = OFFSET_NORMAL + NB_COMPONENTS_NORMAL;
 	public final static int SIZEOF_VERTEX = NB_TOTAL_COMPONENTS * Utils.SIZEOF_FLOAT;
 
@@ -114,6 +114,18 @@ public class VertexShape {
 		this.positionRB = positionRB;
 	}
 
+	public void setCurrentWeight(float weight) {
+		this.position.z = weight;
+	}
+	
+	public void setParentWeight(float weight) {
+		this.positionRP.z = weight;
+	}
+	
+	public void setBrotherWeight(float weight) {
+		this.positionRB.z = weight;
+	}
+	
 	public Vector3f getNormal() {
 		return normal;
 	}

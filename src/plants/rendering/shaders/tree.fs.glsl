@@ -4,6 +4,7 @@
 in vec3 v_Position;
 in vec3 v_Normal;
 in vec2 v_Texcoords;
+in vec4 color;
 
 /* OUT */
 out vec4 glFragColor;

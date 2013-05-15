@@ -22,7 +22,7 @@ public class TrunckTreeNode extends PlantsTreeNode {
 	
 	private boolean uniqueChild;
 	
-	public TrunckTreeNode(float length, Vector3f axe, float rad, float radP, float radB, Matrix4f MPcp, Matrix4f MPcb, boolean uniqueChild) {
+	public TrunckTreeNode(GL3 gl, float length, Vector3f axe, float rad, float radP, float radB, Matrix4f MPcp, Matrix4f MPcb, boolean uniqueChild) {
 		
 		this.MV = new Matrix4f();
 		this.MV.setIdentity();
@@ -65,10 +65,12 @@ public class TrunckTreeNode extends PlantsTreeNode {
 		this.MPcp = new Matrix4f(MPcp);
 		this.MPcb = new Matrix4f(MPcb);
 		
+		this.cylinder = new Cylinder(gl, length, 15, 15, MPcp, MPcb, this.uniqueChild);
+		
 	}
 	
 	public void createDrawableObjects(GL3 gl) {
-		this.cylinder = new Cylinder(gl, length, 9, 9, MPcp, MPcb, this.uniqueChild);
+
 	}
 	
 	public TrunckTreeNode() {

@@ -4,9 +4,9 @@ public class Utils {
 	
 	public final static int SIZEOF_FLOAT = 4;
 	
-	public static final int TREESHADER_POSITIONC_LOCATION = 0;
-	public static final int TREESHADER_POSITIONP_LOCATION = 1;
-	public static final int TREESHADER_POSITIONB_LOCATION = 2;
+	public static final int TREESHADER_CURRENT_POSITION_LOCATION = 0;
+	public static final int TREESHADER_PARENT_POSITION_LOCATION = 1;
+	public static final int TREESHADER_BROTHER_POSITION_LOCATION = 2;
 	public static final int TREESHADER_NORMAL_LOCATION = 3;
 	public static final int TREESHADER_TEXCOORDS_LOCATION = 4;
 	

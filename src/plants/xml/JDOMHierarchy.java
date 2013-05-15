@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.media.opengl.GL3;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector3f;
@@ -15,7 +16,6 @@ import org.jdom2.output.XMLOutputter;
 
 import plants.dataTree.LeafTreeNode;
 import plants.dataTree.TrunckTreeNode;
-import plants.rendering.JOGLRenderer;
 
 public class JDOMHierarchy {
 
@@ -48,7 +48,8 @@ public class JDOMHierarchy {
 		return this.root;
 	}
 	
-	public static void fillTree(Element JDOMelement, DefaultMutableTreeNode tree) {
+	public static void fillTree(GL3 gl, Element JDOMelement, DefaultMutableTreeNode tree) {
+		
 		if (!JDOMelement.getChildren().isEmpty()) {
 
 			List<Element> childrenList = JDOMelement.getChildren();
@@ -70,6 +71,7 @@ public class JDOMHierarchy {
 					++q;
 				}
 			}
+			
 			itChildren = childrenList.iterator();
 			int numChild = 0;
 			int nbChildren = axesList.size();
@@ -106,8 +108,6 @@ public class JDOMHierarchy {
 					float y = Float.parseFloat(vect[1]);
 					float z = Float.parseFloat(vect[2]);
 
-
-					
 					float plength;
 					if(JDOMchild.getParentElement() == null) {
 						plength = 0;
@@ -166,9 +166,9 @@ public class JDOMHierarchy {
 					}
 
 					if(nbChildren == 1) {
-						PASSAGEchildParent.m13 = 0.87f*plength;
+						PASSAGEchildParent.m13 = 0.95f*plength;
 					} else {
-						PASSAGEchildParent.m13 = 0.87f*plength;
+						PASSAGEchildParent.m13 = 0.95f*plength;
 					}
 
 					Matrix4f PASSAGEchildBrother = new Matrix4f();
@@ -219,9 +219,7 @@ public class JDOMHierarchy {
 
 					boolean uniqueChild = (nbChildren==1)?true:false;
 
-
-					
-					treeChild = new DefaultMutableTreeNode(new TrunckTreeNode(length, v, rad, radp, radb, PASSAGEchildParent, PASSAGEchildBrother, uniqueChild));
+					treeChild = new DefaultMutableTreeNode(new TrunckTreeNode(gl, length, v, rad, radp, radb, PASSAGEchildParent, PASSAGEchildBrother, uniqueChild));
 
 					break;
 
@@ -234,8 +232,7 @@ public class JDOMHierarchy {
 					float currentRadius = Float.parseFloat(JDOMchild.getAttributeValue("radiusCurrent"));
 					float currentLength = Float.parseFloat(JDOMchild.getAttributeValue("lengthCurrent"));
 					float orientation = Float.parseFloat(JDOMchild.getAttributeValue("angleDiscLat"));
-					//int type = Integer.parseInt(JDOMchild.getAttributeValue("type"));
-					treeChild = new DefaultMutableTreeNode(new LeafTreeNode(rho, theta, phi, scale, height, currentRadius, currentLength, orientation));
+					treeChild = new DefaultMutableTreeNode(new LeafTreeNode(gl, rho, theta, phi, scale, height, currentRadius, currentLength, orientation));
 					break;
 
 				default:
@@ -243,7 +240,7 @@ public class JDOMHierarchy {
 					break;
 				}
 
-				fillTree(JDOMchild, treeChild);
+				fillTree(gl, JDOMchild, treeChild);
 				tree.add(treeChild);
 				numChild++;
 			}
