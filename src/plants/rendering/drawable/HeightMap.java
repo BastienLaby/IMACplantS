@@ -30,8 +30,8 @@ public class HeightMap implements Drawable {
 		img = ImageIO.read(new File(filename));
 		
 		// Initialize width and height and allocate HM int array
-		this.width = img.getWidth()/10;
-		this.height = img.getHeight()/10;
+		this.width = img.getWidth()/100;
+		this.height = img.getHeight()/100;
 		this.heightMap = new int[width][height];
 		
 		System.out.println("HM : w = " + this.width + ", h = " + this.height);

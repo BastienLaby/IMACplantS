@@ -23,27 +23,48 @@ public class JDOMCreate {
 	 */
 	private static Document document = new Document(root);
  
+	
+	/** TRUNCK GENERATION PARAMETERS **/
+	
 	private static final float INITIAL_LENGTH = 20.0f;
 	private static final float INITIAL_RADIUS = 0.1f * INITIAL_LENGTH;
-	private static final float INITIAL_LENGTH_RATIO_VARIATION = 0.3f; // + or - 10%
-	private static final float INITIAL_RADIUS_RATIO_VARIATION = 0.3f; // + or - 10%
+	private static final float INITIAL_LENGTH_RATIO_VARIATION = 0.3f;
+	private static final float INITIAL_RADIUS_RATIO_VARIATION = 0.3f;
 	
 	private static final float TWO_SONS_PROBABILITY = 1.0f;
 	
-	private static final float HERITED_LENGTH_RATIO = 0.8f;
-	private static final float HERITED_RADIUS_RATIO = 0.5f;
+	private static final float HERITED_LENGTH_RATIO = 0.5f;
+	private static final float HERITED_RADIUS_RATIO = 0.3f;
 	
-	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.3f; // + or - 10%
-	private static final float HERITED_RADIUS_RATIO_VARIATION = 0.2f; // + or - 5%
-	
-	
-	// Recursivity Stop condition
+	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.3f;
+	private static final float HERITED_RADIUS_RATIO_VARIATION = 0.1f;
+
 	private static final float CURRENT_MINIMAL_RADIUS_ACCEPTABLE = 0.1f;
+	
+	/** LEAF GENERATION PARAMETERS **/
+
+	private static final int NB_LEAF_MAX = 50;
+	
+	private static final float MINIMAL_RHO = 0.0f;
+	private static final float MAXIMAL_RHO = 360.0f;
+	private static final float MINIMAL_PHI = 0.0f;
+	private static final float MAXIMAL_PHI = 180.0f;
+	private static final float MINIMAL_THETA = 0.0f;
+	private static final float MAXIMAL_THETA = 360.0f;
+	
+	private static final float MIN_LATERAL_ANGLE = 0.0f;
+	private static final float MAX_LATERAL_ANGLE = 360.0f;
+	
+	private static final float MINIMAL_HEIGHT_PERCENTAGE_POSITION = 35.0f;
+	private static final float MAXIMAL_HEIGHT_PERCENTAGE_POSITION = 100.0f;
+	
+	private static final float MINIMAL_SCALE = 0.8f;
+	private static final float MAXIMAL_SCALE = 1.2f;
 	
 	private JDOMCreate() {
 	}
 	
-	public static void createTreeAt(String filename) {
+	public static void createTreeAt(String filepath) {
 		
 		root = new Element("arbre");
 		document = new Document(root);
@@ -53,9 +74,9 @@ public class JDOMCreate {
 		root.setAttribute(length);
 		createTree();
 		
-		File file = new File("src/plants/xml/" + filename);
+		File file = new File(filepath);
 		file.delete();
-		saveTree("src/plants/xml/" + filename);
+		saveTree(filepath);
 		
 	}
 
@@ -106,13 +127,13 @@ public class JDOMCreate {
 				float newRadius1 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
 				float newRadius2 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
 				Vector3f newAxe1 = new Vector3f(
-						rand.nextFloat()*(0.8f - 0.2f) + 0.2f,
-						0.5f,
-						rand.nextFloat()*(0.8f - 0.1f) + 0.1f);
+						0.2f + rand.nextFloat()*0.3f,
+						0.5f + rand.nextFloat()*0.5f,
+						0.5f + rand.nextFloat()*0.5f);
 				Vector3f newAxe2 = new Vector3f(
-						-rand.nextFloat()*(0.8f - 0.2f) + 0.2f,
-						0.5f,
-						-rand.nextFloat()*(0.8f - 0.1f) + 0.1f);
+						-0.2f + rand.nextFloat()*0.3f,
+						0.5f + rand.nextFloat()*0.5f,
+						-0.5f + rand.nextFloat()*0.5f);
 			   
 				String newAxe1String = new String(newAxe1.x + " " + newAxe1.y + " " + newAxe1.z);
 				String newAxe2String = new String(newAxe2.x + " " + newAxe2.y + " " + newAxe2.z);
@@ -129,73 +150,62 @@ public class JDOMCreate {
 				   
 				parentTrunck.addContent(son1);
 				parentTrunck.addContent(son2);
-				   
+				
+				addLeaf(son1);
 				createLink(son1);
+				
+				addLeaf(son2);
 				createLink(son2);
 			   
-		   }		   
-	   }
-   }
+			}		   
+		}
+	}
    
-   public static void addLeaf(Element trunck, float lengthBranch, float radiusBranch) {
-	   Random rand = new Random();
-	   rand.setSeed(System.currentTimeMillis());
+	public static void addLeaf(Element trunck) {
 	   
-	   float minNbLeaf = 2.0f;
-	   float maxNbLeaf = 5.0f;
-	   float nbFeuille = rand.nextFloat()*(maxNbLeaf - minNbLeaf) + minNbLeaf;
-	   float minAngle = 0.0f;
-	   float maxAngle = 360.0f;
-	   float minPhi = 0f;
-	   float maxPhi = 180f;
-	   float minPercent = 35.0f;
-	   float maxPercent = 100.0f;
-	   float minScale = 0.8f;
-	   float maxScale = 1.2f;
-	   float scale;
-	   float pourcentageHauteur;
-	   float angleSurDiscLat;
-	   float rho;
-	   float theta;
-	   float phi;
-	   int IDtype;
+		float truncLength = Float.parseFloat(trunck.getAttributeValue("length"));
+		float truncRadius = Float.parseFloat(trunck.getAttributeValue("radius"));
+		
+		Random rand = new Random();
+		rand.setSeed(System.currentTimeMillis());
+		
+		int nbLeaf =(int)(((INITIAL_RADIUS - truncRadius) / INITIAL_RADIUS) * NB_LEAF_MAX);
+		
+		float rho;
+		float theta;
+		float phi;
+		float lateralAngle;
+		float heightPercentagePosition;
+		float scale;
  
-	   for(int i = 0; i < nbFeuille; ++i) {
-		   rho = rand.nextFloat()*(maxAngle - minAngle) + minAngle;
-		   theta = rand.nextFloat()*(maxAngle - minAngle) + minAngle;
-		   pourcentageHauteur = rand.nextFloat()*(maxPercent - minPercent) + minPercent;
-		   scale = rand.nextFloat()*(maxScale - minScale) + minScale;
-		   IDtype = rand.nextInt(2);
-		   angleSurDiscLat = rand.nextFloat()*(maxAngle - minAngle) + minAngle;
-		   phi = rand.nextFloat()*(maxPhi - minPhi) + minPhi;
-		   if(angleSurDiscLat >= 270 || angleSurDiscLat <= 90) {
-			   phi = -phi;
-		   }
+		for(int i = 0; i < nbLeaf; ++i) {
 		   
-		   
-		   Element leaf = new Element("leaf");
-		   trunck.addContent(leaf);
-		   Attribute IDTYPE = new Attribute("type", ""+IDtype);
-		   leaf.setAttribute(IDTYPE);
-		   Attribute RHO = new Attribute("rho",""+rho+"");
-		   leaf.setAttribute(RHO);
-		   Attribute THETA = new Attribute("theta",""+theta+"");
-		   leaf.setAttribute(THETA);
-		   Attribute PHI = new Attribute("phi",""+phi+"");
-		   leaf.setAttribute(PHI);
-		   Attribute ANGLESURDISCLAT = new Attribute("angleDiscLat",""+angleSurDiscLat+"");
-		   leaf.setAttribute(ANGLESURDISCLAT);
-		   Attribute HAUTEUR = new Attribute("height",""+pourcentageHauteur+"");
-		   leaf.setAttribute(HAUTEUR);
-		   Attribute SCALE = new Attribute("scale",""+scale+"");
-		   leaf.setAttribute(SCALE);
-		   Attribute LENGTHCOURANT = new Attribute("lengthCurrent",""+lengthBranch+"");
-		   leaf.setAttribute(LENGTHCOURANT);
-		   Attribute RADIUSCOURANT = new Attribute("radiusCurrent",""+radiusBranch+"");
-			   leaf.setAttribute(RADIUSCOURANT);
-		   }
-	 
-	   }
+			rho = MINIMAL_RHO + rand.nextFloat() * (MAXIMAL_RHO - MINIMAL_RHO);
+			theta = MINIMAL_THETA + rand.nextFloat() * (MAXIMAL_THETA - MINIMAL_THETA);
+			phi = MINIMAL_PHI + rand.nextFloat() * (MAXIMAL_PHI - MINIMAL_PHI);
+			   
+			lateralAngle = MIN_LATERAL_ANGLE + rand.nextFloat() * (MAX_LATERAL_ANGLE - MIN_LATERAL_ANGLE);
+			if(lateralAngle >= 270.0f || lateralAngle <= 90.0f) {
+			phi = -phi;
+			}
+			  
+			heightPercentagePosition = rand.nextFloat()*(MAXIMAL_HEIGHT_PERCENTAGE_POSITION - MINIMAL_HEIGHT_PERCENTAGE_POSITION) + MINIMAL_HEIGHT_PERCENTAGE_POSITION;
+			scale = rand.nextFloat()*(MAXIMAL_SCALE - MINIMAL_SCALE) + MINIMAL_SCALE;
+			
+			Element leaf = new Element("leaf");
+			 
+			leaf.setAttribute(new Attribute("rho", ""+rho));
+			leaf.setAttribute(new Attribute("theta", ""+theta));
+			leaf.setAttribute(new Attribute("phi",""+phi));
+			leaf.setAttribute(new Attribute("angleDiscLat", ""+lateralAngle));
+			leaf.setAttribute(new Attribute("height", ""+heightPercentagePosition));
+			leaf.setAttribute(new Attribute("scale", ""+scale));
+			leaf.setAttribute(new Attribute("lengthCurrent", ""+truncLength));
+			leaf.setAttribute(new Attribute("radiusCurrent", ""+truncRadius));
+			   
+			trunck.addContent(leaf);
+		}
+	}
    
 	  private static void displayTree() {
 			  try {
