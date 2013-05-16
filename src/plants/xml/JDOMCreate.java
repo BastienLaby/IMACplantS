@@ -36,7 +36,7 @@ public class JDOMCreate {
 	private static final float HERITED_LENGTH_RATIO = 0.4f;
 	private static final float HERITED_RADIUS_RATIO = 0.3f;
 	
-	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.3f;
+	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.5f;
 	private static final float HERITED_RADIUS_RATIO_VARIATION = 0.1f;
 
 	private static final float CURRENT_MINIMAL_RADIUS_ACCEPTABLE = 0.1f;
@@ -44,7 +44,7 @@ public class JDOMCreate {
 	
 	/** LEAF GENERATION PARAMETERS **/
 
-	private static final int NB_LEAF_MAX = 1;
+	private static final int NB_LEAF_MAX = 20;
 	
 	private static final float MINIMAL_RHO = 0.0f;
 	private static final float MAXIMAL_RHO = 360.0f;

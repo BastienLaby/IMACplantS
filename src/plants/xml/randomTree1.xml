@@ -1,63 +1,797 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <arbre length="0">
-  <trunck length="25.302715" radius="1.0645412" axe="0 1 0">
-    <trunck length="10.774314" radius="0.3503071" axe="0.4466737 0.5 0.99035954">
-      <trunck length="4.587881" radius="0.11527508" axe="0.4466737 0.5 0.99035954">
-        <trunck length="1.9535955" radius="0.03793341" axe="0.4466737 0.5 0.99035954">
-          <trunck length="0.83187324" radius="0.041608978" axe="0.4466737 0.5 0.99035954">
-            <trunck length="0.39273843" radius="0.04228465" axe="0.39220732 0.5 0.8169395">
-              <trunck length="0.46354258" radius="0.04297129" axe="0.39220732 0.5 0.8169395" />
-              <trunck length="0.48807895" radius="0.042508792" axe="0.06318329 0.5 -0.05098006" />
+  <trunck length="20.26009" radius="0.80436796" axe="0 1 0">
+    <trunck length="7.0249834" radius="0.25649416" axe="0.20650111 0.5 0.6710136">
+      <leaf id="2" rho="187.89948" theta="132.06598" phi="-10.272013" angleDiscLat="293.25983" height="60.403854" scale="0.80866814" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="285.84723" theta="229.9486" phi="88.95466" angleDiscLat="147.01884" height="76.9919" scale="1.1844141" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="114.15754" theta="185.55519" phi="48.802376" angleDiscLat="155.54236" height="91.01779" scale="0.9973126" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="2" rho="84.86453" theta="11.156058" phi="21.414907" angleDiscLat="91.41882" height="55.030884" scale="0.85507697" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="130.54478" theta="26.260607" phi="-3.5685503" angleDiscLat="19.127691" height="75.566345" scale="0.8638386" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="94.502335" theta="21.549812" phi="-55.94031" angleDiscLat="298.63174" height="58.522675" scale="0.8532162" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="1" rho="315.8084" theta="68.5916" phi="-171.86852" angleDiscLat="56.708637" height="40.511955" scale="1.0617218" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="2" rho="198.34491" theta="7.6750445" phi="-20.31431" angleDiscLat="326.1281" height="84.93805" scale="1.0810186" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="2" rho="173.75972" theta="140.41667" phi="-143.98882" angleDiscLat="83.57809" height="58.45079" scale="0.91588324" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="2" rho="295.91516" theta="131.18225" phi="172.34145" angleDiscLat="207.8552" height="81.95715" scale="1.0877274" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="306.69443" theta="112.36821" phi="-132.39369" angleDiscLat="280.05774" height="95.301636" scale="1.1996756" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="0" rho="151.90541" theta="36.52877" phi="153.5996" angleDiscLat="150.76501" height="84.19024" scale="1.02512" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="1" rho="232.45149" theta="345.447" phi="163.85" angleDiscLat="98.69016" height="82.44704" scale="1.0783712" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <leaf id="1" rho="30.268494" theta="36.23572" phi="75.40952" angleDiscLat="97.57162" height="37.15069" scale="1.1647438" lengthCurrent="7.0249834" radiusCurrent="0.25649416" />
+      <trunck length="4.161722" radius="0.07881314" axe="0.31543377 0.5 0.5178537">
+        <leaf id="1" rho="187.70596" theta="353.17557" phi="13.379964" angleDiscLat="223.62413" height="87.819855" scale="0.9539117" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="0" rho="16.266182" theta="309.60355" phi="12.4960575" angleDiscLat="160.48024" height="37.976303" scale="0.9728516" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="1" rho="17.009068" theta="339.46124" phi="-122.25576" angleDiscLat="273.33862" height="89.39265" scale="0.94397795" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="0" rho="303.08264" theta="123.377174" phi="-156.0878" angleDiscLat="49.922455" height="53.923725" scale="0.8148661" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="280.07584" theta="91.13577" phi="-154.1015" angleDiscLat="63.2007" height="97.173134" scale="1.1584351" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="42.165314" theta="311.14642" phi="-173.70941" angleDiscLat="3.6846042" height="85.52308" scale="0.9433567" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="282.6775" theta="4.8871565" phi="91.35499" angleDiscLat="138.73479" height="88.60536" scale="0.94984275" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="253.50407" theta="302.44095" phi="52.151497" angleDiscLat="228.99048" height="91.287094" scale="1.0295461" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="1" rho="50.986217" theta="303.4319" phi="-95.58807" angleDiscLat="273.82965" height="49.91869" scale="1.0358778" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="1" rho="289.1954" theta="49.793602" phi="121.134575" angleDiscLat="246.35274" height="66.52391" scale="0.80396026" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="24.263199" theta="25.375586" phi="26.916258" angleDiscLat="151.9799" height="55.13411" scale="0.93648744" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="1" rho="308.57236" theta="90.339226" phi="-125.70617" angleDiscLat="65.35835" height="99.288734" scale="1.1069038" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="111.47922" theta="4.828341" phi="-11.936024" angleDiscLat="12.133047" height="98.62249" scale="0.86097205" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="345.66223" theta="274.1933" phi="-158.68472" angleDiscLat="11.568389" height="37.602932" scale="0.8759674" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="357.3438" theta="348.30576" phi="37.034653" angleDiscLat="101.412346" height="36.9913" scale="0.9631076" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="0" rho="340.24542" theta="289.09897" phi="-138.24548" angleDiscLat="298.50677" height="70.50479" scale="0.86646765" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="295.04645" theta="157.17442" phi="12.299644" angleDiscLat="116.94931" height="72.133865" scale="0.95842326" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <leaf id="2" rho="142.2747" theta="281.1421" phi="-163.1606" angleDiscLat="350.20712" height="39.74483" scale="0.85015714" lengthCurrent="4.161722" radiusCurrent="0.07881314" />
+        <trunck length="2.0176213" radius="0.083858505" axe="0.3972783 0.5 0.62671363">
+          <leaf id="1" rho="187.73822" theta="256.32397" phi="-162.86197" angleDiscLat="295.23007" height="50.75052" scale="1.0630378" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="181.19635" theta="176.32771" phi="-25.239159" angleDiscLat="278.23666" height="44.4789" scale="1.1414454" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="0" rho="33.20049" theta="133.81024" phi="-110.01353" angleDiscLat="313.7059" height="89.6635" scale="0.81953377" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="0" rho="86.71297" theta="44.67365" phi="-13.642316" angleDiscLat="356.8385" height="75.77492" scale="1.021568" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="75.15399" theta="260.32324" phi="-9.012672" angleDiscLat="55.8552" height="61.072002" scale="0.84266907" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="1" rho="230.88815" theta="322.88034" phi="64.08122" angleDiscLat="232.84245" height="91.856346" scale="1.0616666" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="168.19931" theta="315.50455" phi="44.77391" angleDiscLat="185.06378" height="37.256462" scale="1.1684892" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="4.3108892" theta="193.31331" phi="76.8453" angleDiscLat="245.18008" height="68.562256" scale="1.1714582" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="1" rho="251.44847" theta="156.26268" phi="73.65486" angleDiscLat="242.12105" height="73.00737" scale="1.0825454" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="170.31538" theta="303.35837" phi="9.669052" angleDiscLat="239.93648" height="58.262787" scale="0.9179214" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="191.33505" theta="219.87434" phi="-44.49583" angleDiscLat="353.3262" height="61.828697" scale="1.1803521" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="222.4612" theta="321.37082" phi="40.35507" angleDiscLat="259.5928" height="85.93898" scale="0.95993984" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="11.641259" theta="241.59811" phi="-37.255013" angleDiscLat="26.559235" height="74.25992" scale="0.89720523" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="1" rho="293.09662" theta="234.53369" phi="-54.805523" angleDiscLat="25.902264" height="80.860886" scale="1.1907635" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="0" rho="179.48576" theta="141.22786" phi="-7.620113" angleDiscLat="348.10718" height="57.774574" scale="1.1698189" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="0" rho="152.06947" theta="134.6676" phi="60.316174" angleDiscLat="258.93124" height="98.331985" scale="0.80839163" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="0" rho="351.07596" theta="31.895563" phi="27.399473" angleDiscLat="108.08768" height="96.53775" scale="1.0436321" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <leaf id="2" rho="152.02162" theta="113.12459" phi="172.84213" angleDiscLat="140.03989" height="63.029804" scale="0.8341698" lengthCurrent="2.0176213" radiusCurrent="0.083858505" />
+          <trunck length="0.66678697" radius="0.08598266" axe="0.20621099 0.5 0.9735538">
+            <leaf id="2" rho="187.64148" theta="186.87877" phi="-74.41595" angleDiscLat="80.41222" height="96.95851" scale="1.1356596" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="1" rho="46.40584" theta="216.1552" phi="-167.00986" angleDiscLat="284.96735" height="89.97111" scale="1.0356641" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="344.62625" theta="30.763243" phi="146.74022" angleDiscLat="192.60405" height="88.85094" scale="1.1928664" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="15.822029" theta="280.7842" phi="80.97877" angleDiscLat="156.09033" height="75.221344" scale="0.80146253" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="329.91953" theta="112.76084" phi="-84.27915" angleDiscLat="77.89169" height="39.375397" scale="0.98996735" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="24.719646" theta="287.67862" phi="32.965775" angleDiscLat="265.3689" height="72.856544" scale="1.1067369" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="151.63383" theta="103.652336" phi="-4.517151" angleDiscLat="46.07683" height="61.30317" scale="0.91254973" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="31.890457" theta="160.69624" phi="2.7638876" angleDiscLat="196.61128" height="71.73677" scale="1.1457219" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="10.061717" theta="237.7703" phi="-139.45448" angleDiscLat="337.24686" height="68.74132" scale="0.9425426" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="166.95549" theta="262.66403" phi="164.06563" angleDiscLat="259.18524" height="83.04616" scale="0.97603786" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="50.119457" theta="356.37802" phi="171.75711" angleDiscLat="109.28729" height="41.744934" scale="0.8487581" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="120.79468" theta="348.27603" phi="-116.408356" angleDiscLat="36.889473" height="60.988228" scale="1.0008317" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="311.15512" theta="251.28879" phi="-141.29802" angleDiscLat="343.28067" height="82.34764" scale="1.1885056" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="1" rho="90.793465" theta="353.51248" phi="-6.4431167" angleDiscLat="342.90067" height="81.087006" scale="1.0463753" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="0" rho="353.05984" theta="42.46162" phi="-95.86374" angleDiscLat="328.02267" height="60.424744" scale="0.94968504" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="356.59732" theta="237.96179" phi="-114.10411" angleDiscLat="17.657818" height="79.850426" scale="0.9826197" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="182.98738" theta="47.73212" phi="162.09999" angleDiscLat="134.67262" height="88.32608" scale="1.1880054" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <leaf id="2" rho="122.78088" theta="257.17706" phi="-143.7975" angleDiscLat="50.541615" height="58.17489" scale="0.8821317" lengthCurrent="0.66678697" radiusCurrent="0.08598266" />
+            <trunck length="0.3313483" radius="0.08881942" axe="0.34165156 0.5 0.6634544">
+              <leaf id="2" rho="186.416" theta="267.2395" phi="154.09961" angleDiscLat="239.38611" height="75.59315" scale="0.9888687" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="259.05927" theta="240.6365" phi="42.77205" angleDiscLat="130.22275" height="37.872375" scale="1.0291016" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="1" rho="89.3526" theta="285.5015" phi="71.94501" angleDiscLat="98.64703" height="78.55835" scale="1.1217471" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="0" rho="317.87006" theta="31.517994" phi="-93.90709" angleDiscLat="13.279961" height="89.87601" scale="0.94679403" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="1" rho="196.94946" theta="163.63698" phi="-17.654503" angleDiscLat="357.02066" height="46.21839" scale="0.9890786" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="0" rho="53.251957" theta="201.79044" phi="58.836723" angleDiscLat="197.37033" height="92.1924" scale="1.0109599" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="181.80455" theta="180.19098" phi="-154.59818" angleDiscLat="85.57581" height="62.56143" scale="1.0039828" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="141.23178" theta="347.54688" phi="-144.39938" angleDiscLat="301.4064" height="90.280716" scale="0.95306295" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="312.49625" theta="70.2" phi="72.916374" angleDiscLat="102.173454" height="36.371334" scale="1.1691748" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="4.3970847" theta="347.2025" phi="79.75546" angleDiscLat="143.00296" height="71.968925" scale="1.0455126" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="0" rho="181.38838" theta="165.42477" phi="-43.733288" angleDiscLat="18.12772" height="47.350594" scale="1.1819005" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="1" rho="153.01869" theta="209.07549" phi="119.749954" angleDiscLat="215.98068" height="48.278667" scale="0.9854623" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="144.99728" theta="254.0373" phi="79.17611" angleDiscLat="155.08563" height="98.12547" scale="1.0116446" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="288.28708" theta="60.577133" phi="173.85263" angleDiscLat="158.21362" height="62.284554" scale="1.0841248" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="1" rho="271.66504" theta="351.42267" phi="-133.61627" angleDiscLat="313.61914" height="50.66027" scale="1.0946565" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="1" rho="307.28302" theta="346.35495" phi="-15.417928" angleDiscLat="81.52785" height="62.417355" scale="1.1895083" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="2" rho="213.86536" theta="128.32849" phi="128.30661" angleDiscLat="111.41538" height="70.97818" scale="1.1500665" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <leaf id="0" rho="112.398315" theta="161.84181" phi="135.8988" angleDiscLat="116.89664" height="83.345955" scale="1.089649" lengthCurrent="0.3313483" radiusCurrent="0.08881942" />
+              <trunck length="0.3225012" radius="0.095283106" axe="0.42349613 0.5 0.7723144">
+                <leaf id="2" rho="186.44824" theta="170.38791" phi="-123.58162" angleDiscLat="310.99207" height="38.52381" scale="1.0979948" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="2" rho="63.98944" theta="107.360695" phi="55.51515" angleDiscLat="247.97919" height="44.374973" scale="1.1976954" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="105.544" theta="79.8505" phi="59.702785" angleDiscLat="139.01433" height="78.82921" scale="0.99730295" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="1" rho="101.50037" theta="312.81448" phi="-131.46161" angleDiscLat="320.196" height="46.727196" scale="1.1534958" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="352.02762" theta="332.82446" phi="-52.565674" angleDiscLat="349.67517" height="75.11726" scale="1.0733125" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="1" rho="241.9748" theta="213.52435" phi="-129.20854" angleDiscLat="66.52818" height="98.525665" scale="1.1292698" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="2" rho="67.32636" theta="130.80838" phi="108.0171" angleDiscLat="131.90477" height="76.21253" scale="0.82262933" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="252.0386" theta="238.41924" phi="-169.09319" angleDiscLat="317.59598" height="67.55588" scale="1.094975" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="1" rho="152.95848" theta="283.0308" phi="-50.98317" angleDiscLat="70.46485" height="59.460014" scale="0.81584233" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="1" rho="245.51706" theta="240.76729" phi="148.28995" angleDiscLat="136.58672" height="63.707798" scale="1.1594738" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="348.46027" theta="359.92355" phi="61.312862" angleDiscLat="219.47403" height="54.045177" scale="1.0257652" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="66.90753" theta="80.10709" phi="-34.398857" angleDiscLat="50.215115" height="99.92892" scale="0.83849835" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="2" rho="45.159344" theta="130.80707" phi="104.49511" angleDiscLat="169.51181" height="73.7629" scale="1.0478778" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="1" rho="235.72148" theta="20.91754" phi="69.973434" angleDiscLat="172.54747" height="40.542515" scale="0.9989208" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="93.807" theta="144.34477" phi="104.20173" angleDiscLat="200.31398" height="71.44354" scale="0.9013678" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="2" rho="119.10707" theta="191.92355" phi="-117.48861" angleDiscLat="41.952324" height="90.24454" scale="1.1314323" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="2" rho="269.8949" theta="3.0496502" phi="143.40643" angleDiscLat="102.55373" height="95.38207" scale="0.8352754" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+                <leaf id="0" rho="122.145226" theta="353.8243" phi="145.58034" angleDiscLat="266.7294" height="41.630928" scale="1.0736616" lengthCurrent="0.3225012" radiusCurrent="0.095283106" />
+              </trunck>
+              <trunck length="0.39316615" radius="0.080900505" axe="-0.14667547 0.5 -0.35088792">
+                <leaf id="1" rho="186.35149" theta="100.9427" phi="35.135597" angleDiscLat="96.17419" height="84.73181" scale="1.1706166" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="289.19894" theta="147.18817" phi="17.28585" angleDiscLat="254.70988" height="89.86718" scale="1.091914" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="56.969776" theta="336.8035" phi="-96.42947" angleDiscLat="17.912457" height="78.01663" scale="0.9706356" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="30.609413" theta="188.92503" phi="18.798058" angleDiscLat="119.447845" height="46.173622" scale="0.93339044" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="246.79312" theta="185.26204" phi="-127.83215" angleDiscLat="11.711662" height="53.42066" scale="0.82061076" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="35.80629" theta="178.32265" phi="98.093094" angleDiscLat="99.0546" height="79.52586" scale="1.17434" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="50.76089" theta="278.95615" phi="-67.76034" angleDiscLat="352.91785" height="35.25923" scale="0.9666898" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="0" rho="279.61816" theta="205.80219" phi="95.01177" angleDiscLat="269.02716" height="70.7304" scale="1.0692388" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="0" rho="271.57172" theta="4.538405" phi="116.7828" angleDiscLat="165.59064" height="55.193962" scale="1.0758396" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="0" rho="242.15717" theta="200.07297" phi="122.686516" angleDiscLat="155.83548" height="88.49118" scale="0.8175902" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="207.24463" theta="136.42723" phi="-8.574142" angleDiscLat="335.43512" height="98.96141" scale="1.0941712" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="325.24103" theta="107.01231" phi="110.45214" angleDiscLat="187.5118" height="74.978165" scale="0.87939024" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="0" rho="344.6732" theta="140.49774" phi="28.538115" angleDiscLat="126.23325" height="81.850624" scale="0.9391782" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="33.418327" theta="139.89635" phi="21.61103" angleDiscLat="129.54587" height="40.768635" scale="0.8545326" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="0" rho="267.3811" theta="45.57854" phi="12.4453535" angleDiscLat="180.22949" height="74.09372" scale="1.081234" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="2" rho="323.6349" theta="295.21774" phi="171.27655" angleDiscLat="160.67891" height="71.762985" scale="0.90566033" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="101.80631" theta="18.886206" phi="98.10696" angleDiscLat="129.13869" height="87.170395" scale="0.97964865" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+                <leaf id="1" rho="92.90449" theta="137.87679" phi="116.535706" angleDiscLat="177.23112" height="36.776016" scale="1.1216235" lengthCurrent="0.39316615" radiusCurrent="0.080900505" />
+              </trunck>
             </trunck>
-            <trunck length="0.41352695" radius="0.04182954" axe="0.06318329 0.5 -0.05098006" />
+            <trunck length="0.3616943" radius="0.0881238" axe="0.01588273 0.5 -0.16578263">
+              <leaf id="2" rho="186.158" theta="322.0523" phi="-38.24355" angleDiscLat="26.538485" height="47.147804" scale="0.9158602" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="19.617891" theta="226.84311" phi="120.82725" angleDiscLat="268.17123" height="50.85159" scale="0.88035154" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="319.8213" theta="130.70953" phi="169.88286" angleDiscLat="135.70872" height="76.39149" scale="0.917301" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="248.82751" theta="301.14615" phi="-153.47095" angleDiscLat="77.951454" height="45.066463" scale="0.89317966" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="1" rho="36.32417" theta="250.13724" phi="-98.365105" angleDiscLat="55.78465" height="75.02745" scale="1.1152073" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="343.4693" theta="107.91926" phi="35.862186" angleDiscLat="164.10747" height="41.526268" scale="0.8644805" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="17.629946" theta="215.25174" phi="-167.24681" angleDiscLat="74.94401" height="83.352646" scale="0.85481083" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="334.7773" theta="140.56807" phi="126.84896" angleDiscLat="171.88956" height="77.079445" scale="1.0177664" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="148.79823" theta="167.55363" phi="-68.38204" angleDiscLat="355.84222" height="46.66186" scale="1.1958342" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="235.43742" theta="118.68432" phi="71.479645" angleDiscLat="194.33302" height="73.05793" scale="0.93382305" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="1" rho="284.81342" theta="49.434616" phi="83.096695" angleDiscLat="207.35727" height="58.793884" scale="0.8309831" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="0" rho="121.90797" theta="160.82277" phi="82.558716" angleDiscLat="102.10513" height="90.07665" scale="0.9611741" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="1" rho="223.70091" theta="159.87907" phi="-56.624126" angleDiscLat="39.67616" height="98.02608" scale="1.1217792" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="1" rho="348.81204" theta="17.853899" phi="-104.886215" angleDiscLat="43.54266" height="41.22088" scale="0.96575624" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="254.52928" theta="208.04608" phi="8.932592" angleDiscLat="140.06052" height="79.394066" scale="1.0409663" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="12.690539" theta="141.80614" phi="-98.8524" angleDiscLat="38.132065" height="99.799866" scale="0.85411644" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="125.62916" theta="50.55932" phi="7.5079966" angleDiscLat="182.3086" height="70.74704" scale="0.86839515" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+              <leaf id="2" rho="34.423042" theta="65.981766" phi="-58.446438" angleDiscLat="358.23456" height="92.06618" scale="0.81754726" lengthCurrent="0.3616943" radiusCurrent="0.0881238" />
+            </trunck>
           </trunck>
-          <trunck length="0.74075514" radius="0.03594112" axe="-0.049142137 0.5 -0.49566412">
-            <trunck length="0.34972036" radius="0.036524754" axe="0.39220732 0.5 0.8169395" />
-            <trunck length="0.36823183" radius="0.03613164" axe="0.06318329 0.5 -0.05098006" />
+          <trunck length="1.1476674" radius="0.08661074" axe="0.026346102 0.5 -0.14446852">
+            <leaf id="0" rho="186.2225" theta="128.34909" phi="157.20757" angleDiscLat="169.7504" height="38.00914" scale="1.1341124" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="349.47824" theta="320.29147" phi="146.31345" angleDiscLat="143.68413" height="63.85679" scale="0.81753904" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="0" rho="352.20413" theta="79.407524" phi="145.39839" angleDiscLat="216.4433" height="76.933205" scale="1.0684125" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="1" rho="176.08817" theta="143.7391" phi="-48.579987" angleDiscLat="331.7836" height="88.768845" scale="0.90658325" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="0" rho="346.4805" theta="228.51218" phi="-168.18745" angleDiscLat="41.09365" height="67.82518" scale="0.8836751" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="0.91495514" theta="131.38704" phi="176.60582" angleDiscLat="262.4232" height="54.192802" scale="1.1011004" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="148.6736" theta="116.486534" phi="74.08466" angleDiscLat="167.60194" height="45.654842" scale="0.89210385" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="0" rho="196.39093" theta="282.31277" phi="176.23656" angleDiscLat="204.26878" height="96.62976" scale="0.90159047" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="189.72273" theta="233.21523" phi="-24.515627" angleDiscLat="292.42502" height="92.83923" scale="0.88916934" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="1" rho="357.67734" theta="265.81387" phi="28.548595" angleDiscLat="181.50049" height="56.53568" scale="1.1617454" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="258.95715" theta="78.432144" phi="118.25584" angleDiscLat="250.04988" height="72.18306" scale="0.9187125" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="0" rho="309.68564" theta="262.88596" phi="91.85653" angleDiscLat="130.574" height="63.37716" scale="1.0672462" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="1" rho="24.024998" theta="273.41864" phi="-107.262115" angleDiscLat="68.52851" height="49.300926" scale="1.1942456" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="243.68082" theta="298.5347" phi="-77.12782" angleDiscLat="72.21039" height="62.736797" scale="1.1953484" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="1" rho="258.8132" theta="153.89024" phi="-130.10352" angleDiscLat="273.45016" height="55.960617" scale="1.0543888" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="1" rho="356.33865" theta="192.94333" phi="-122.99379" angleDiscLat="318.98102" height="90.45424" scale="1.1379644" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="2" rho="237.6882" theta="160.0016" phi="37.707653" angleDiscLat="164.58528" height="54.554832" scale="1.038813" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <leaf id="0" rho="53.916862" theta="89.94676" phi="-77.809525" angleDiscLat="297.9001" height="73.63612" scale="1.1855726" lengthCurrent="1.1476674" radiusCurrent="0.08661074" />
+            <trunck length="0.33959514" radius="0.07932142" axe="0.47767234 0.5 0.7482747">
+              <leaf id="1" rho="185.99675" theta="86.31029" phi="-10.833496" angleDiscLat="28.508728" height="37.494465" scale="1.1702298" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="274.967" theta="173.22223" phi="-57.11175" angleDiscLat="39.389076" height="83.3386" scale="0.8373828" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="1" rho="238.86426" theta="78.96458" phi="-51.09402" angleDiscLat="293.87228" height="75.0372" scale="1.1395222" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="250.67595" theta="334.66376" phi="-145.69836" angleDiscLat="343.37115" height="65.8105" scale="1.0596707" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="340.93338" theta="124.19988" phi="103.809235" angleDiscLat="92.51215" height="60.533104" scale="1.0940378" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="1" rho="119.85513" theta="49.249756" phi="44.003098" angleDiscLat="98.31819" height="74.85993" scale="1.0729309" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="230.02084" theta="102.164696" phi="40.152218" angleDiscLat="203.29913" height="80.09715" scale="0.96157837" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="1" rho="140.7433" theta="326.2063" phi="3.3799481" angleDiscLat="90.94154" height="60.70365" scale="1.1082059" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="1" rho="226.48697" theta="183.39964" phi="178.04808" angleDiscLat="154.38518" height="61.218437" scale="0.9624963" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="109.83764" theta="290.8604" phi="88.80725" angleDiscLat="226.41429" height="49.363556" scale="1.1640171" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="169.45407" theta="156.94077" phi="-175.19882" angleDiscLat="280.62576" height="90.32095" scale="0.81165975" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="192.46376" theta="85.6648" phi="149.3142" angleDiscLat="210.93292" height="91.82539" scale="0.8959939" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="2.8906488" theta="56.03019" phi="-110.02914" angleDiscLat="327.54523" height="89.83894" scale="0.9406132" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="251.64017" theta="216.15189" phi="-84.2822" angleDiscLat="331.8733" height="84.931076" scale="0.99177593" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="63.81941" theta="163.43568" phi="-156.0053" angleDiscLat="346.58636" height="40.477684" scale="0.8074098" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="233.57024" theta="193.96313" phi="128.49896" angleDiscLat="236.00969" height="90.66394" scale="1.1444966" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="2" rho="205.48152" theta="316.95358" phi="112.00888" angleDiscLat="226.61684" height="78.727585" scale="0.84235054" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+              <leaf id="0" rho="345.68848" theta="186.06921" phi="-10.038714" angleDiscLat="329.07074" height="40.641323" scale="0.8974837" lengthCurrent="0.33959514" radiusCurrent="0.07932142" />
+            </trunck>
+            <trunck length="0.25716293" radius="0.07861443" axe="0.02913919 0.5 -0.25941357">
+              <leaf id="1" rho="186.93199" theta="157.61394" phi="-25.811756" angleDiscLat="305.0813" height="67.483826" scale="1.1348859" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="17.942026" theta="268.22333" phi="66.66165" angleDiscLat="214.32573" height="76.91395" scale="0.9266016" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="348.4152" theta="235.08539" phi="-56.069317" angleDiscLat="24.523674" height="82.89207" scale="1.1306396" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="95.955086" theta="212.26167" phi="154.77937" angleDiscLat="243.93695" height="49.495094" scale="1.0540229" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="158.2" theta="350.6365" phi="36.233307" angleDiscLat="239.49266" height="53.60029" scale="1.1368213" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="192.8173" theta="29.532837" phi="104.7858" angleDiscLat="263.89606" height="63.524673" scale="0.9039186" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="1" rho="150.1537" theta="110.06944" phi="129.3009" angleDiscLat="106.8394" height="85.979004" scale="0.9023268" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="114.14069" theta="41.5045" phi="179.50023" angleDiscLat="200.44002" height="51.683273" scale="0.8236562" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="279.8922" theta="235.49275" phi="-81.985054" angleDiscLat="314.83594" height="80.79027" scale="1.1158559" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="262.3164" theta="84.23896" phi="-96.307106" angleDiscLat="40.34287" height="69.79092" scale="0.86889166" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="334.5383" theta="37.405098" phi="-145.00647" angleDiscLat="359.66858" height="89.464" scale="1.0837352" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="1" rho="215.24014" theta="305.581" phi="-14.1324415" angleDiscLat="83.73174" height="94.68269" scale="1.0340389" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="2" rho="347.59006" theta="82.35371" phi="-124.28007" angleDiscLat="25.904602" height="98.32428" scale="1.1913756" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="1" rho="167.23715" theta="146.0236" phi="-131.78546" angleDiscLat="27.555534" height="39.411903" scale="0.9208618" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="0" rho="305.93652" theta="278.17593" phi="-22.983624" angleDiscLat="300.73645" height="58.19268" scale="0.80203694" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="1" rho="176.46799" theta="35.45256" phi="28.54895" angleDiscLat="168.31941" height="52.65233" scale="1.060292" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="2" rho="30.337801" theta="283.86688" phi="-9.903821" angleDiscLat="329.62897" height="71.44045" scale="0.9134092" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+              <leaf id="2" rho="268.34888" theta="353.56192" phi="-110.80351" angleDiscLat="354.22086" height="65.90551" scale="0.8338522" lengthCurrent="0.25716293" radiusCurrent="0.07861443" />
+            </trunck>
           </trunck>
         </trunck>
-        <trunck length="1.7396111" radius="0.032766227" axe="-0.049142137 0.5 -0.49566412">
-          <trunck length="0.8212936" radius="0.033298302" axe="0.39220732 0.5 0.8169395">
-            <trunck length="0.38774362" radius="0.03383902" axe="0.39220732 0.5 0.8169395" />
-            <trunck length="0.40826777" radius="0.03347481" axe="0.06318329 0.5 -0.05098006" />
+        <trunck length="2.3385363" radius="0.07475136" axe="-0.049003035 0.5 -0.2551004">
+          <leaf id="2" rho="186.99649" theta="323.91074" phi="-144.77577" angleDiscLat="88.29321" height="58.34516" scale="0.9531381" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="1" rho="347.8024" theta="1.6716814" phi="-92.14785" angleDiscLat="89.838615" height="89.91914" scale="0.8637891" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="1" rho="20.79802" theta="183.78337" phi="31.584846" angleDiscLat="105.25825" height="83.433784" scale="0.88175106" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="1" rho="23.215721" theta="54.85463" phi="49.888412" angleDiscLat="137.76909" height="93.19748" scale="1.0674264" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="108.35633" theta="329.01144" phi="106.05565" angleDiscLat="224.80167" height="46.398026" scale="0.90528905" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="0" rho="210.26299" theta="53.000645" phi="-65.529434" angleDiscLat="2.2117496" height="76.19121" scale="1.1405385" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="0" rho="281.19736" theta="11.304245" phi="36.138744" angleDiscLat="199.49734" height="48.2812" scale="0.9396198" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="0" rho="335.7543" theta="183.2492" phi="48.88783" angleDiscLat="232.81921" height="71.23359" scale="1.1074804" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="0" rho="320.8167" theta="301.15436" phi="38.11864" angleDiscLat="251.41875" height="61.96764" scale="0.8091911" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="24.556332" theta="231.36852" phi="-53.37607" angleDiscLat="27.510366" height="53.268665" scale="1.096814" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="308.68204" theta="66.40263" phi="-0.16562104" angleDiscLat="42.3612" height="37.853176" scale="1.1714647" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="1" rho="43.01785" theta="47.644165" phi="23.430244" angleDiscLat="112.20062" height="67.9832" scale="1.140111" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="147.91415" theta="195.89326" phi="-174.91808" angleDiscLat="54.756973" height="49.599133" scale="0.86384195" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="62.105907" theta="66.704414" phi="-104.02708" angleDiscLat="56.223263" height="60.927826" scale="1.1504539" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="1" rho="310.2205" theta="224.02007" phi="-144.15454" angleDiscLat="74.12608" height="99.75923" scale="0.8154595" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="160.1161" theta="86.589775" phi="-52.690323" angleDiscLat="89.168365" height="43.306705" scale="0.94414" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="2" rho="142.39685" theta="33.30915" phi="-40.103477" angleDiscLat="311.90564" height="55.248238" scale="1.083827" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <leaf id="0" rho="287.8427" theta="17.526928" phi="-130.16661" angleDiscLat="293.88635" height="47.47545" scale="0.8018776" lengthCurrent="2.3385363" radiusCurrent="0.07475136" />
+          <trunck length="1.2001158" radius="0.080027625" axe="0.34194165 0.5 0.86091423">
+            <leaf id="2" rho="186.77075" theta="281.87192" phi="-178.4017" angleDiscLat="307.05157" height="57.830486" scale="0.98925555" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="2" rho="273.29117" theta="214.60245" phi="-2.946149" angleDiscLat="345.54355" height="44.400955" scale="0.88363284" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="267.45813" theta="183.34042" phi="117.28047" angleDiscLat="182.68723" height="81.53778" scale="0.95286065" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="2" rho="97.80351" theta="245.77927" phi="147.00679" angleDiscLat="149.35664" height="70.23913" scale="0.82051384" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="2" rho="102.809204" theta="224.69916" phi="-41.67743" angleDiscLat="276.22018" height="39.105946" scale="1.1156516" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="329.20312" theta="330.86334" phi="112.92672" angleDiscLat="198.10675" height="96.85834" scale="1.1123691" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="2.544601" theta="356.98242" phi="2.2062993" angleDiscLat="235.19452" height="82.72351" scale="1.0090944" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="0" rho="280.10666" theta="227.14276" phi="56.03122" angleDiscLat="119.492004" height="35.307472" scale="0.9140958" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="357.58096" theta="251.33878" phi="11.651097" angleDiscLat="113.37891" height="95.346855" scale="0.8825181" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="136.71663" theta="256.41507" phi="-113.63473" angleDiscLat="72.42415" height="46.096546" scale="1.0990857" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="219.17896" theta="144.91125" phi="-57.10861" angleDiscLat="72.93707" height="55.99106" scale="1.0644119" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="285.79596" theta="230.42302" phi="80.88792" angleDiscLat="192.55954" height="96.431435" scale="0.9688587" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="0" rho="126.77982" theta="338.50482" phi="-177.68509" angleDiscLat="313.77368" height="90.13715" scale="1.0102097" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="0" rho="70.06525" theta="344.3216" phi="-111.18146" angleDiscLat="315.88617" height="83.12211" scale="0.9468815" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="115.22669" theta="233.56554" phi="170.05634" angleDiscLat="147.26228" height="84.276306" scale="0.9684805" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="37.34768" theta="87.60955" phi="-58.195503" angleDiscLat="6.1970615" height="43.516403" scale="0.95067215" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="1" rho="110.19017" theta="190.26112" phi="-114.40469" angleDiscLat="13.937208" height="79.42099" scale="0.8873646" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <leaf id="0" rho="219.61432" theta="113.64938" phi="-62.39579" angleDiscLat="325.057" height="79.48065" scale="0.9137887" lengthCurrent="1.2001158" radiusCurrent="0.080027625" />
+            <trunck length="0.3575928" radius="0.07603796" axe="0.20563076 0.5 0.5786342">
+              <leaf id="1" rho="186.83524" theta="88.16872" phi="117.36573" angleDiscLat="90.26346" height="48.691822" scale="0.8075077" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="0" rho="243.15152" theta="308.0508" phi="28.432348" angleDiscLat="221.05643" height="57.40615" scale="0.8208203" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="0" rho="299.84094" theta="132.0384" phi="92.79601" angleDiscLat="263.4218" height="82.0795" scale="1.1039722" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="25.064148" theta="88.372246" phi="-42.11582" angleDiscLat="43.188778" height="48.941517" scale="0.83391744" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="52.965515" theta="203.0741" phi="111.49979" angleDiscLat="261.52917" height="96.90369" scale="0.8841195" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="346.6488" theta="354.33115" phi="-73.67035" angleDiscLat="296.42245" height="44.52487" scale="0.94898885" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="133.58826" theta="258.21722" phi="-89.04414" angleDiscLat="327.85248" height="45.02571" scale="1.0463873" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="0" rho="141.72029" theta="8.887467" phi="105.418816" angleDiscLat="151.87122" height="54.85779" scale="1.19792" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="38.50547" theta="317.00037" phi="-147.78468" angleDiscLat="49.961723" height="76.52422" scale="0.97585326" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="2" rho="258.95654" theta="43.544613" phi="-70.703674" angleDiscLat="59.591644" height="94.574295" scale="0.9270081" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="193.32271" theta="173.90878" phi="92.26775" angleDiscLat="115.629684" height="69.38023" scale="1.1521413" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="113.57363" theta="332.4862" phi="90.18573" angleDiscLat="221.02843" height="69.73193" scale="1.0749308" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="0" rho="287.1039" theta="92.04438" phi="-48.323074" angleDiscLat="342.62604" height="41.412003" scale="1.082676" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="324.934" theta="265.00238" phi="-83.423065" angleDiscLat="344.5539" height="39.638023" scale="1.1764736" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="2" rho="119.51063" theta="179.4097" phi="-111.22725" angleDiscLat="280.65195" height="60.842854" scale="0.9819031" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="2" rho="20.995796" theta="138.74677" phi="-82.33688" angleDiscLat="287.046" height="99.17078" scale="0.8345201" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="222.2492" theta="299.70343" phi="-144.60434" angleDiscLat="356.2139" height="63.228775" scale="1.0577824" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+              <leaf id="1" rho="239.10814" theta="137.61441" phi="81.75888" angleDiscLat="264.72256" height="61.05059" scale="0.88181406" lengthCurrent="0.3575928" radiusCurrent="0.07603796" />
+            </trunck>
+            <trunck length="0.55302864" radius="0.07539632" axe="0.00262627 0.5 -0.07215166">
+              <leaf id="2" rho="186.73851" theta="18.723515" phi="28.919695" angleDiscLat="235.44559" height="94.89982" scale="0.88012946" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="108.36101" theta="347.8783" phi="170.20305" angleDiscLat="227.78711" height="37.898357" scale="1.1150391" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="251.26672" theta="28.99144" phi="129.5227" angleDiscLat="142.31995" height="81.26692" scale="1.0773048" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="1" rho="314.1732" theta="324.4828" phi="109.45227" angleDiscLat="202.44058" height="48.387936" scale="1.0138121" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="307.73105" theta="55.511684" phi="-6.7662582" angleDiscLat="283.56567" height="75.20708" scale="1.0314177" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="140.48032" theta="319.12946" phi="-42.554897" angleDiscLat="328.9489" height="90.52507" scale="0.9940591" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="117.02278" theta="46.36501" phi="48.787388" angleDiscLat="188.86555" height="69.07242" scale="1.1904478" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="1" rho="169.29985" theta="336.27042" phi="31.337406" angleDiscLat="103.30241" height="58.032314" scale="1.1721838" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="1" rho="157.11874" theta="38.50798" phi="33.584305" angleDiscLat="145.08751" height="72.25817" scale="0.83585054" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="255.59666" theta="2.850287" phi="-45.10024" angleDiscLat="78.8404" height="54.35767" scale="0.98512447" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="52.107082" theta="310.41248" phi="39.529034" angleDiscLat="231.59076" height="49.29647" scale="0.8205472" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="11.90712" theta="359.39142" phi="-166.239" angleDiscLat="358.3251" height="44.78118" scale="1.1158227" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="226.61778" theta="101.735054" phi="-152.36607" angleDiscLat="299.34747" height="49.49973" scale="0.9739765" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="1" rho="122.630875" theta="23.98118" phi="-35.060658" angleDiscLat="301.5523" height="39.864147" scale="1.0320854" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="2" rho="293.08472" theta="80.64347" phi="19.470863" angleDiscLat="260.56747" height="63.493027" scale="1.1617693" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="1" rho="225.5236" theta="242.04095" phi="-136.12482" angleDiscLat="45.772583" height="80.68922" scale="1.0087482" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="54.16062" theta="315.53998" phi="-99.30486" angleDiscLat="22.798862" height="55.017097" scale="0.8021557" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+              <leaf id="0" rho="209.8674" theta="281.66687" phi="52.71425" angleDiscLat="175.22427" height="56.195675" scale="0.92977595" lengthCurrent="0.55302864" radiusCurrent="0.07539632" />
+            </trunck>
           </trunck>
-          <trunck length="0.8647665" radius="0.032939915" axe="0.06318329 0.5 -0.05098006" />
+          <trunck length="1.3948158" radius="0.072527334" axe="0.027742654 0.5 -0.20194104">
+            <leaf id="1" rho="186.545" theta="239.83311" phi="32.027645" angleDiscLat="165.80989" height="57.31581" scale="1.0253731" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="198.77997" theta="67.53322" phi="93.744446" angleDiscLat="241.2485" height="63.88277" scale="0.9034766" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="154.11826" theta="182.89748" phi="22.976091" angleDiscLat="260.11618" height="79.641785" scale="1.0239702" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="172.3913" theta="76.703926" phi="64.12516" angleDiscLat="160.94421" height="47.280777" scale="0.9736012" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="97.26209" theta="120.38687" phi="-157.2992" angleDiscLat="327.63864" height="96.813866" scale="0.92601424" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="0" rho="88.14329" theta="248.72604" phi="-160.32399" angleDiscLat="34.001762" height="52.52547" scale="1.0841995" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="1" rho="83.89184" theta="342.66058" phi="-148.27386" angleDiscLat="270.8917" height="52.165825" scale="1.0785688" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="224.45901" theta="271.0363" phi="-63.174595" angleDiscLat="6.164789" height="64.381355" scale="1.1207113" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="0" rho="34.345238" theta="201.52321" phi="-165.18355" angleDiscLat="335.33905" height="63.726067" scale="0.95584506" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="1" rho="248.87692" theta="281.46164" phi="173.89337" angleDiscLat="117.33795" height="38.924423" scale="1.1013573" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="129.67586" theta="223.41986" phi="114.05158" angleDiscLat="103.512924" height="74.12894" scale="0.9573592" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="1" rho="168.57407" theta="53.201874" phi="-138.34557" angleDiscLat="272.91843" height="59.879677" scale="1.1976066" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="105.64548" theta="121.116394" phi="0.45210242" angleDiscLat="212.79037" height="65.67518" scale="1.1565773" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="1" rho="78.024605" theta="261.93875" phi="118.335846" angleDiscLat="215.5491" height="40.31639" scale="1.143309" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="2" rho="280.2329" theta="243.11101" phi="15.958114" angleDiscLat="220.39848" height="68.79337" scale="1.1215016" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="0" rho="274.57925" theta="88.62935" phi="-63.700684" angleDiscLat="283.22574" height="43.726097" scale="0.9572042" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="0" rho="77.98347" theta="347.2131" phi="-8.705914" angleDiscLat="75.968765" height="38.59375" scale="1.0909022" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+            <leaf id="1" rho="151.38596" theta="209.77184" phi="-174.62497" angleDiscLat="356.2277" height="46.485844" scale="1.0256997" lengthCurrent="1.3948158" radiusCurrent="0.072527334" />
+          </trunck>
         </trunck>
       </trunck>
-      <trunck length="4.085354" radius="0.09957263" axe="-0.049142137 0.5 -0.49566412">
-        <trunck length="1.212047" radius="0.09722844" axe="0.31036276 0.5 0.7080795">
-          <trunck length="0.35959136" radius="0.09493944" axe="0.31036276 0.5 0.7080795">
-            <trunck length="0.26670983" radius="0.092704326" axe="0.31036276 0.5 0.7080795" />
-            <trunck length="0.26771036" radius="0.08728355" axe="-0.07425852 0.5 -0.36587474" />
+      <trunck length="1.6138724" radius="0.08175926" axe="-0.18644485 0.5 -0.069995075">
+        <leaf id="1" rho="186.57726" theta="142.9815" phi="1.5096545" angleDiscLat="237.41586" height="85.246475" scale="1.1344991" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="3.7101388" theta="294.2574" phi="-106.48755" angleDiscLat="359.00494" height="70.38537" scale="1.0720704" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="170.30965" theta="337.24646" phi="-10.733857" angleDiscLat="300.4835" height="79.912636" scale="0.899526" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="316.0216" theta="358.0004" phi="101.67968" angleDiscLat="107.860275" height="69.13197" scale="1.1803031" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="252.34026" theta="289.57434" phi="-12.210381" angleDiscLat="320.29315" height="60.712738" scale="1.0102482" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="276.86612" theta="260.45993" phi="50.69581" angleDiscLat="263.1596" height="58.858738" scale="0.8025095" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="329.41367" theta="293.27798" phi="-101.69278" angleDiscLat="317.22067" height="65.816925" scale="0.8972153" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="335.26584" theta="161.90865" phi="-87.86839" angleDiscLat="22.35439" height="41.656517" scale="0.86262333" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="2" rho="234.80748" theta="54.354" phi="-143.25035" angleDiscLat="303.6305" height="86.81475" scale="1.0025127" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="2" rho="129.99689" theta="175.02641" phi="62.427856" angleDiscLat="110.921684" height="95.6633" scale="0.8153185" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="296.74774" theta="57.918633" phi="-131.63115" angleDiscLat="304.85922" height="80.82353" scale="0.8012239" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="0" rho="82.462906" theta="284.23346" phi="52.994484" angleDiscLat="107.15288" height="46.529922" scale="1.0506425" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="5.807519" theta="357.88617" phi="25.771093" angleDiscLat="227.21655" height="41.312603" scale="1.1928105" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="0" rho="25.45897" theta="222.27917" phi="14.456645" angleDiscLat="229.88295" height="83.574356" scale="1.0581051" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="0" rho="102.37488" theta="36.033073" phi="166.54358" angleDiscLat="107.09331" height="89.576645" scale="0.9282129" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="86.403305" theta="294.19794" phi="165.77136" angleDiscLat="243.6502" height="71.55328" scale="0.8991282" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="2" rho="134.01299" theta="221.93423" phi="-23.805742" angleDiscLat="67.10711" height="62.99764" scale="1.1761111" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <leaf id="1" rho="161.13287" theta="41.754333" phi="4.3065224" angleDiscLat="146.06047" height="69.77081" scale="1.0097125" lengthCurrent="1.6138724" radiusCurrent="0.08175926" />
+        <trunck length="0.80574036" radius="0.07392459" axe="0.29298744 0.5 0.9392302">
+          <leaf id="1" rho="193.6076" theta="269.33307" phi="-8.587543" angleDiscLat="7.5131035" height="64.13202" scale="0.9239833" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="318.4878" theta="40.12767" phi="4.4833875" angleDiscLat="109.90821" height="57.95177" scale="1.0255079" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="100.03743" theta="145.32704" phi="41.927433" angleDiscLat="100.552605" height="73.95956" scale="0.97068405" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="307.43033" theta="120.63295" phi="-8.564529" angleDiscLat="55.561874" height="87.69203" scale="1.041296" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="219.37901" theta="92.442764" phi="62.84652" angleDiscLat="158.97433" height="55.666065" scale="0.9732414" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="2" rho="18.44392" theta="298.45" phi="91.751945" angleDiscLat="179.57242" height="74.51091" scale="0.99407196" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="213.1712" theta="327.87222" phi="-27.017399" angleDiscLat="336.93713" height="51.756363" scale="0.9621519" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="11.149836" theta="132.08127" phi="-71.11743" angleDiscLat="311.68774" height="92.64125" scale="0.99945647" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="2" rho="15.577948" theta="11.467731" phi="41.811058" angleDiscLat="231.15677" height="50.147846" scale="1.1760441" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="134.14772" theta="12.147746" phi="62.94403" angleDiscLat="152.17793" height="49.73796" scale="0.85885847" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="358.41547" theta="338.65048" phi="-3.9783275" angleDiscLat="278.3537" height="45.243713" scale="1.1637225" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="30.230341" theta="249.12071" phi="-166.45581" angleDiscLat="330.2613" height="61.28478" scale="1.0124984" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="1" rho="201.13406" theta="133.69742" phi="145.3126" angleDiscLat="132.12495" height="60.271328" scale="1.0916449" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="86.153496" theta="216.48718" phi="48.791473" angleDiscLat="114.66656" height="88.8095" scale="0.8836472" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="2" rho="209.3242" theta="253.04587" phi="54.173744" angleDiscLat="246.56621" height="70.33074" scale="1.1912715" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="104.0484" theta="108.153" phi="97.181595" angleDiscLat="256.1853" height="92.87985" scale="1.0385567" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="108.44987" theta="271.14453" phi="-75.56777" angleDiscLat="295.26712" height="53.046104" scale="0.9516552" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <leaf id="0" rho="125.95922" theta="133.94087" phi="-134.88335" angleDiscLat="49.602608" height="75.89468" scale="1.1244824" lengthCurrent="0.80574036" radiusCurrent="0.07392459" />
+          <trunck length="0.3401011" radius="0.07280321" axe="0.34745377 0.5 0.6126502">
+            <leaf id="0" rho="193.51085" theta="199.88788" phi="100.14152" angleDiscLat="152.69527" height="45.340015" scale="0.99660504" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="1" rho="183.69727" theta="79.95515" phi="146.25409" angleDiscLat="116.63891" height="38.443977" scale="0.9197266" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="1" rho="51.46318" theta="42.280067" phi="-78.65413" angleDiscLat="339.45074" height="73.14699" scale="0.9440167" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="2" rho="236.5394" theta="356.7435" phi="75.90098" angleDiscLat="214.8137" height="87.13846" scale="0.82119066" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="2" rho="114.14454" theta="304.88037" phi="138.11299" angleDiscLat="181.01083" height="98.96946" scale="1.1205397" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="172.27544" theta="263.2483" phi="60.636494" angleDiscLat="212.09885" height="55.511112" scale="1.0391423" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="1" rho="196.60573" theta="116.020004" phi="166.76064" angleDiscLat="197.95023" height="75.80307" scale="1.1062124" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="38.729404" theta="99.4642" phi="177.03603" angleDiscLat="263.11893" height="95.81577" scale="0.9737202" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="2" rho="134.1912" theta="92.97534" phi="-107.61069" angleDiscLat="326.28256" height="45.881794" scale="1.0360414" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="1" rho="130.78786" theta="331.45343" phi="37.3406" angleDiscLat="171.4267" height="74.52133" scale="0.9169749" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="217.19986" theta="115.15418" phi="-131.23961" angleDiscLat="34.314808" height="90.15995" scale="0.8321285" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="288.5638" theta="276.02594" phi="62.509094" angleDiscLat="107.557976" height="36.334026" scale="1.0533903" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="2" rho="140.64792" theta="143.38808" phi="-69.35561" angleDiscLat="88.84639" height="68.359055" scale="0.9829453" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="243.85036" theta="335.46597" phi="-0.4290676" angleDiscLat="71.66493" height="89.03563" scale="1.1392591" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="22.898296" theta="154.27963" phi="142.41736" angleDiscLat="226.48172" height="72.98091" scale="0.97113776" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="1" rho="308.57623" theta="211.44719" phi="-150.96951" angleDiscLat="14.9118805" height="74.39829" scale="0.81278473" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="2" rho="300.3613" theta="286.98108" phi="-30.2683" angleDiscLat="321.85208" height="44.834427" scale="1.0960284" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <leaf id="0" rho="96.71848" theta="277.99338" phi="-105.838715" angleDiscLat="320.1043" height="71.039764" scale="1.1724443" lengthCurrent="0.3401011" radiusCurrent="0.07280321" />
+            <trunck length="0.17589337" radius="0.07749122" axe="0.21114287 0.5 0.8303702">
+              <leaf id="1" rho="193.54309" theta="103.036285" phi="69.62353" angleDiscLat="224.30121" height="73.27068" scale="1.1057311" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="0" rho="348.62744" theta="306.67935" phi="158.9972" angleDiscLat="234.39532" height="44.94658" scale="1.0883204" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="0" rho="67.6546" theta="196.62906" phi="-66.4119" angleDiscLat="19.818027" height="73.41785" scale="0.81957245" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="20.169718" theta="278.03998" phi="113.4555" angleDiscLat="161.72975" height="43.98965" scale="1.0278925" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="269.2227" theta="114.067825" phi="173.02417" angleDiscLat="173.66533" height="62.868332" scale="0.8047735" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="1" rho="0.9982538" theta="274.98218" phi="-131.00832" angleDiscLat="81.25671" height="61.84438" scale="1.1574521" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="1" rho="82.12755" theta="66.637405" phi="120.17956" angleDiscLat="244.2792" height="89.45417" scale="0.92485887" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="0" rho="149.53622" theta="350.33655" phi="-21.72982" angleDiscLat="279.30856" height="73.09093" scale="1.1156323" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="334.65344" theta="305.80615" phi="-85.67747" angleDiscLat="294.57394" height="68.970474" scale="1.082709" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="11.907827" theta="225.01819" phi="105.87508" angleDiscLat="165.01044" height="66.26021" scale="1.0309361" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="24.271717" theta="309.65295" phi="148.81918" angleDiscLat="235.66112" height="96.85454" scale="1.0759932" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="1" rho="202.45267" theta="147.05754" phi="-157.15799" angleDiscLat="301.79242" height="87.984276" scale="0.90642637" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="40.80996" theta="20.157852" phi="94.67462" angleDiscLat="103.272575" height="43.996475" scale="1.0191785" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="191.28474" theta="295.80637" phi="-76.54987" angleDiscLat="85.99881" height="67.29359" scale="1.0540551" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="0" rho="205.04027" theta="307.2017" phi="113.002815" angleDiscLat="113.17656" height="93.76419" scale="1.177849" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="2" rho="120.40028" theta="57.01578" phi="-73.04021" angleDiscLat="335.33633" height="37.225475" scale="1.1547087" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="1" rho="356.3908" theta="161.70222" phi="-45.368126" angleDiscLat="312.99042" height="69.23833" scale="1.1812375" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+              <leaf id="0" rho="106.46539" theta="109.97587" phi="115.520256" angleDiscLat="109.93707" height="94.32474" scale="1.156457" lengthCurrent="0.17589337" radiusCurrent="0.07749122" />
+            </trunck>
+            <trunck length="0.24393852" radius="0.065792" axe="-0.07203531 0.5 -0.2591618">
+              <leaf id="2" rho="193.3496" theta="324.14587" phi="72.731476" angleDiscLat="154.66551" height="35.686676" scale="0.8509747" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="0" rho="79.04642" theta="26.33427" phi="82.53859" angleDiscLat="247.85672" height="70.930984" scale="0.87675786" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="0" rho="330.50613" theta="350.5351" phi="139.8653" angleDiscLat="137.61429" height="71.792694" scale="1.1662378" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="238.38783" theta="30.261112" phi="68.12839" angleDiscLat="120.23339" height="42.882492" scale="0.9876816" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="58.753746" theta="178.94302" phi="143.55711" angleDiscLat="217.73834" height="84.47511" scale="1.0993701" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="308.66125" theta="204.5788" phi="68.777405" angleDiscLat="146.30957" height="88.84477" scale="0.8475926" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="48.996597" theta="2.9329848" phi="-39.666042" angleDiscLat="326.30536" height="72.54758" scale="0.8129799" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="204.69537" theta="285.10245" phi="53.56701" angleDiscLat="182.17094" height="79.43998" scale="1.0641599" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="0" rho="211.87994" theta="108.82134" phi="37.27672" angleDiscLat="124.82552" height="60.438377" scale="0.80270344" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="5.188079" theta="143.62953" phi="54.668205" angleDiscLat="203.50798" height="50.82696" scale="1.1471689" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="101.84049" theta="222.66034" phi="43.34174" angleDiscLat="107.583275" height="56.68701" scale="0.8128052" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="359.1196" theta="200.86797" phi="129.26457" angleDiscLat="216.38576" height="38.082767" scale="0.98821014" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="0" rho="279.83768" theta="39.539192" phi="-122.76063" angleDiscLat="16.715462" height="60.171925" scale="0.8017794" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="146.67847" theta="173.76395" phi="-159.82507" angleDiscLat="359.9956" height="67.74583" scale="1.1652787" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="0" rho="192.18845" theta="109.66924" phi="-109.49007" angleDiscLat="73.00756" height="99.06454" scale="1.1375813" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="169.45593" theta="263.6042" phi="0.61608195" angleDiscLat="212.7895" height="65.26236" scale="1.1031649" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="2" rho="20.213663" theta="193.37534" phi="-134.76917" angleDiscLat="6.160326" height="52.814972" scale="1.069984" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+              <leaf id="1" rho="47.983948" theta="38.080822" phi="-57.43099" angleDiscLat="290.9405" height="84.6149" scale="0.8523807" lengthCurrent="0.24393852" radiusCurrent="0.065792" />
+            </trunck>
           </trunck>
-          <trunck length="0.36094028" radius="0.08938797" axe="-0.07425852 0.5 -0.36587474" />
+          <trunck length="0.34045488" radius="0.068884075" axe="-0.046918944 0.5 -0.38895118">
+            <leaf id="1" rho="193.25285" theta="254.70065" phi="-164.28545" angleDiscLat="299.84766" height="81.89468" scale="0.92359644" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="304.2559" theta="66.16175" phi="44.309277" angleDiscLat="254.5874" height="51.423195" scale="1.1709766" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="0" rho="281.93192" theta="247.48811" phi="-176.59198" angleDiscLat="16.51243" height="70.98012" scale="1.1395706" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="167.49687" theta="266.37167" phi="-135.46484" angleDiscLat="279.4852" height="42.328915" scale="1.1675763" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="313.51926" theta="31.3806" phi="38.823593" angleDiscLat="239.77483" height="62.77851" scale="0.8466683" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="0" rho="102.49277" theta="169.3771" phi="37.66196" angleDiscLat="178.83598" height="69.84498" scale="0.8926629" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="1" rho="32.431126" theta="151.08076" phi="179.40929" angleDiscLat="187.31844" height="96.594284" scale="0.9570404" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="232.27495" theta="252.48538" phi="159.4856" angleDiscLat="133.60211" height="82.6145" scale="1.0384235" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="330.4932" theta="190.32895" phi="103.07635" angleDiscLat="219.95131" height="56.172325" scale="1.0627007" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="1" rho="1.8281937" theta="102.935196" phi="29.064772" angleDiscLat="222.75674" height="75.61034" scale="0.80528533" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="320.62488" theta="359.16403" phi="170.60301" angleDiscLat="223.54436" height="36.603245" scale="0.88121116" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="257.45306" theta="227.7732" phi="-25.317854" angleDiscLat="353.68243" height="78.13201" scale="1.0291021" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="1" rho="219.35153" theta="49.229866" phi="-46.803635" angleDiscLat="333.4369" height="68.25964" scale="1.0930798" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="304.3753" theta="292.74274" phi="-111.46266" angleDiscLat="316.994" height="67.97195" scale="1.0208905" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="1" rho="5.7625437" theta="10.9030075" phi="-17.733683" angleDiscLat="52.923073" height="36.71471" scale="0.9174475" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="2" rho="13.98375" theta="6.898384" phi="-54.404007" angleDiscLat="331.5161" height="46.780804" scale="0.8773929" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="1" rho="212.12508" theta="209.2119" phi="-89.469696" angleDiscLat="32.74529" height="44.603294" scale="0.8143571" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+            <leaf id="0" rho="18.743212" theta="182.1333" phi="28.386343" angleDiscLat="201.44223" height="79.75998" scale="0.9003426" lengthCurrent="0.34045488" radiusCurrent="0.068884075" />
+          </trunck>
         </trunck>
-        <trunck length="1.2165937" radius="0.09154312" axe="-0.07425852 0.5 -0.36587474">
-          <trunck length="0.36094028" radius="0.08938797" axe="0.31036276 0.5 0.7080795" />
-          <trunck length="0.3622943" radius="0.08416112" axe="-0.07425852 0.5 -0.36587474" />
+        <trunck length="0.35357273" radius="0.08091199" axe="0.065406516 0.5 -0.44426712">
+          <leaf id="1" rho="193.31734" theta="60.997467" phi="-103.249466" angleDiscLat="83.059555" height="72.75601" scale="1.1418486" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="274.11624" theta="159.6101" phi="69.79549" angleDiscLat="130.10027" height="64.42839" scale="1.1081641" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="1" rho="314.31473" theta="196.1861" phi="152.10751" angleDiscLat="97.24701" height="71.521835" scale="0.8906821" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="94.75751" theta="108.96463" phi="30.57388" angleDiscLat="173.31734" height="86.031296" scale="1.1809798" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="2" rho="263.6756" theta="9.755537" phi="108.64594" angleDiscLat="225.08383" height="55.57625" scale="1.0151361" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="119.93843" theta="192.84491" phi="-178.4056" angleDiscLat="277.1517" height="82.511505" scale="1.1292827" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="2" rho="163.47478" theta="52.315586" phi="-86.247116" angleDiscLat="279.97638" height="58.89648" scale="0.9943334" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="1" rho="93.88856" theta="34.230095" phi="28.873207" angleDiscLat="165.98132" height="37.164818" scale="0.92224777" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="11.417692" theta="255.99054" phi="59.209927" angleDiscLat="156.53412" height="37.34969" scale="1.1560359" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="2" rho="124.06811" theta="250.06474" phi="166.13373" angleDiscLat="209.92422" height="59.08809" scale="1.0332078" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="2" rho="294.76865" theta="28.161564" phi="25.762156" angleDiscLat="266.23697" height="49.99242" scale="0.9689405" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="1" rho="85.230774" theta="329.83636" phi="-34.615665" angleDiscLat="22.151314" height="51.432514" scale="1.135174" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="1" rho="19.675634" theta="162.76942" phi="-97.441635" angleDiscLat="2.2892761" height="84.5345" scale="1.1655462" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="199.24408" theta="213.42354" phi="-83.70426" angleDiscLat="345.6617" height="89.48787" scale="0.85048264" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="2" rho="10.046482" theta="316.74716" phi="138.9046" angleDiscLat="186.31274" height="78.281265" scale="0.93087006" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="1" rho="357.63187" theta="58.03558" phi="78.54539" angleDiscLat="252.36504" height="37.435173" scale="1.1612408" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="324.18414" theta="318.6542" phi="-119.66934" angleDiscLat="15.02198" height="93.41107" scale="0.98477495" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <leaf id="0" rho="38.237034" theta="206.09833" phi="47.749435" angleDiscLat="141.10773" height="61.32993" scale="0.868368" lengthCurrent="0.35357273" radiusCurrent="0.08091199" />
+          <trunck length="0.3336425" radius="0.076111585" axe="0.40250033 0.5 0.68098986">
+            <leaf id="1" rho="194.1236" theta="159.7075" phi="-60.299686" angleDiscLat="73.20832" height="56.0227" scale="1.0700004" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="77.37055" theta="67.71449" phi="28.372986" angleDiscLat="194.0112" height="96.99335" scale="0.92300785" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="359.10004" theta="94.910934" phi="-26.051739" angleDiscLat="26.429243" height="78.293274" scale="0.97957635" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="2" rho="85.51539" theta="301.37662" phi="-69.43681" angleDiscLat="286.2189" height="47.311127" scale="1.1485249" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="180.62956" theta="279.4423" phi="-81.42532" angleDiscLat="41.44635" height="63.047962" scale="1.1209841" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="2" rho="158.00928" theta="126.192375" phi="137.70102" angleDiscLat="246.09813" height="45.843185" scale="0.8870307" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="181.52036" theta="257.7507" phi="-1.7201221" angleDiscLat="358.20074" height="75.173935" scale="0.86049587" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="344.05875" theta="186.03888" phi="106.21828" angleDiscLat="210.7214" height="54.0438" scale="0.8700497" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="342.97394" theta="176.76047" phi="-50.879734" angleDiscLat="83.819244" height="94.56679" scale="1.1227252" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="2" rho="32.067055" theta="109.184166" phi="-79.495674" angleDiscLat="49.51785" height="47.55995" scale="1.0822375" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="151.56538" theta="210.6308" phi="105.25151" angleDiscLat="259.8946" height="87.35712" scale="1.0655574" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="92.4518" theta="345.62622" phi="60.838295" angleDiscLat="198.01239" height="42.68881" scale="1.061075" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="43.72683" theta="322.01382" phi="-10.416584" angleDiscLat="2.9439068" height="60.47013" scale="0.8713758" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="2" rho="325.10355" theta="301.93365" phi="-6.724309" angleDiscLat="344.00848" height="65.93686" scale="1.1203842" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="243.59572" theta="179.79909" phi="123.5411" angleDiscLat="233.68349" height="77.86315" scale="0.898652" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="0" rho="333.23337" theta="157.2506" phi="-110.312614" angleDiscLat="342.97687" height="83.11482" scale="0.9093405" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="284.9223" theta="66.68289" phi="137.165" angleDiscLat="153.4807" height="53.508377" scale="1.1149979" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+            <leaf id="1" rho="281.9098" theta="325.66098" phi="-109.78806" angleDiscLat="286.9268" height="58.454224" scale="0.86868566" lengthCurrent="0.3336425" radiusCurrent="0.076111585" />
+          </trunck>
+          <trunck length="0.2952326" radius="0.0780546" axe="-0.13552454 0.5 -0.4059521">
+            <leaf id="1" rho="194.18806" theta="326.0043" phi="179.2637" angleDiscLat="216.42021" height="46.884037" scale="0.8882526" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="47.23091" theta="161.16284" phi="-53.859184" angleDiscLat="69.52408" height="44.99854" scale="0.8601954" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="1" rho="31.482826" theta="43.60892" phi="1.5672684" angleDiscLat="107.16382" height="78.83499" scale="1.130688" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="12.776027" theta="143.96959" phi="144.54585" angleDiscLat="180.05101" height="91.01351" scale="1.1619285" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="130.78589" theta="257.81723" phi="-151.24768" angleDiscLat="26.755356" height="55.845703" scale="0.8894518" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="1" rho="175.45494" theta="149.66019" phi="-98.44466" angleDiscLat="344.41382" height="58.50972" scale="1.1236506" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="312.56403" theta="158.98552" phi="88.55797" angleDiscLat="90.858696" height="37.476135" scale="0.8977888" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="2" rho="205.67236" theta="327.78357" phi="155.60588" angleDiscLat="243.1006" height="73.59412" scale="1.1538739" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="2" rho="23.89844" theta="242.42206" phi="-7.013322" angleDiscLat="20.402061" height="75.744156" scale="0.81606036" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="1" rho="154.30698" theta="256.31375" phi="-36.564625" angleDiscLat="36.685326" height="96.037704" scale="0.91015995" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="125.70913" theta="239.62836" phi="-140.41066" angleDiscLat="302.58722" height="35.7463" scale="1.1532867" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="280.22946" theta="87.68939" phi="70.13611" angleDiscLat="226.48126" height="80.9893" scale="1.1671472" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="204.05093" theta="75.55338" phi="-61.054577" angleDiscLat="31.79628" height="76.74498" scale="0.9438422" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="219.97229" theta="222.61444" phi="-158.96591" angleDiscLat="12.676206" height="87.452774" scale="0.9499764" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="2" rho="247.87965" theta="125.643234" phi="-64.71201" angleDiscLat="7.073157" height="54.429703" scale="0.91207457" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="2" rho="316.8815" theta="208.38782" phi="134.454" angleDiscLat="263.8258" height="73.769196" scale="1.1931884" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="0" rho="36.981354" theta="176.1252" phi="167.36464" angleDiscLat="135.75739" height="37.316162" scale="0.88541573" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+            <leaf id="2" rho="301.4036" theta="349.626" phi="129.15115" angleDiscLat="226.59232" height="40.024166" scale="0.83671105" lengthCurrent="0.2952326" radiusCurrent="0.0780546" />
+          </trunck>
         </trunck>
       </trunck>
     </trunck>
-    <trunck length="9.594164" radius="0.30258924" axe="-0.049142137 0.5 -0.49566412">
-      <trunck length="2.8464065" radius="0.08863966" axe="0.31036276 0.5 0.7080795">
-        <trunck length="1.347353" radius="0.09312011" axe="0.42016578 0.5 0.647299">
-          <trunck length="0.6377726" radius="0.09782703" axe="0.42016578 0.5 0.647299">
-            <trunck length="0.30189112" radius="0.10277187" axe="0.42016578 0.5 0.647299" />
-            <trunck length="0.25456458" radius="0.10171607" axe="0.036670372 0.5 -0.36371815" />
+    <trunck length="4.514489" radius="0.23604156" axe="0.038206026 0.5 -0.18062696">
+      <leaf id="1" rho="194.09134" theta="256.5591" phi="-90.81768" angleDiscLat="1.6023731" height="93.09203" scale="0.9608744" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="272.44037" theta="200.9903" phi="-15.629887" angleDiscLat="76.254776" height="90.490746" scale="1.1544142" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="2" rho="342.9086" theta="300.56195" phi="-38.29396" angleDiscLat="346.06195" height="78.022415" scale="1.1040206" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="301.88507" theta="20.080132" phi="-31.882303" angleDiscLat="339.30283" height="90.45993" scale="0.9418231" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="1" rho="25.55141" theta="110.25482" phi="-46.514137" angleDiscLat="48.79185" height="99.14909" scale="1.0367501" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="329.28644" theta="114.45848" phi="-67.32921" angleDiscLat="16.940273" height="39.509914" scale="1.1687207" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="295.99854" theta="307.1333" phi="-48.30121" angleDiscLat="311.87177" height="61.52284" scale="1.0418494" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="233.25194" theta="295.16653" phi="81.524475" angleDiscLat="194.53178" height="76.76865" scale="1.1281376" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="142.51169" theta="323.9297" phi="72.81294" angleDiscLat="115.52785" height="71.4781" scale="1.0760577" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="1" rho="150.94711" theta="215.61938" phi="-10.96119" angleDiscLat="55.9341" height="55.82108" scale="0.9682763" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="1" rho="344.49353" theta="16.13205" phi="-87.671936" angleDiscLat="58.548286" height="80.66254" scale="0.82169265" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="2" rho="178.56296" theta="114.59461" phi="-146.18939" angleDiscLat="3.7779236" height="56.038555" scale="0.80803895" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="1" rho="143.56479" theta="85.24406" phi="-165.09758" angleDiscLat="348.51773" height="84.8327" scale="0.8351426" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="17.66917" theta="341.59323" phi="-110.60351" angleDiscLat="329.6746" height="87.678894" scale="0.8055882" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <leaf id="0" rho="61.453743" theta="26.877" phi="-152.95563" angleDiscLat="346.98868" height="57.07988" scale="1.0919408" lengthCurrent="4.514489" radiusCurrent="0.23604156" />
+      <trunck length="2.675641" radius="0.07513976" axe="0.23881121 0.5 0.9632699">
+        <leaf id="2" rho="194.05908" theta="353.4107" phi="-121.33567" angleDiscLat="289.99643" height="65.16137" scale="0.8517483" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="107.51021" theta="334.26614" phi="-2.8867865" angleDiscLat="318.49832" height="83.988144" scale="0.98582035" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="0" rho="326.7172" theta="146.21294" phi="-50.536198" angleDiscLat="305.69467" height="77.75156" scale="0.8284648" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="158.25475" theta="98.78365" phi="-174.32779" angleDiscLat="32.38675" height="68.60874" scale="1.1351213" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="230.47325" theta="301.06735" phi="-11.602968" angleDiscLat="56.13735" height="70.25023" scale="0.9525162" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="140.56361" theta="102.724594" phi="176.95738" angleDiscLat="147.78242" height="98.17665" scale="1.0504109" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="0" rho="50.476727" theta="356.5159" phi="94.882286" angleDiscLat="265.5428" height="47.871742" scale="0.82320285" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="0" rho="122.44514" theta="44.29417" phi="56.830666" angleDiscLat="178.34218" height="99.493484" scale="0.98622555" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="302.04944" theta="111.09888" phi="94.74615" angleDiscLat="147.23643" height="48.38942" scale="1.0293901" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="269.82715" theta="322.05463" phi="-122.42672" angleDiscLat="62.350353" height="64.0822" scale="0.85431516" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="177.42165" theta="181.63327" phi="70.09237" angleDiscLat="217.20198" height="73.96794" scale="0.97782797" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="264.67413" theta="243.563" phi="51.54048" angleDiscLat="169.54349" height="69.388306" scale="0.9550029" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="243.40274" theta="208.47427" phi="-139.77858" angleDiscLat="334.09152" height="44.195282" scale="1.1989095" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="70.23478" theta="21.252838" phi="-34.482704" angleDiscLat="315.34073" height="44.420937" scale="0.89079213" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="1" rho="239.31177" theta="233.95493" phi="2.3701715" angleDiscLat="100.29382" height="36.296604" scale="0.88522947" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="349.58527" theta="106.1134" phi="-86.171234" angleDiscLat="62.1279" height="92.46045" scale="1.0254925" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="2" rho="172.86324" theta="317.2406" phi="106.96534" angleDiscLat="171.20401" height="69.70059" scale="0.9445801" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <leaf id="0" rho="262.41595" theta="301.69598" phi="-90.42497" angleDiscLat="347.26126" height="76.88428" scale="0.9006603" lengthCurrent="2.675641" radiusCurrent="0.07513976" />
+        <trunck length="1.172883" radius="0.07682459" axe="0.34774387 0.5 0.81011">
+          <leaf id="1" rho="193.86559" theta="214.5203" phi="124.44362" angleDiscLat="220.36072" height="92.57736" scale="0.9969919" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="0" rho="197.92917" theta="53.921093" phi="-106.428185" angleDiscLat="331.95972" height="44.972557" scale="1.1742579" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="2" rho="229.56873" theta="300.119" phi="-123.989586" angleDiscLat="63.490913" height="76.12642" scale="1.1751301" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="16.472862" theta="211.00479" phi="-129.00067" angleDiscLat="350.89038" height="67.50158" scale="1.0949105" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="20.00428" theta="5.9425306" phi="162.13593" angleDiscLat="100.21036" height="91.85701" scale="0.84711266" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="2" rho="88.22661" theta="32.321198" phi="114.72648" angleDiscLat="212.83528" height="60.177048" scale="1.1405513" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="17.345781" theta="292.81146" phi="-14.368765" angleDiscLat="347.56894" height="95.96515" scale="1.1113238" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="177.6043" theta="339.06006" phi="-88.667854" angleDiscLat="81.20457" height="40.842525" scale="0.93475306" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="2" rho="179.27594" theta="274.1141" phi="-46.345398" angleDiscLat="337.488" height="39.857315" scale="1.1493847" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="2" rho="263.1074" theta="240.66597" phi="71.21985" angleDiscLat="100.847885" height="48.648956" scale="0.970548" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="254.99042" theta="94.64065" phi="-144.61493" angleDiscLat="89.12416" height="98.800415" scale="1.11464" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="61.34107" theta="297.37347" phi="-23.647053" angleDiscLat="84.13684" height="84.486786" scale="1.0367867" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="0" rho="122.430435" theta="227.8556" phi="167.8646" angleDiscLat="247.53444" height="60.37073" scale="0.98151034" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="25.628529" theta="259.21042" phi="117.75789" angleDiscLat="229.33752" height="44.873177" scale="1.0020157" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="226.45996" theta="36.422466" phi="-178.85742" angleDiscLat="60.124847" height="41.596947" scale="0.8449618" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="2" rho="38.640892" theta="312.70178" phi="-13.747105" angleDiscLat="299.5811" height="55.497337" scale="0.9739486" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="0" rho="196.68608" theta="348.91373" phi="16.366388" angleDiscLat="224.3739" height="53.27724" scale="0.8333266" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <leaf id="1" rho="203.9345" theta="229.80093" phi="32.335705" angleDiscLat="168.2647" height="67.17445" scale="0.996584" lengthCurrent="1.172883" radiusCurrent="0.07682459" />
+          <trunck length="0.26170552" radius="0.06929461" axe="0.21143298 0.5 0.52783">
+            <leaf id="2" rho="193.93008" theta="20.817097" phi="-63.407635" angleDiscLat="3.5726166" height="83.4387" scale="0.81524396" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="2" rho="167.7895" theta="147.36943" phi="131.91438" angleDiscLat="207.47258" height="57.977757" scale="1.1114454" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="261.95154" theta="248.81699" phi="99.50513" angleDiscLat="144.22551" height="76.66813" scale="0.92624176" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="303.7335" theta="53.597748" phi="24.10971" angleDiscLat="244.72252" height="46.203964" scale="1.108314" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="330.1606" theta="344.31747" phi="-51.95827" angleDiscLat="85.51934" height="84.654755" scale="1.0155805" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="1" rho="105.67228" theta="55.788982" phi="-75.47012" angleDiscLat="311.151" height="72.84358" scale="0.9771712" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="148.38942" theta="194.04628" phi="-101.206604" angleDiscLat="80.22691" height="58.26735" scale="1.1486169" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="39.217907" theta="120.80476" phi="138.05545" angleDiscLat="113.583786" height="60.392845" scale="0.81857723" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="220.20044" theta="339.7757" phi="-2.4789834" angleDiscLat="274.07083" height="86.03468" scale="0.8427198" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="1" rho="25.347305" theta="27.795517" phi="-28.288807" angleDiscLat="88.01538" height="97.12671" scale="1.1984704" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="229.13417" theta="123.63818" phi="179.77408" angleDiscLat="131.81676" height="47.18959" scale="0.8023693" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="2" rho="249.11874" theta="39.43665" phi="32.944866" angleDiscLat="112.60572" height="57.787296" scale="1.1428587" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="2" rho="282.75455" theta="341.39517" phi="-38.502594" angleDiscLat="276.3868" height="76.645584" scale="1.0539768" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="2" rho="280.49728" theta="179.89124" phi="89.9995" angleDiscLat="258.00525" height="66.3891" scale="0.8316079" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="230.7439" theta="342.26663" phi="120.028336" angleDiscLat="193.51451" height="83.1635" scale="0.8583844" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="0" rho="22.289007" theta="3.838992" phi="37.888477" angleDiscLat="220.43001" height="46.15171" scale="0.85779655" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="2" rho="308.74515" theta="98.356" phi="46.566036" angleDiscLat="206.6506" height="37.085026" scale="1.0037444" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <leaf id="1" rho="223.42831" theta="253.76596" phi="51.698795" angleDiscLat="107.93022" height="48.744396" scale="0.9646094" lengthCurrent="0.26170552" radiusCurrent="0.06929461" />
+            <trunck length="0.2363165" radius="0.06257853" axe="0.4022102 0.5 0.98353004">
+              <leaf id="2" rho="193.76883" theta="145.07509" phi="-35.997593" angleDiscLat="5.54286" height="73.785355" scale="1.0696137" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="63.138664" theta="93.74855" phi="-68.19889" angleDiscLat="338.6904" height="90.46477" scale="1.0684767" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="180.99448" theta="197.072" phi="-160.71628" angleDiscLat="302.38904" height="75.31384" scale="1.1484629" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="305.58194" theta="87.11534" phi="16.33712" angleDiscLat="150.14221" height="66.948" scale="0.8748051" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="274.7698" theta="218.38011" phi="57.402393" angleDiscLat="122.24685" height="70.16041" scale="0.99441093" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="0" rho="242.0581" theta="357.1195" phi="83.61103" angleDiscLat="245.3617" height="41.17725" scale="1.1856216" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="0.78030825" theta="80.959236" phi="154.112" angleDiscLat="208.58203" height="55.011856" scale="0.85538435" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="205.18387" theta="306.443" phi="-14.586443" angleDiscLat="32.63577" height="44.01705" scale="0.90901685" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="297.8892" theta="355.6217" phi="-112.14501" angleDiscLat="72.61379" height="35.591267" scale="1.009382" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="259.74753" theta="199.97162" phi="45.616413" angleDiscLat="120.09666" height="73.43233" scale="1.0286645" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="113.77482" theta="231.14433" phi="91.8762" angleDiscLat="205.08524" height="78.71666" scale="1.183046" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="319.67456" theta="324.2787" phi="99.70034" angleDiscLat="221.43352" height="59.53604" scale="1.0776787" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="0" rho="61.94431" theta="237.54628" phi="91.90761" angleDiscLat="204.25587" height="68.45845" scale="0.8728108" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="183.32538" theta="18.189198" phi="69.395485" angleDiscLat="186.33589" height="45.0993" scale="0.8576275" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="40.03405" theta="297.65625" phi="-87.101036" angleDiscLat="40.04036" height="44.247124" scale="1.024828" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="0" rho="243.1687" theta="55.995983" phi="-67.53503" angleDiscLat="58.307663" height="37.01578" scale="1.1481767" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="1" rho="28.597519" theta="4.750278" phi="151.06691" angleDiscLat="250.95886" height="45.065563" scale="0.9776998" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+              <leaf id="2" rho="174.69377" theta="13.853416" phi="-3.2910705" angleDiscLat="78.76642" height="62.319534" scale="1.0445459" lengthCurrent="0.2363165" radiusCurrent="0.06257853" />
+            </trunck>
+            <trunck length="0.18319038" radius="0.07063474" axe="-0.14738445 0.5 -0.36979368">
+              <leaf id="1" rho="193.83333" theta="311.3719" phi="154.96161" angleDiscLat="148.75478" height="64.64669" scale="0.8878658" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="32.999004" theta="187.1969" phi="93.68509" angleDiscLat="214.20328" height="38.46996" scale="1.0056641" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="213.3773" theta="145.76999" phi="-136.23183" angleDiscLat="23.123625" height="75.85556" scale="0.8995744" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="0" rho="232.84254" theta="289.70828" phi="-91.44616" angleDiscLat="43.974323" height="45.650387" scale="0.8882087" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="224.92612" theta="196.75507" phi="127.22475" angleDiscLat="107.555855" height="62.958145" scale="1.1628788" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="2" rho="259.50375" theta="20.587284" phi="-44.35467" angleDiscLat="343.6774" height="53.84378" scale="1.0222415" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="131.82396" theta="342.19406" phi="-60.94984" angleDiscLat="301.23996" height="82.31406" scale="0.89267737" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="66.79748" theta="88.187706" phi="-63.974052" angleDiscLat="65.01497" height="63.567368" scale="1.192841" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="338.8137" theta="61.283306" phi="-68.2786" angleDiscLat="9.196608" height="81.76863" scale="1.1027172" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="21.98744" theta="347.1012" phi="2.685374" angleDiscLat="107.26414" height="56.91008" scale="0.8565868" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="87.918564" theta="260.14188" phi="127.035355" angleDiscLat="247.77786" height="92.105835" scale="0.8707753" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="0" rho="147.45222" theta="66.341866" phi="108.99815" angleDiscLat="249.9024" height="97.83655" scale="1.1837506" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="0" rho="222.2684" theta="351.08585" phi="142.54561" angleDiscLat="233.10825" height="84.73331" scale="0.94527715" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="2" rho="78.19414" theta="298.87" phi="41.63709" angleDiscLat="215.00365" height="66.61522" scale="1.0872197" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="44.31799" theta="243.5004" phi="28.271954" angleDiscLat="173.43002" height="85.813675" scale="1.0382506" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="226.81682" theta="107.1332" phi="-91.676414" angleDiscLat="339.1566" height="92.67015" scale="1.0320246" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="1" rho="140.65657" theta="114.19256" phi="1.2665606" angleDiscLat="233.23557" height="93.87335" scale="1.1481177" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+              <leaf id="0" rho="194.18758" theta="37.81844" phi="-22.654163" angleDiscLat="18.431927" height="43.889477" scale="1.0125713" lengthCurrent="0.18319038" radiusCurrent="0.07063474" />
+            </trunck>
           </trunck>
-          <trunck length="0.53779095" radius="0.09682203" axe="0.036670372 0.5 -0.36371815" />
+          <trunck length="0.3998427" radius="0.08059223" axe="-0.060175404 0.5 -0.29532024">
+            <leaf id="0" rho="193.80109" theta="48.2235" phi="-5.479603" angleDiscLat="77.1488" height="36.716026" scale="1.1787398" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="228.06883" theta="320.47275" phi="80.941986" angleDiscLat="96.44683" height="96.96736" scale="0.83707035" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="197.1859" theta="351.42102" phi="-148.47404" angleDiscLat="342.75635" height="75.5847" scale="1.0240186" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="89.21225" theta="8.411816" phi="53.89164" angleDiscLat="97.058266" height="88.799194" scale="1.0815068" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="69.84796" theta="27.567595" phi="92.31357" angleDiscLat="114.90135" height="99.05928" scale="1.0786449" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="1" rho="70.78092" theta="8.853393" phi="153.98285" angleDiscLat="114.519554" height="47.510517" scale="0.9039315" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="1" rho="246.30212" theta="31.576637" phi="107.53093" angleDiscLat="254.91101" height="68.66296" scale="1.0740309" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="315.9907" theta="197.31535" phi="-39.280243" angleDiscLat="48.825367" height="86.292206" scale="1.050929" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="138.35143" theta="208.45251" phi="-90.21181" angleDiscLat="40.90519" height="58.67995" scale="1.0560496" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="140.86748" theta="93.536415" phi="114.1509" angleDiscLat="113.68039" height="65.1712" scale="1.1426256" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="1" rho="280.84668" theta="65.64312" phi="-109.45578" angleDiscLat="46.43155" height="85.41124" scale="1.0269105" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="233.56339" theta="195.31026" phi="-14.349239" angleDiscLat="55.66796" height="46.18629" scale="0.9307146" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="0" rho="322.10635" theta="114.31607" phi="117.2266" angleDiscLat="218.68207" height="44.09588" scale="0.90904397" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="0" rho="130.75977" theta="338.5296" phi="145.51628" angleDiscLat="200.66977" height="88.357254" scale="1.1724236" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="222.17603" theta="90.57831" phi="-57.686493" angleDiscLat="286.73517" height="65.030396" scale="0.8315392" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="1" rho="54.992775" theta="261.5646" phi="-169.60573" angleDiscLat="18.732119" height="64.842964" scale="1.0901006" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="2" rho="84.627045" theta="239.47142" phi="166.16673" angleDiscLat="242.09721" height="69.46946" scale="1.0629088" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+            <leaf id="0" rho="184.44069" theta="205.83592" phi="12.972611" angleDiscLat="228.59918" height="85.60451" scale="1.0285586" lengthCurrent="0.3998427" radiusCurrent="0.08059223" />
+          </trunck>
         </trunck>
-        <trunck length="1.1361326" radius="0.092163466" axe="0.036670372 0.5 -0.36371815">
-          <trunck length="0.53779095" radius="0.09682203" axe="0.42016578 0.5 0.647299" />
-          <trunck length="0.45348313" radius="0.095827356" axe="0.036670372 0.5 -0.36371815" />
+        <trunck length="1.2750537" radius="0.08093763" axe="-0.03505902 0.5 -0.4251096">
+          <leaf id="0" rho="192.60786" theta="31.732635" phi="-54.64528" angleDiscLat="307.72864" height="43.281326" scale="1.141075" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="2" rho="245.65244" theta="211.67824" phi="-149.44728" angleDiscLat="59.45867" height="51.37123" scale="0.99910164" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="318.10367" theta="40.508244" phi="-61.436607" angleDiscLat="289.16663" height="65.56297" scale="0.82845515" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="174.89056" theta="40.44207" phi="104.37448" angleDiscLat="261.16394" height="60.305054" scale="1.0335402" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="2" rho="91.95606" theta="247.63121" phi="-60.600094" angleDiscLat="26.684803" height="69.80114" scale="1.16199" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="2" rho="288.03607" theta="294.6991" phi="-70.22562" angleDiscLat="275.67886" height="73.17964" scale="0.92646444" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="0" rho="161.99466" theta="58.732674" phi="-31.030872" angleDiscLat="340.73895" height="83.57231" scale="0.9841105" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="176.1388" theta="275.03836" phi="25.609539" angleDiscLat="169.81007" height="82.11131" scale="1.000182" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="0" rho="281.2482" theta="253.71303" phi="1.7404962" angleDiscLat="134.12321" height="49.398643" scale="0.9293492" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="219.42903" theta="71.639656" phi="-98.37522" angleDiscLat="351.08188" height="45.832848" scale="0.9260615" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="219.18748" theta="69.188614" phi="179.01154" angleDiscLat="156.61826" height="97.71149" scale="0.8039177" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="179.67624" theta="287.14133" phi="-112.33975" angleDiscLat="68.99358" height="85.12698" scale="1.1683813" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="2" rho="56.11057" theta="353.83435" phi="-80.42369" angleDiscLat="44.913204" height="35.51114" scale="1.1684161" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="275.68777" theta="5.934677" phi="-29.046618" angleDiscLat="30.3166" height="47.812763" scale="1.1249692" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="322.92316" theta="192.46147" phi="66.0245" angleDiscLat="159.02647" height="76.049194" scale="1.1832219" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="177.50255" theta="215.52635" phi="-172.99023" angleDiscLat="43.026623" height="75.23708" scale="0.8389132" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="0" rho="171.53455" theta="194.78896" phi="147.47318" angleDiscLat="209.97832" height="76.52545" scale="1.1101788" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <leaf id="1" rho="183.80501" theta="302.48315" phi="-14.755444" angleDiscLat="84.786964" height="69.06055" scale="0.82008845" lengthCurrent="1.2750537" radiusCurrent="0.08093763" />
+          <trunck length="0.53556424" radius="0.07693304" axe="0.31949532 0.5 0.7822907">
+            <leaf id="0" rho="192.67236" theta="198.02942" phi="173.6093" angleDiscLat="90.94054" height="99.14266" scale="0.9593271" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="215.51279" theta="305.1266" phi="-174.93347" angleDiscLat="294.97153" height="64.37643" scale="0.9362891" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="350.48648" theta="349.20624" phi="-36.95214" angleDiscLat="9.901214" height="66.10469" scale="0.9795667" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="102.1512" theta="243.03505" phi="179.48352" angleDiscLat="154.99608" height="39.007442" scale="1.0469438" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="1" rho="42.112396" theta="226.00615" phi="-130.42244" angleDiscLat="11.993809" height="62.59888" scale="0.9304579" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="305.48175" theta="318.16693" phi="-30.969246" angleDiscLat="13.994565" height="85.846176" scale="1.1630843" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="293.0383" theta="319.9675" phi="-117.86871" angleDiscLat="73.39689" height="45.87451" scale="1.0214034" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="1" rho="37.752415" theta="56.783073" phi="74.99714" angleDiscLat="202.18927" height="36.66163" scale="0.8840062" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="322.1727" theta="319.37463" phi="-137.87408" angleDiscLat="70.70601" height="95.57601" scale="1.0226843" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="1" rho="341.66895" theta="218.76923" phi="-55.444168" angleDiscLat="338.24936" height="94.31059" scale="1.1539838" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="193.33122" theta="98.186165" phi="34.170677" angleDiscLat="199.31088" height="46.100662" scale="0.89164704" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="7.4539447" theta="29.204514" phi="121.637566" angleDiscLat="97.46246" height="58.427483" scale="0.87445337" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="216.43466" theta="107.37389" phi="-131.06168" angleDiscLat="73.76558" height="51.785988" scale="0.8408825" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="2" rho="170.55652" theta="286.61548" phi="-1.2882221" angleDiscLat="58.98433" height="69.328674" scale="0.95456135" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="1" rho="327.2071" theta="138.30562" phi="-7.1954117" angleDiscLat="292.41614" height="52.61575" scale="1.1966445" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="1" rho="161.15067" theta="266.66354" phi="-17.131601" angleDiscLat="323.87558" height="65.89145" scale="1.1227612" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="0" rho="283.5936" theta="304.23123" phi="177.67284" angleDiscLat="192.25502" height="60.333237" scale="0.88059664" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+            <leaf id="2" rho="203.29883" theta="326.44818" phi="-34.118534" angleDiscLat="24.452497" height="50.630493" scale="1.1881139" lengthCurrent="0.53556424" radiusCurrent="0.07693304" />
+          </trunck>
+          <trunck length="0.7469245" radius="0.08881789" axe="-0.020406008 0.5 -0.07621306">
+            <leaf id="0" rho="192.6401" theta="294.88104" phi="-24.127285" angleDiscLat="19.334585" height="71.21199" scale="0.850201" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="1" rho="50.5826" theta="78.402405" phi="162.19038" angleDiscLat="177.21509" height="57.87383" scale="1.1676954" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="0" rho="334.29507" theta="194.85725" phi="-49.194374" angleDiscLat="329.53394" height="65.83383" scale="1.1040109" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="318.52087" theta="321.73856" phi="141.929" angleDiscLat="208.08" height="82.15625" scale="0.84024197" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="1" rho="247.03423" theta="56.818672" phi="-95.51128" angleDiscLat="19.339306" height="98.70001" scale="0.84622395" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="116.75892" theta="306.433" phi="140.59744" angleDiscLat="144.83672" height="79.51291" scale="1.0447744" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="0" rho="47.51649" theta="9.350073" phi="-164.4498" angleDiscLat="27.06791" height="97.22342" scale="0.8027569" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="286.94562" theta="165.91072" phi="50.303337" angleDiscLat="185.99968" height="59.386475" scale="1.1420941" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="0" rho="121.71045" theta="106.54382" phi="159.8073" angleDiscLat="102.41461" height="72.48733" scale="0.97601676" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="100.548996" theta="325.20444" phi="-166.9097" angleDiscLat="344.6656" height="37.571724" scale="1.0400227" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="1" rho="26.259363" theta="263.68738" phi="-16.591105" angleDiscLat="357.96457" height="39.406075" scale="1.0477824" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="93.56509" theta="158.17293" phi="26.988655" angleDiscLat="263.22803" height="71.77723" scale="1.0214174" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="316.2726" theta="230.60413" phi="-105.742676" angleDiscLat="59.33939" height="76.14857" scale="0.8046493" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="0" rho="223.12213" theta="326.27505" phi="-105.16742" angleDiscLat="44.650455" height="91.070724" scale="1.0397654" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="145.06512" theta="345.38354" phi="-36.609955" angleDiscLat="45.72132" height="96.83247" scale="0.98993325" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="1" rho="349.3266" theta="61.094948" phi="-95.06092" angleDiscLat="3.4511018" height="38.064266" scale="1.1808372" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="227.56406" theta="69.51009" phi="162.573" angleDiscLat="201.11667" height="35.929344" scale="1.1953877" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+            <leaf id="2" rho="193.55191" theta="134.46567" phi="24.436995" angleDiscLat="234.61974" height="92.34552" scale="0.80410117" lengthCurrent="0.7469245" radiusCurrent="0.08881789" />
+          </trunck>
         </trunck>
       </trunck>
-      <trunck length="2.8570843" radius="0.08345656" axe="-0.07425852 0.5 -0.36587474">
-        <trunck length="1.3524073" radius="0.08767502" axe="0.42016578 0.5 0.647299">
-          <trunck length="0.6401651" radius="0.09210671" axe="0.42016578 0.5 0.647299" />
-          <trunck length="0.5398084" radius="0.091160476" axe="0.036670372 0.5 -0.36371815" />
+      <trunck length="2.1201613" radius="0.07030292" axe="-0.11040816 0.5 -0.03574148">
+        <leaf id="2" rho="192.47887" theta="59.13902" phi="-176.71724" angleDiscLat="21.304829" height="61.558655" scale="1.1045706" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="305.93176" theta="24.78153" phi="-98.47488" angleDiscLat="308.43292" height="90.36084" scale="1.1247267" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="253.33801" theta="143.11226" phi="110.405525" angleDiscLat="127.69748" height="64.479546" scale="0.92623204" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="320.36932" theta="355.25616" phi="134.15642" angleDiscLat="113.499695" height="37.900284" scale="1.006733" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="191.64343" theta="290.88132" phi="-100.9554" angleDiscLat="56.066814" height="84.20567" scale="0.82505435" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="253.14474" theta="247.76352" phi="-148.73834" angleDiscLat="79.047424" height="47.846573" scale="0.8532248" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="1" rho="259.90735" theta="256.26306" phi="37.35519" angleDiscLat="155.42305" height="93.967926" scale="0.90952444" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="92.91157" theta="351.54895" phi="106.83433" angleDiscLat="105.05166" height="43.010674" scale="0.8325337" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="199.3992" theta="122.38984" phi="89.473335" angleDiscLat="260.95758" height="87.04391" scale="1.142679" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="334.9492" theta="137.38055" phi="-4.2373" angleDiscLat="16.746876" height="78.87735" scale="0.8702167" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="1" rho="270.9" theta="11.193544" phi="-108.69324" angleDiscLat="71.23303" height="70.933136" scale="1.0284591" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="2" rho="164.1209" theta="83.01497" phi="-93.744125" angleDiscLat="12.055821" height="73.52597" scale="0.95623714" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="95.46237" theta="126.75523" phi="-159.14769" angleDiscLat="347.20847" height="67.96144" scale="1.0234834" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="125.95025" theta="164.57304" phi="-84.56341" angleDiscLat="332.9811" height="69.78092" scale="1.0657849" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="314.3553" theta="300.77316" phi="3.6826622" angleDiscLat="252.24716" height="57.9161" scale="1.1563768" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="1" rho="210.20631" theta="113.25194" phi="124.70747" angleDiscLat="201.32874" height="93.92834" scale="1.0712173" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="307.41644" theta="335.90436" phi="87.07387" angleDiscLat="245.42491" height="43.90988" scale="1.1693431" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <leaf id="0" rho="144.81738" theta="254.55313" phi="156.02927" angleDiscLat="205.45592" height="40.920662" scale="0.8840376" lengthCurrent="2.1201613" radiusCurrent="0.07030292" />
+        <trunck length="0.9550993" radius="0.069698185" axe="0.2921171 0.5 0.84685075">
+          <leaf id="2" rho="192.54337" theta="225.43582" phi="115.68126" angleDiscLat="164.51674" height="52.41999" scale="0.92282283" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="275.79208" theta="118.22989" phi="123.96108" angleDiscLat="183.94579" height="38.36603" scale="1.0619141" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="285.72083" theta="91.81026" phi="85.92107" angleDiscLat="208.43205" height="65.02126" scale="1.0773436" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="247.62994" theta="197.84912" phi="-29.265453" angleDiscLat="7.331829" height="81.60267" scale="1.0201366" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="2" rho="141.79974" theta="269.2563" phi="-170.77776" angleDiscLat="41.37582" height="77.0034" scale="0.9935222" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="270.5904" theta="271.23132" phi="109.48198" angleDiscLat="177.36313" height="60.513107" scale="1.0898447" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="1" rho="30.95102" theta="157.49785" phi="124.19304" angleDiscLat="248.081" height="56.27012" scale="0.94681746" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="1" rho="314.52518" theta="133.29367" phi="156.22192" angleDiscLat="137.43088" height="62.560993" scale="1.1163579" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="2" rho="240.3237" theta="188.05144" phi="45.60691" angleDiscLat="197.5404" height="68.221275" scale="0.8360141" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="1" rho="97.18912" theta="284.5101" phi="-141.30626" angleDiscLat="3.914373" height="62.355095" scale="1.0981392" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="245.04375" theta="40.19108" phi="143.85239" angleDiscLat="113.925644" height="84.32231" scale="1.1161884" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="1" rho="351.89856" theta="185.07816" phi="-103.04194" angleDiscLat="40.524704" height="46.826477" scale="1.0623093" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="255.78645" theta="240.2948" phi="-29.785685" angleDiscLat="16.060831" height="84.23629" scale="1.0959498" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="20.819006" theta="85.25386" phi="-56.80501" angleDiscLat="1.6488504" height="91.296844" scale="0.8953771" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="2" rho="318.63922" theta="246.61731" phi="-124.85358" angleDiscLat="25.636833" height="99.48264" scale="1.1697993" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="2" rho="193.85443" theta="164.38916" phi="148.84885" angleDiscLat="122.17769" height="84.5827" scale="0.95506525" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="1" rho="59.475494" theta="85.34665" phi="117.27353" angleDiscLat="227.7016" height="92.71767" scale="0.9397609" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <leaf id="0" rho="164.3112" theta="278.51816" phi="175.39235" angleDiscLat="145.12146" height="87.4906" scale="0.85206306" lengthCurrent="0.9550993" radiusCurrent="0.069698185" />
+          <trunck length="0.5330382" radius="0.066325985" axe="0.21027254 0.5 0.73799086">
+            <leaf id="2" rho="192.51111" theta="322.28745" phi="146.19925" angleDiscLat="92.910774" height="89.48932" scale="0.81369674" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="110.86192" theta="251.50572" phi="-111.21798" angleDiscLat="66.18935" height="96.863434" scale="0.8933203" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="269.52942" theta="297.46127" phi="98.1633" angleDiscLat="168.06477" height="64.750404" scale="0.8017878" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="0" rho="103.999626" theta="276.55264" phi="-171.71094" angleDiscLat="60.41577" height="59.75148" scale="0.8134348" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="346.7216" theta="100.0688" phi="-135.86656" angleDiscLat="48.721317" height="48.104538" scale="0.9092883" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="81.86756" theta="259.4974" phi="-39.11017" angleDiscLat="308.2053" height="54.17984" scale="0.9715347" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="1" rho="145.42918" theta="206.88046" phi="170.77411" angleDiscLat="201.75201" height="42.61902" scale="1.128171" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="203.71837" theta="242.42131" phi="131.52812" angleDiscLat="121.24126" height="85.285835" scale="0.9744458" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="39.861446" theta="335.22064" phi="67.54012" angleDiscLat="229.24898" height="45.13259" scale="1.1893466" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="1" rho="216.06917" theta="30.945332" phi="-72.77178" angleDiscLat="10.330625" height="70.61623" scale="0.98417795" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="0" rho="77.97188" theta="205.6923" phi="-126.27281" angleDiscLat="272.57935" height="77.62772" scale="0.8723237" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="0" rho="78.009735" theta="314.04654" phi="8.39304" angleDiscLat="206.29027" height="60.176224" scale="0.8092732" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="1" rho="355.62442" theta="3.5250235" phi="-4.4666934" angleDiscLat="1.6346455" height="43.598866" scale="1.0597166" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="1" rho="73.38461" theta="124.91346" phi="-160.6842" angleDiscLat="347.31497" height="48.03888" scale="0.98058105" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="136.49725" theta="93.695244" phi="154.26813" angleDiscLat="138.94199" height="78.69937" scale="0.9630881" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="1" rho="22.030376" theta="318.82056" phi="46.778164" angleDiscLat="161.7532" height="56.755524" scale="1.0131413" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="2" rho="3.445952" theta="210.62549" phi="102.1737" angleDiscLat="236.56326" height="68.31378" scale="0.85455203" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+            <leaf id="0" rho="154.56429" theta="86.53564" phi="-165.71082" angleDiscLat="355.2887" height="64.205635" scale="0.86805034" lengthCurrent="0.5330382" radiusCurrent="0.066325985" />
+          </trunck>
+          <trunck length="0.5013194" radius="0.074413925" axe="-0.10761507 0.5 -0.1506865">
+            <leaf id="0" rho="192.31763" theta="183.397" phi="-149.3072" angleDiscLat="23.275072" height="51.905315" scale="0.95894027" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="201.28088" theta="331.16064" phi="-34.75938" angleDiscLat="79.65073" height="57.847847" scale="1.0817579" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="172.38097" theta="91.3673" phi="-171.61668" angleDiscLat="285.86102" height="63.12526" scale="1.1484532" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="322.21774" theta="28.77375" phi="-126.38382" angleDiscLat="18.91938" height="58.644318" scale="1.173224" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="2" rho="136.25264" theta="164.94398" phi="106.39952" angleDiscLat="92.794304" height="69.71133" scale="0.8038848" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="29.530563" theta="189.09402" phi="-156.87926" angleDiscLat="13.258138" height="81.18024" scale="1.0616752" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="112.298256" theta="143.17604" phi="-90.26059" angleDiscLat="283.77817" height="90.71243" scale="1.016292" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="0" rho="258.87753" theta="177.1872" phi="-163.36531" angleDiscLat="24.10364" height="91.63488" scale="0.92297333" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="0" rho="277.08795" theta="138.23584" phi="-19.139364" angleDiscLat="59.500557" height="36.60049" scale="0.90934104" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="2" rho="209.34941" theta="309.55667" phi="-21.564919" angleDiscLat="48.828156" height="55.182976" scale="1.1004108" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="2" rho="155.54065" theta="118.6997" phi="20.79536" angleDiscLat="144.50153" height="37.460194" scale="1.0091357" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="234.67668" theta="7.8570056" phi="160.4996" angleDiscLat="120.8836" height="75.27472" scale="0.89105695" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="234.65213" theta="22.906364" phi="-32.552704" angleDiscLat="275.0775" height="59.774315" scale="0.84231746" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="2" rho="28.778343" theta="2.8710365" phi="63.959396" angleDiscLat="261.31177" height="48.491127" scale="1.0918046" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="123.64544" theta="256.16278" phi="150.75536" angleDiscLat="98.77301" height="83.99972" scale="0.92282045" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="71.086006" theta="165.40895" phi="-154.35402" angleDiscLat="39.206387" height="84.792404" scale="0.9615974" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="0" rho="27.268795" theta="242.2986" phi="-11.57474" angleDiscLat="289.7332" height="51.890423" scale="1.1432985" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+            <leaf id="1" rho="96.082825" theta="14.640591" phi="107.621544" angleDiscLat="176.29211" height="54.495804" scale="0.9639741" lengthCurrent="0.5013194" radiusCurrent="0.074413925" />
+          </trunck>
         </trunck>
-        <trunck length="1.1403946" radius="0.08677431" axe="0.036670372 0.5 -0.36371815" />
+        <trunck length="0.969061" radius="0.06704086" axe="0.029826745 0.5 -0.33579183">
+          <leaf id="1" rho="192.41435" theta="252.84221" phi="57.753227" angleDiscLat="238.09294" height="70.69732" scale="0.8863185" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="336.07138" theta="291.33316" phi="-72.98868" angleDiscLat="72.92004" height="77.35564" scale="1.1875391" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="220.95518" theta="194.41428" phi="-134.89" angleDiscLat="46.962883" height="63.93783" scale="1.1751206" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="0" rho="33.108673" theta="152.66321" phi="59.047382" angleDiscLat="219.66757" height="59.1979" scale="0.99332935" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="241.4871" theta="312.50638" phi="-31.133043" angleDiscLat="70.75781" height="91.40793" scale="1.0565865" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="0" rho="235.69908" theta="224.29572" phi="-7.99471" angleDiscLat="340.73172" height="35.18004" scale="1.0166049" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="128.86372" theta="355.02823" phi="-130.51735" angleDiscLat="62.765087" height="66.665726" scale="0.8722315" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="0" rho="231.29796" theta="209.80426" phi="-57.446716" angleDiscLat="72.672455" height="88.46036" scale="0.94870955" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="158.4747" theta="56.72825" phi="-133.33975" angleDiscLat="324.37476" height="40.866543" scale="1.0493438" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="212.70927" theta="350.251" phi="-47.16835" angleDiscLat="29.579401" height="95.3996" scale="1.0422944" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="296.75626" theta="342.19598" phi="-73.53408" angleDiscLat="28.540442" height="57.54396" scale="0.9407297" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="336.3432" theta="340.95178" phi="-84.44633" angleDiscLat="343.58694" height="35.225468" scale="0.85016507" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="295.13828" theta="13.215694" phi="-108.5097" angleDiscLat="318.35608" height="51.68659" scale="0.951017" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="231.0815" theta="243.89224" phi="-112.32181" angleDiscLat="304.3134" height="48.265007" scale="0.8361928" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="310.07135" theta="354.92902" phi="62.511734" angleDiscLat="118.8575" height="81.34955" scale="1.1429543" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="226.5582" theta="62.114746" phi="-100.56609" angleDiscLat="280.4798" height="38.273964" scale="1.1873693" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="1" rho="195.35739" theta="226.46204" phi="56.874226" angleDiscLat="263.14822" height="60.102097" scale="0.99892527" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+          <leaf id="2" rho="125.323555" theta="230.58812" phi="136.66618" angleDiscLat="265.7904" height="59.35072" scale="0.9160122" lengthCurrent="0.969061" radiusCurrent="0.06704086" />
+        </trunck>
       </trunck>
     </trunck>
   </trunck>

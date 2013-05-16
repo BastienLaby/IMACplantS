@@ -30,6 +30,7 @@ void main (void) {
 	light.intensity = vec3(1, 1, 1);
 
 	vec4 lb = vec4(lambertLight(light, v_Normal), 1.0f);
+	
 	vec4 tex = texture(uTex, v_Texcoords);
 	
 	glFragColor = tex * lb;

@@ -111,7 +111,7 @@ public class JOGLRenderer implements GLEventListener {
 		this.stack.pop();
 		
 		// Drawing tree
-		for(int i = 0; i < 1; i++) {
+		for(int i = 0; i < 2; i++) {
 			this.stack.push();
 			this.stack.rotate(new Vector3f(0f, 1f, 0f), i*135);
 				this.render(this.trees.get(0));
@@ -169,9 +169,9 @@ public class JOGLRenderer implements GLEventListener {
 		// Load and init textures
 		try {
 			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), true);
-			this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/sand.jpg"), true);
+			this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/automne2.jpg"), true);
 			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree5.jpg"), false);
-			this.texLeaf1 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf1.png"), false);
+			this.texLeaf1 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf3.png"), false);
 			this.texLeaf2 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf2.png"), false);
 			this.texLeaf3 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf3.png"), false);
 		} catch (GLException e) {
@@ -181,8 +181,8 @@ public class JOGLRenderer implements GLEventListener {
 		}
 		this.texSkybox.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
 		this.texSkybox.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
-		//this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
-		//this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
+		this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		this.texLeaf1.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
