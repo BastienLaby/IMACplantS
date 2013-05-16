@@ -16,10 +16,11 @@ public class LeafTreeNode extends PlantsTreeNode {
 					radiusTrunck,
 					lengthTrunck,
 					orientation;
+	private int id;
 	
 	private Square square;
 	
-	public LeafTreeNode(GL3 gl, float rho, float theta, float phi, float scale, float height, float radiusTrunck, float lengthTrunck, float orientation) {
+	public LeafTreeNode(GL3 gl, float rho, float theta, float phi, float scale, float height, float radiusTrunck, float lengthTrunck, float orientation, int id) {
 		this.rho = rho;
 		this.theta = theta;
 		this.phi = phi;
@@ -28,6 +29,7 @@ public class LeafTreeNode extends PlantsTreeNode {
 		this.radiusTrunck = radiusTrunck;
 		this.lengthTrunck = lengthTrunck;
 		this.orientation = orientation;
+		this.id = id;
 		this.square = new Square(gl);
 	}
 	
@@ -85,6 +87,10 @@ public class LeafTreeNode extends PlantsTreeNode {
 
 	public float getScale() {
 		return scale;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 
 	public void setScale(float scale) {

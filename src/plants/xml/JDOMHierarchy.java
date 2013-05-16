@@ -232,7 +232,8 @@ public class JDOMHierarchy {
 					float currentRadius = Float.parseFloat(JDOMchild.getAttributeValue("radiusCurrent"));
 					float currentLength = Float.parseFloat(JDOMchild.getAttributeValue("lengthCurrent"));
 					float orientation = Float.parseFloat(JDOMchild.getAttributeValue("angleDiscLat"));
-					treeChild = new DefaultMutableTreeNode(new LeafTreeNode(gl, rho, theta, phi, scale, height, currentRadius, currentLength, orientation));
+					int id = Integer.parseInt(JDOMchild.getAttributeValue("id"));
+					treeChild = new DefaultMutableTreeNode(new LeafTreeNode(gl, rho, theta, phi, scale, height, currentRadius, currentLength, orientation, id));
 					break;
 
 				default:

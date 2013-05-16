@@ -27,10 +27,10 @@ public class Square implements Drawable {
 	}
 	
 	private void createData() {
-		this.vertices[0] = new VertexShape(-0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f);
-		this.vertices[1] = new VertexShape(0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 1.0f);
-		this.vertices[2] = new VertexShape(0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f);
-		this.vertices[3] = new VertexShape(-0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f);
+		this.vertices[0] = new VertexShape(-0.4f, 1.2f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+		this.vertices[1] = new VertexShape(0.4f, 1.2f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 1.0f);
+		this.vertices[2] = new VertexShape(0.4f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f);
+		this.vertices[3] = new VertexShape(-0.4f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, 0.0f);
 	}
 	
 	private void createGLRessources(GL3 gl) {

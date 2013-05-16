@@ -49,7 +49,7 @@ public class JOGLRenderer implements GLEventListener {
 	private FPSCamera camera;
 	
 	// Textures
-	private Texture texSkybox, texGround, texTree, texLeaf;
+	private Texture texSkybox, texGround, texTree, texLeaf1, texLeaf2, texLeaf3;
 	
 	// Drawable
 	private Cube skybox;
@@ -113,7 +113,7 @@ public class JOGLRenderer implements GLEventListener {
 		// Drawing tree
 		for(int i = 0; i < 1; i++) {
 			this.stack.push();
-			this.stack.translate(new Vector3f((float)Math.random()*i*10f, (float)Math.random()*i*10f, 0f));
+			this.stack.rotate(new Vector3f(0f, 1f, 0f), i*135);
 				this.render(this.trees.get(0));
 			this.stack.pop();
 		}
@@ -133,7 +133,7 @@ public class JOGLRenderer implements GLEventListener {
 		// Get openGL Context
 		this.gl = drawable.getGL().getGL3();
 
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < 1; i++) {
 			this.createTree();
 		}
 		
@@ -171,7 +171,9 @@ public class JOGLRenderer implements GLEventListener {
 			this.texSkybox = TextureIO.newTexture(new File("src/plants/rendering/img/skybox.jpg"), true);
 			this.texGround = TextureIO.newTexture(new File("src/plants/rendering/img/sand.jpg"), true);
 			this.texTree = TextureIO.newTexture(new File("src/plants/rendering/img/tree5.jpg"), false);
-			this.texLeaf = TextureIO.newTexture(new File("src/plants/rendering/img/leaf.png"), false);
+			this.texLeaf1 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf1.png"), false);
+			this.texLeaf2 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf2.png"), false);
+			this.texLeaf3 = TextureIO.newTexture(new File("src/plants/rendering/img/leaf3.png"), false);
 		} catch (GLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -183,8 +185,12 @@ public class JOGLRenderer implements GLEventListener {
 		//this.texGround.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
 		this.texTree.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
-		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
-		this.texLeaf.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
+		this.texLeaf1.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texLeaf1.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
+		this.texLeaf2.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texLeaf2.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
+		this.texLeaf3.setTexParameterf(gl, GL3.GL_TEXTURE_MIN_FILTER, GL3.GL_LINEAR);
+		this.texLeaf3.setTexParameterf(gl, GL3.GL_TEXTURE_MAG_FILTER, GL3.GL_LINEAR);
 		
 		// Create drawable objects
 		this.skybox = new Cube(this.gl);
@@ -234,7 +240,8 @@ public class JOGLRenderer implements GLEventListener {
 		String filename = new String("src/plants/xml/randomTree"+i+".xml");
 		JDOMCreate.createTreeAt(filename);
 		JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File(filename));
-
+		//JDOMHierarchy xmlHierarchy = new JDOMHierarchy(new File("src/plants/xml/randomxml.xml"));
+		
 		PlantsTreeNode root = new TrunckTreeNode();
 		DefaultMutableTreeNode treeNodeRoot = new DefaultMutableTreeNode(root, true);
 		JDOMHierarchy.fillTree(this.gl, xmlHierarchy.getRoot(), treeNodeRoot);
@@ -348,8 +355,20 @@ public class JOGLRenderer implements GLEventListener {
 
 				this.gl.glUseProgram(this.leafLoc.PROGRAM_ID);
 				this.gl.glActiveTexture(GL3.GL_TEXTURE1);
-				this.texLeaf.enable(gl);
-				this.texLeaf.bind(gl);
+				
+				if(((LeafTreeNode)tree.getUserObject()).getId() == 0) {
+					this.texLeaf1.enable(gl);
+					this.texLeaf1.bind(gl);
+				}
+				else if(((LeafTreeNode)tree.getUserObject()).getId() == 1) {
+					this.texLeaf2.enable(gl);
+					this.texLeaf2.bind(gl);
+				}
+				else if(((LeafTreeNode)tree.getUserObject()).getId() == 2) {
+					this.texLeaf3.enable(gl);
+					this.texLeaf3.bind(gl);
+				}
+				
 				this.gl.glUniform1i(this.leafLoc.LOC_TEX, 1);
 				
 				MV = new Matrix4f(this.camera.getViewMatrix());

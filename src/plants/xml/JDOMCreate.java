@@ -27,23 +27,24 @@ public class JDOMCreate {
 	/** TRUNCK GENERATION PARAMETERS **/
 	
 	private static final float INITIAL_LENGTH = 20.0f;
-	private static final float INITIAL_RADIUS = 0.1f * INITIAL_LENGTH;
+	private static final float INITIAL_RADIUS = 0.05f * INITIAL_LENGTH;
 	private static final float INITIAL_LENGTH_RATIO_VARIATION = 0.3f;
 	private static final float INITIAL_RADIUS_RATIO_VARIATION = 0.3f;
 	
 	private static final float TWO_SONS_PROBABILITY = 1.0f;
 	
-	private static final float HERITED_LENGTH_RATIO = 0.5f;
+	private static final float HERITED_LENGTH_RATIO = 0.4f;
 	private static final float HERITED_RADIUS_RATIO = 0.3f;
 	
 	private static final float HERITED_LENGTH_RATIO_VARIATION = 0.3f;
 	private static final float HERITED_RADIUS_RATIO_VARIATION = 0.1f;
 
 	private static final float CURRENT_MINIMAL_RADIUS_ACCEPTABLE = 0.1f;
+	private static final float CURRENT_MINIMAL_LENGTH_ACCEPTABLE = 0.03f*INITIAL_LENGTH;
 	
 	/** LEAF GENERATION PARAMETERS **/
 
-	private static final int NB_LEAF_MAX = 50;
+	private static final int NB_LEAF_MAX = 1;
 	
 	private static final float MINIMAL_RHO = 0.0f;
 	private static final float MAXIMAL_RHO = 360.0f;
@@ -100,64 +101,83 @@ public class JDOMCreate {
 	   root.addContent(trunck);
 	   
 	   /** CREATING THE TRUNC SONS **/
-	   
-	   createLink(trunck);
+	   int iter = 0;
+	   createLink(trunck, iter);
    }
 
-	private static void createLink(Element parentTrunck) {
+	private static void createLink(Element parentTrunck, int iteration) {
 	   
 		float parentLength = Float.parseFloat(parentTrunck.getAttributeValue("length"));
 		float parentRadius = Float.parseFloat(parentTrunck.getAttributeValue("radius"));
-		   
+		
+		float heritedRadius;
+		float heritedLength;
+		
 		if( parentRadius >= CURRENT_MINIMAL_RADIUS_ACCEPTABLE ) {
 		   
-			// Initiate random
-			Random rand = new Random();
-			rand.setSeed(System.currentTimeMillis());
+			heritedRadius = parentRadius * HERITED_RADIUS_RATIO;
+					   
+		} else {
+			
+			heritedRadius = parentRadius;
+			
+		}
+		if( parentLength <= CURRENT_MINIMAL_LENGTH_ACCEPTABLE) {
+			heritedLength = parentLength;
+		} else {
+			heritedLength = parentLength * HERITED_LENGTH_RATIO;
+		}
+		
+		// Initiate random
+		Random rand = new Random();
+		rand.setSeed(System.currentTimeMillis());
+	   
+			if( rand.nextFloat() < TWO_SONS_PROBABILITY ) {
+			 
 		   
-				if( rand.nextFloat() < TWO_SONS_PROBABILITY ) {
+			/** HANDLE SON ONE **/
+		   
+			float newLength1 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
+			float newLength2 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
+			float newRadius1 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
+			float newRadius2 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
+			Vector3f newAxe1 = new Vector3f(
+					0.2f + rand.nextFloat()*0.3f,
+					0.5f,
+					0.5f + rand.nextFloat()*0.5f);
+			Vector3f newAxe2 = new Vector3f(
+					-0.2f + rand.nextFloat()*0.3f,
+					0.5f,
+					-0.5f + rand.nextFloat()*0.5f);
+		   
+			String newAxe1String = new String(newAxe1.x + " " + newAxe1.y + " " + newAxe1.z);
+			String newAxe2String = new String(newAxe2.x + " " + newAxe2.y + " " + newAxe2.z);
+		   
+			Element son1 = new Element("trunck");
+			son1.setAttribute("length", newLength1+"");
+			son1.setAttribute("radius", newRadius1+"");
+			son1.setAttribute("axe", newAxe1String);
 			   
-				float heritedLength = parentLength * HERITED_LENGTH_RATIO;
-				float heritedRadius = parentRadius * HERITED_RADIUS_RATIO;
+			Element son2 = new Element("trunck");
+			son2.setAttribute("length", newLength2+"");
+			son2.setAttribute("radius", newRadius2+"");
+			son2.setAttribute("axe", newAxe2String);
 			   
-				/** HANDLE SON ONE **/
-			   
-				float newLength1 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
-				float newLength2 =  heritedLength + (2*rand.nextFloat()-1) * HERITED_LENGTH_RATIO_VARIATION * heritedLength;
-				float newRadius1 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
-				float newRadius2 = heritedRadius + (2*rand.nextFloat()-1) * HERITED_RADIUS_RATIO_VARIATION * heritedRadius;
-				Vector3f newAxe1 = new Vector3f(
-						0.2f + rand.nextFloat()*0.3f,
-						0.5f + rand.nextFloat()*0.5f,
-						0.5f + rand.nextFloat()*0.5f);
-				Vector3f newAxe2 = new Vector3f(
-						-0.2f + rand.nextFloat()*0.3f,
-						0.5f + rand.nextFloat()*0.5f,
-						-0.5f + rand.nextFloat()*0.5f);
-			   
-				String newAxe1String = new String(newAxe1.x + " " + newAxe1.y + " " + newAxe1.z);
-				String newAxe2String = new String(newAxe2.x + " " + newAxe2.y + " " + newAxe2.z);
-			   
-				Element son1 = new Element("trunck");
-				son1.setAttribute("length", newLength1+"");
-				son1.setAttribute("radius", newRadius1+"");
-				son1.setAttribute("axe", newAxe1String);
-				   
-				Element son2 = new Element("trunck");
-				son2.setAttribute("length", newLength2+"");
-				son2.setAttribute("radius", newRadius2+"");
-				son2.setAttribute("axe", newAxe2String);
-				   
-				parentTrunck.addContent(son1);
-				parentTrunck.addContent(son2);
-				
-				addLeaf(son1);
-				createLink(son1);
-				
-				addLeaf(son2);
-				createLink(son2);
-			   
-			}		   
+			parentTrunck.addContent(son1);
+			parentTrunck.addContent(son2);
+			
+			addLeaf(son1);
+			iteration++;
+			if(iteration < 6) {
+				createLink(son1, iteration);
+			}
+			
+			addLeaf(son2);
+			iteration++;
+			if(iteration < 6) {
+				createLink(son2, iteration);
+			}
+		   
 		}
 	}
    
@@ -177,6 +197,7 @@ public class JDOMCreate {
 		float lateralAngle;
 		float heightPercentagePosition;
 		float scale;
+		int id;
  
 		for(int i = 0; i < nbLeaf; ++i) {
 		   
@@ -192,8 +213,11 @@ public class JDOMCreate {
 			heightPercentagePosition = rand.nextFloat()*(MAXIMAL_HEIGHT_PERCENTAGE_POSITION - MINIMAL_HEIGHT_PERCENTAGE_POSITION) + MINIMAL_HEIGHT_PERCENTAGE_POSITION;
 			scale = rand.nextFloat()*(MAXIMAL_SCALE - MINIMAL_SCALE) + MINIMAL_SCALE;
 			
+			id = rand.nextInt(3);
+			
 			Element leaf = new Element("leaf");
-			 
+			
+			leaf.setAttribute(new Attribute("id", ""+id));
 			leaf.setAttribute(new Attribute("rho", ""+rho));
 			leaf.setAttribute(new Attribute("theta", ""+theta));
 			leaf.setAttribute(new Attribute("phi",""+phi));

@@ -295,7 +295,7 @@ public class Cylinder implements Drawable {
 		this.allVertices = new ArrayList<VertexShape>();
         for(int j = 0; j < discHeight-1; ++j) {
         	int offset = j * discLat;
-        	for(int i = 0; i < discLat; ++i) {
+        	for(int i = 0; i < discLat-1; ++i) {
         		this.allVertices.add(new VertexShape(distinctVertices.get(offset + i)));
         		this.allVertices.add(new VertexShape(distinctVertices.get(offset + (i + 1)%discLat)));
         		this.allVertices.add(new VertexShape(distinctVertices.get(offset + discLat + (i + 1)%discLat)));
